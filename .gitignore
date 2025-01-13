@@ -1,0 +1,10 @@
+# .gitignore 파일 생성
+echo ".env" >> .gitignore
+
+# data 디렉토리도 추가 (토큰 정보가 저장되므로)
+echo "data/" >> .gitignore
+
+# Python 관련 파일들도 추가
+echo "venv/" >> .gitignore
+echo "__pycache__/" >> .gitignore
+echo "*.pyc" >> .gitignore
