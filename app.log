@@ -1,0 +1,1112 @@
+2025-01-14 15:32:45,277 - __main__ - INFO - Environment variables loaded
+2025-01-14 15:32:45,291 - slack_bolt.App - INFO - As you've set SLACK_CLIENT_ID and SLACK_CLIENT_SECRET env variables, Bolt has enabled the file-based InstallationStore/OAuthStateStore for you. Note that these file-based stores are for local development. If you'd like to use a different data store, set the oauth_settings argument in the App constructor. Please refer to https://slack.dev/bolt-python/concepts#authenticating-oauth for more details.
+2025-01-14 15:32:45,291 - slack_bolt.App - WARNING - As `installation_store` or `authorize` has been used, `token` (or SLACK_BOT_TOKEN env variable) will be ignored.
+2025-01-14 15:32:45,291 - __main__ - INFO - Slack app initialized successfully
+2025-01-14 15:32:45,291 - __main__ - INFO - Starting Flask application
+2025-01-14 15:32:45,312 - werkzeug - WARNING -  * Debugger is active!
+2025-01-14 15:32:45,318 - werkzeug - INFO -  * Debugger PIN: 454-586-817
+2025-01-14 15:33:23,490 - __main__ - INFO - Received Slack event: {'token': 'SvouyNxg8nGRob0Cb7HjidCx', 'challenge': 'OriuEesNY2uPFuqcpomYwkUPWk1xZwkFKFp6t5bn3OS9gsv6pKkz', 'type': 'url_verification'}
+2025-01-14 15:33:23,491 - __main__ - INFO - Handling URL verification challenge: OriuEesNY2uPFuqcpomYwkUPWk1xZwkFKFp6t5bn3OS9gsv6pKkz
+2025-01-14 15:33:23,492 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2025 15:33:23] "POST /slack/events HTTP/1.1" 200 -
+2025-01-14 15:34:09,341 - __main__ - INFO - Received Slack event: {'token': 'SvouyNxg8nGRob0Cb7HjidCx', 'team_id': 'T01EQ5VAYA2', 'context_team_id': 'T01EQ5VAYA2', 'context_enterprise_id': None, 'api_app_id': 'A0890NQE0G0', 'event': {'user': 'U054JK0RHL3', 'type': 'message', 'ts': '1736836448.565589', 'client_msg_id': 'd0926852-0b79-4be6-b282-f769bed20341', 'text': '*/connect-github', 'team': 'T01EQ5VAYA2', 'blocks': [{'type': 'rich_text', 'block_id': 'hsBpa', 'elements': [{'type': 'rich_text_section', 'elements': [{'type': 'text', 'text': '*/connect-github'}]}]}], 'channel': 'D088BUC4B7U', 'event_ts': '1736836448.565589', 'channel_type': 'im'}, 'type': 'event_callback', 'event_id': 'Ev088F67RYPP', 'event_time': 1736836448, 'authorizations': [{'enterprise_id': None, 'team_id': 'T01EQ5VAYA2', 'user_id': 'U088BRUQPSP', 'is_bot': True, 'is_enterprise_install': False}], 'is_ext_shared_channel': False, 'event_context': '4-eyJldCI6Im1lc3NhZ2UiLCJ0aWQiOiJUMDFFUTVWQVlBMiIsImFpZCI6IkEwODkwTlFFMEcwIiwiY2lkIjoiRDA4OEJVQzRCN1UifQ'}
+2025-01-14 15:34:09,342 - __main__ - INFO - Handling regular Slack event
+2025-01-14 15:34:09,343 - slack_bolt.App - DEBUG - Applying slack_bolt.middleware.ssl_check.ssl_check.SslCheck
+2025-01-14 15:34:09,343 - slack_bolt.App - DEBUG - Applying slack_bolt.middleware.request_verification.request_verification.RequestVerification
+2025-01-14 15:34:09,343 - slack_bolt.App - DEBUG - Applying slack_bolt.middleware.authorization.multi_teams_authorization.MultiTeamsAuthorization
+2025-01-14 15:34:09,343 - slack_sdk.oauth.installation_store.file - DEBUG - Installation data missing for enterprise: none, team: T01EQ5VAYA2: [Errno 2] No such file or directory: '/Users/conan/.bolt-app-installation/1500199372342.8306772476544/none-T01EQ5VAYA2/installer-latest'
+2025-01-14 15:34:09,343 - slack_sdk.oauth.installation_store.file - DEBUG - Installation data missing for enterprise: none, team: T01EQ5VAYA2: [Errno 2] No such file or directory: '/Users/conan/.bolt-app-installation/1500199372342.8306772476544/none-T01EQ5VAYA2/bot-latest'
+2025-01-14 15:34:09,344 - slack_bolt.oauth.oauth_settings - DEBUG - No installation data found for enterprise_id: None team_id: T01EQ5VAYA2
+2025-01-14 15:34:09,344 - slack_bolt.MultiTeamsAuthorization - ERROR - Although the app should be installed into this workspace, the AuthorizeResult (returned value from authorize) for it was not found.
+2025-01-14 15:34:09,344 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2025 15:34:09] "POST /slack/events HTTP/1.1" 200 -
+2025-01-14 15:37:55,712 - __main__ - ERROR - Unhandled error: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+2025-01-14 15:37:55,714 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2025 15:37:55] "[35m[1mPOST /slack/events HTTP/1.1[0m" 500 -
+2025-01-14 15:38:03,593 - __main__ - ERROR - Unhandled error: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+2025-01-14 15:38:03,594 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2025 15:38:03] "[35m[1mPOST /slack/events HTTP/1.1[0m" 500 -
+2025-01-14 15:38:05,793 - __main__ - ERROR - Unhandled error: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+2025-01-14 15:38:05,794 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2025 15:38:05] "[35m[1mPOST /slack/events HTTP/1.1[0m" 500 -
+2025-01-14 15:38:19,420 - __main__ - ERROR - Unhandled error: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+2025-01-14 15:38:19,421 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2025 15:38:19] "[35m[1mPOST /slack/events HTTP/1.1[0m" 500 -
+2025-01-14 15:38:37,239 - __main__ - INFO - Received Slack event: {'token': 'SvouyNxg8nGRob0Cb7HjidCx', 'team_id': 'T01EQ5VAYA2', 'context_team_id': 'T01EQ5VAYA2', 'context_enterprise_id': None, 'api_app_id': 'A0890NQE0G0', 'event': {'user': 'U054JK0RHL3', 'type': 'message', 'ts': '1736836716.404119', 'client_msg_id': 'c1c1e36a-0dae-46f8-beca-4f687ba94bf5', 'text': 'curl -X POST -H "Content-Type: application/json" \\\n-d \'{"type":"url_verification", "challenge":"test"}\' \\\n<http://localhost:5000/slack/events>', 'team': 'T01EQ5VAYA2', 'blocks': [{'type': 'rich_text', 'block_id': '5mRDs', 'elements': [{'type': 'rich_text_section', 'elements': [{'type': 'text', 'text': 'curl -X POST -H "Content-Type: application/json" \\\n-d \'{"type":"url_verification", "challenge":"test"}\' \\\n'}, {'type': 'link', 'url': 'http://localhost:5000/slack/events'}]}]}], 'channel': 'D088BUC4B7U', 'event_ts': '1736836716.404119', 'channel_type': 'im'}, 'type': 'event_callback', 'event_id': 'Ev0883FJ74SK', 'event_time': 1736836716, 'authorizations': [{'enterprise_id': None, 'team_id': 'T01EQ5VAYA2', 'user_id': 'U088BRUQPSP', 'is_bot': True, 'is_enterprise_install': False}], 'is_ext_shared_channel': False, 'event_context': '4-eyJldCI6Im1lc3NhZ2UiLCJ0aWQiOiJUMDFFUTVWQVlBMiIsImFpZCI6IkEwODkwTlFFMEcwIiwiY2lkIjoiRDA4OEJVQzRCN1UifQ'}
+2025-01-14 15:38:37,239 - __main__ - INFO - Handling regular Slack event
+2025-01-14 15:38:37,239 - slack_bolt.App - DEBUG - Applying slack_bolt.middleware.ssl_check.ssl_check.SslCheck
+2025-01-14 15:38:37,239 - slack_bolt.App - DEBUG - Applying slack_bolt.middleware.request_verification.request_verification.RequestVerification
+2025-01-14 15:38:37,240 - slack_bolt.App - DEBUG - Applying slack_bolt.middleware.authorization.multi_teams_authorization.MultiTeamsAuthorization
+2025-01-14 15:38:37,240 - slack_sdk.oauth.installation_store.file - DEBUG - Installation data missing for enterprise: none, team: T01EQ5VAYA2: [Errno 2] No such file or directory: '/Users/conan/.bolt-app-installation/1500199372342.8306772476544/none-T01EQ5VAYA2/installer-latest'
+2025-01-14 15:38:37,240 - slack_sdk.oauth.installation_store.file - DEBUG - Installation data missing for enterprise: none, team: T01EQ5VAYA2: [Errno 2] No such file or directory: '/Users/conan/.bolt-app-installation/1500199372342.8306772476544/none-T01EQ5VAYA2/bot-latest'
+2025-01-14 15:38:37,240 - slack_bolt.oauth.oauth_settings - DEBUG - No installation data found for enterprise_id: None team_id: T01EQ5VAYA2
+2025-01-14 15:38:37,240 - slack_bolt.MultiTeamsAuthorization - ERROR - Although the app should be installed into this workspace, the AuthorizeResult (returned value from authorize) for it was not found.
+2025-01-14 15:38:37,240 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2025 15:38:37] "POST /slack/events HTTP/1.1" 200 -
+2025-01-14 15:39:45,397 - __main__ - ERROR - Unhandled error: 405 Method Not Allowed: The method is not allowed for the requested URL.
+2025-01-14 15:39:45,398 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2025 15:39:45] "[35m[1mGET /slack/events HTTP/1.1[0m" 500 -
+2025-01-14 15:39:46,735 - __main__ - ERROR - Unhandled error: 405 Method Not Allowed: The method is not allowed for the requested URL.
+2025-01-14 15:39:46,735 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2025 15:39:46] "[35m[1mGET /slack/events HTTP/1.1[0m" 500 -
+2025-01-14 15:39:49,083 - __main__ - ERROR - Unhandled error: 405 Method Not Allowed: The method is not allowed for the requested URL.
+2025-01-14 15:39:49,083 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2025 15:39:49] "[35m[1mGET /slack/events HTTP/1.1[0m" 500 -
+2025-01-14 15:40:48,320 - werkzeug - INFO -  * Detected change in '/Users/conan/Documents/Slack_Ai_Backendbot/app.py', reloading
+2025-01-14 15:40:48,614 - INFO - Environment variables loaded
+2025-01-14 15:40:48,627 - INFO - As you've set SLACK_CLIENT_ID and SLACK_CLIENT_SECRET env variables, Bolt has enabled the file-based InstallationStore/OAuthStateStore for you. Note that these file-based stores are for local development. If you'd like to use a different data store, set the oauth_settings argument in the App constructor. Please refer to https://slack.dev/bolt-python/concepts#authenticating-oauth for more details.
+2025-01-14 15:40:48,627 - WARNING - As `installation_store` or `authorize` has been used, `token` (or SLACK_BOT_TOKEN env variable) will be ignored.
+2025-01-14 15:40:48,627 - INFO - Slack app initialized with token and signing secret
+2025-01-14 15:40:48,628 - INFO - Starting Flask application
+2025-01-14 15:40:48,658 - WARNING -  * Debugger is active!
+2025-01-14 15:40:48,666 - INFO -  * Debugger PIN: 454-586-817
+2025-01-14 15:41:21,940 - DEBUG - Headers: {'Host': '3128-220-85-91-47.ngrok-free.app', 'User-Agent': 'Slackbot 1.0 (+https://api.slack.com/robots)', 'Content-Length': '129', 'Accept': '*/*', 'Accept-Encoding': 'gzip,deflate', 'Content-Type': 'application/json', 'X-Forwarded-For': '44.203.114.207', 'X-Forwarded-Host': '3128-220-85-91-47.ngrok-free.app', 'X-Forwarded-Proto': 'https', 'X-Slack-Request-Timestamp': '1736836881', 'X-Slack-Signature': 'v0=697127122bb0267b515027bdca6daf08d9a3a0a93982d7445cd4ca045e393cce'}
+2025-01-14 15:41:21,941 - DEBUG - Body: {"token":"SvouyNxg8nGRob0Cb7HjidCx","challenge":"2ntGmVmmyOFjmke5zf3g3U1QUQKdW98QXGQcHJ8h60BhCEBvJ7HM","type":"url_verification"}
+2025-01-14 15:41:21,941 - DEBUG - URL: http://3128-220-85-91-47.ngrok-free.app/slack/events
+2025-01-14 15:41:21,941 - DEBUG - Method: POST
+2025-01-14 15:41:21,942 - INFO - Received request to /slack/events
+2025-01-14 15:41:21,942 - DEBUG - Request data: {'token': 'SvouyNxg8nGRob0Cb7HjidCx', 'challenge': '2ntGmVmmyOFjmke5zf3g3U1QUQKdW98QXGQcHJ8h60BhCEBvJ7HM', 'type': 'url_verification'}
+2025-01-14 15:41:21,942 - INFO - Handling URL verification with challenge: 2ntGmVmmyOFjmke5zf3g3U1QUQKdW98QXGQcHJ8h60BhCEBvJ7HM
+2025-01-14 15:41:21,943 - INFO - 127.0.0.1 - - [14/Jan/2025 15:41:21] "POST /slack/events HTTP/1.1" 200 -
+2025-01-14 15:41:46,512 - DEBUG - Headers: {'Host': '3128-220-85-91-47.ngrok-free.app', 'User-Agent': 'Slackbot 1.0 (+https://api.slack.com/robots)', 'Content-Length': '425', 'Accept': 'application/json,*/*', 'Accept-Encoding': 'gzip,deflate', 'Content-Type': 'application/x-www-form-urlencoded', 'X-Forwarded-For': '44.211.116.245', 'X-Forwarded-Host': '3128-220-85-91-47.ngrok-free.app', 'X-Forwarded-Proto': 'https', 'X-Slack-Request-Timestamp': '1736836906', 'X-Slack-Signature': 'v0=98f00252ce459352848ba0a486d3f6848b313cb484b3039f106daafc68d96a77'}
+2025-01-14 15:41:46,513 - DEBUG - Body: token=SvouyNxg8nGRob0Cb7HjidCx&team_id=T01EQ5VAYA2&team_domain=hyperhire&channel_id=D088BUC4B7U&channel_name=directmessage&user_id=U054JK0RHL3&user_name=jayden&command=%2Fconnect-github&text=&api_app_id=A0890NQE0G0&is_enterprise_install=false&response_url=https%3A%2F%2Fhooks.slack.com%2Fcommands%2FT01EQ5VAYA2%2F8302766305025%2FV84f0GCsD0c3PKmXAqXr6Ao8&trigger_id=8283452034310.1500199372342.79ebbb5a9d4a389aded4d1c5bb4138a4
+2025-01-14 15:41:46,513 - DEBUG - URL: http://3128-220-85-91-47.ngrok-free.app/slack/events
+2025-01-14 15:41:46,513 - DEBUG - Method: POST
+2025-01-14 15:41:46,513 - INFO - Received request to /slack/events
+2025-01-14 15:41:46,514 - DEBUG - Request data: None
+2025-01-14 15:41:46,514 - WARNING - Request is not JSON
+2025-01-14 15:41:46,514 - INFO - 127.0.0.1 - - [14/Jan/2025 15:41:46] "[31m[1mPOST /slack/events HTTP/1.1[0m" 400 -
+2025-01-14 15:42:37,513 - INFO -  * Detected change in '/Users/conan/Documents/Slack_Ai_Backendbot/app.py', reloading
+2025-01-14 15:42:37,800 - INFO - Environment variables loaded
+2025-01-14 15:42:37,814 - INFO - As you've set SLACK_CLIENT_ID and SLACK_CLIENT_SECRET env variables, Bolt has enabled the file-based InstallationStore/OAuthStateStore for you. Note that these file-based stores are for local development. If you'd like to use a different data store, set the oauth_settings argument in the App constructor. Please refer to https://slack.dev/bolt-python/concepts#authenticating-oauth for more details.
+2025-01-14 15:42:37,814 - WARNING - As `installation_store` or `authorize` has been used, `token` (or SLACK_BOT_TOKEN env variable) will be ignored.
+2025-01-14 15:42:37,814 - INFO - Slack app initialized with token and signing secret
+2025-01-14 15:42:37,814 - INFO - Starting Flask application
+2025-01-14 15:42:37,838 - WARNING -  * Debugger is active!
+2025-01-14 15:42:37,844 - INFO -  * Debugger PIN: 454-586-817
+2025-01-14 15:44:07,179 - DEBUG - Headers: {'Host': '3128-220-85-91-47.ngrok-free.app', 'User-Agent': 'Slackbot 1.0 (+https://api.slack.com/robots)', 'Content-Length': '425', 'Accept': 'application/json,*/*', 'Accept-Encoding': 'gzip,deflate', 'Content-Type': 'application/x-www-form-urlencoded', 'X-Forwarded-For': '3.231.144.105', 'X-Forwarded-Host': '3128-220-85-91-47.ngrok-free.app', 'X-Forwarded-Proto': 'https', 'X-Slack-Request-Timestamp': '1736837046', 'X-Slack-Signature': 'v0=4a3c336dd4aa86471706a2bd02970cd77edf8ea8cadce9b6cf1411ee86def8a1'}
+2025-01-14 15:44:07,180 - DEBUG - Body: token=SvouyNxg8nGRob0Cb7HjidCx&team_id=T01EQ5VAYA2&team_domain=hyperhire&channel_id=D088BUC4B7U&channel_name=directmessage&user_id=U054JK0RHL3&user_name=jayden&command=%2Fconnect-github&text=&api_app_id=A0890NQE0G0&is_enterprise_install=false&response_url=https%3A%2F%2Fhooks.slack.com%2Fcommands%2FT01EQ5VAYA2%2F8289988242419%2FrNC3C1qAr0VMvSR6Ex9Iy7Rc&trigger_id=8275543721191.1500199372342.0347ffa7616bfc034f134a506d0197a8
+2025-01-14 15:44:07,180 - DEBUG - URL: http://3128-220-85-91-47.ngrok-free.app/slack/events
+2025-01-14 15:44:07,181 - DEBUG - Method: POST
+2025-01-14 15:44:07,181 - INFO - Received request to /slack/events
+2025-01-14 15:44:07,181 - DEBUG - Request data: None
+2025-01-14 15:44:07,181 - WARNING - Request is not JSON
+2025-01-14 15:44:07,181 - INFO - 127.0.0.1 - - [14/Jan/2025 15:44:07] "[31m[1mPOST /slack/events HTTP/1.1[0m" 400 -
+2025-01-14 15:44:09,840 - DEBUG - Headers: {'Host': '3128-220-85-91-47.ngrok-free.app', 'User-Agent': 'Slackbot 1.0 (+https://api.slack.com/robots)', 'Content-Length': '425', 'Accept': 'application/json,*/*', 'Accept-Encoding': 'gzip,deflate', 'Content-Type': 'application/x-www-form-urlencoded', 'X-Forwarded-For': '44.222.128.59', 'X-Forwarded-Host': '3128-220-85-91-47.ngrok-free.app', 'X-Forwarded-Proto': 'https', 'X-Slack-Request-Timestamp': '1736837049', 'X-Slack-Signature': 'v0=b146b449c4d2536e0c7c43b97c134934698d98409721eea33fadb2996ba513a4'}
+2025-01-14 15:44:09,841 - DEBUG - Body: token=SvouyNxg8nGRob0Cb7HjidCx&team_id=T01EQ5VAYA2&team_domain=hyperhire&channel_id=D088BUC4B7U&channel_name=directmessage&user_id=U054JK0RHL3&user_name=jayden&command=%2Fconnect-github&text=&api_app_id=A0890NQE0G0&is_enterprise_install=false&response_url=https%3A%2F%2Fhooks.slack.com%2Fcommands%2FT01EQ5VAYA2%2F8287240057669%2F2XwevolviDkrNcB8OjOvxiRd&trigger_id=8283458769078.1500199372342.5b1a865797bbf40bd80c56971f48078a
+2025-01-14 15:44:09,841 - DEBUG - URL: http://3128-220-85-91-47.ngrok-free.app/slack/events
+2025-01-14 15:44:09,841 - DEBUG - Method: POST
+2025-01-14 15:44:09,841 - INFO - Received request to /slack/events
+2025-01-14 15:44:09,841 - DEBUG - Request data: None
+2025-01-14 15:44:09,841 - WARNING - Request is not JSON
+2025-01-14 15:44:09,842 - INFO - 127.0.0.1 - - [14/Jan/2025 15:44:09] "[31m[1mPOST /slack/events HTTP/1.1[0m" 400 -
+2025-01-14 15:44:11,198 - DEBUG - Headers: {'Host': '3128-220-85-91-47.ngrok-free.app', 'User-Agent': 'Slackbot 1.0 (+https://api.slack.com/robots)', 'Content-Length': '425', 'Accept': 'application/json,*/*', 'Accept-Encoding': 'gzip,deflate', 'Content-Type': 'application/x-www-form-urlencoded', 'X-Forwarded-For': '54.85.220.110', 'X-Forwarded-Host': '3128-220-85-91-47.ngrok-free.app', 'X-Forwarded-Proto': 'https', 'X-Slack-Request-Timestamp': '1736837050', 'X-Slack-Signature': 'v0=5274866a9c6b33c371a675a039c2e8bd0b8d20b55e6b09dbce35e72bf730287f'}
+2025-01-14 15:44:11,198 - DEBUG - Body: token=SvouyNxg8nGRob0Cb7HjidCx&team_id=T01EQ5VAYA2&team_domain=hyperhire&channel_id=D088BUC4B7U&channel_name=directmessage&user_id=U054JK0RHL3&user_name=jayden&command=%2Fconnect-github&text=&api_app_id=A0890NQE0G0&is_enterprise_install=false&response_url=https%3A%2F%2Fhooks.slack.com%2Fcommands%2FT01EQ5VAYA2%2F8292594826292%2FIZK8mSNUX8OTzB0GcavIA2BI&trigger_id=8287240124933.1500199372342.ca2aecf53bff7ed3ca219d259708f7d3
+2025-01-14 15:44:11,199 - DEBUG - URL: http://3128-220-85-91-47.ngrok-free.app/slack/events
+2025-01-14 15:44:11,199 - DEBUG - Method: POST
+2025-01-14 15:44:11,199 - INFO - Received request to /slack/events
+2025-01-14 15:44:11,199 - DEBUG - Request data: None
+2025-01-14 15:44:11,199 - WARNING - Request is not JSON
+2025-01-14 15:44:11,199 - INFO - 127.0.0.1 - - [14/Jan/2025 15:44:11] "[31m[1mPOST /slack/events HTTP/1.1[0m" 400 -
+2025-01-14 15:44:12,159 - DEBUG - Headers: {'Host': '3128-220-85-91-47.ngrok-free.app', 'User-Agent': 'Slackbot 1.0 (+https://api.slack.com/robots)', 'Content-Length': '425', 'Accept': 'application/json,*/*', 'Accept-Encoding': 'gzip,deflate', 'Content-Type': 'application/x-www-form-urlencoded', 'X-Forwarded-For': '3.238.96.41', 'X-Forwarded-Host': '3128-220-85-91-47.ngrok-free.app', 'X-Forwarded-Proto': 'https', 'X-Slack-Request-Timestamp': '1736837051', 'X-Slack-Signature': 'v0=3e94530bc87bcdb51aeeb05ceee8609d6ad8be005dd5f88c34d214dcc35ef7f0'}
+2025-01-14 15:44:12,160 - DEBUG - Body: token=SvouyNxg8nGRob0Cb7HjidCx&team_id=T01EQ5VAYA2&team_domain=hyperhire&channel_id=D088BUC4B7U&channel_name=directmessage&user_id=U054JK0RHL3&user_name=jayden&command=%2Fconnect-github&text=&api_app_id=A0890NQE0G0&is_enterprise_install=false&response_url=https%3A%2F%2Fhooks.slack.com%2Fcommands%2FT01EQ5VAYA2%2F8289988486627%2FZgLRjfJAC3y4SxuJMvGelMfF&trigger_id=8312893097936.1500199372342.551d190720680b829c67880fe958d92c
+2025-01-14 15:44:12,160 - DEBUG - URL: http://3128-220-85-91-47.ngrok-free.app/slack/events
+2025-01-14 15:44:12,160 - DEBUG - Method: POST
+2025-01-14 15:44:12,160 - INFO - Received request to /slack/events
+2025-01-14 15:44:12,160 - DEBUG - Request data: None
+2025-01-14 15:44:12,160 - WARNING - Request is not JSON
+2025-01-14 15:44:12,161 - INFO - 127.0.0.1 - - [14/Jan/2025 15:44:12] "[31m[1mPOST /slack/events HTTP/1.1[0m" 400 -
+2025-01-14 15:44:37,698 - INFO -  * Detected change in '/Users/conan/Documents/Slack_Ai_Backendbot/app.py', reloading
+2025-01-14 15:44:38,002 - INFO - Environment variables loaded
+2025-01-14 15:44:38,017 - INFO - As you've set SLACK_CLIENT_ID and SLACK_CLIENT_SECRET env variables, Bolt has enabled the file-based InstallationStore/OAuthStateStore for you. Note that these file-based stores are for local development. If you'd like to use a different data store, set the oauth_settings argument in the App constructor. Please refer to https://slack.dev/bolt-python/concepts#authenticating-oauth for more details.
+2025-01-14 15:44:38,017 - WARNING - As `installation_store` or `authorize` has been used, `token` (or SLACK_BOT_TOKEN env variable) will be ignored.
+2025-01-14 15:44:38,017 - INFO - Slack app initialized with token and signing secret
+2025-01-14 15:44:38,018 - INFO - Starting Flask application
+2025-01-14 15:44:38,039 - WARNING -  * Debugger is active!
+2025-01-14 15:44:38,046 - INFO -  * Debugger PIN: 454-586-817
+2025-01-14 15:44:42,961 - DEBUG - Headers: {'Host': '3128-220-85-91-47.ngrok-free.app', 'User-Agent': 'Slackbot 1.0 (+https://api.slack.com/robots)', 'Content-Length': '425', 'Accept': 'application/json,*/*', 'Accept-Encoding': 'gzip,deflate', 'Content-Type': 'application/x-www-form-urlencoded', 'X-Forwarded-For': '44.200.165.165', 'X-Forwarded-Host': '3128-220-85-91-47.ngrok-free.app', 'X-Forwarded-Proto': 'https', 'X-Slack-Request-Timestamp': '1736837082', 'X-Slack-Signature': 'v0=32a972ff0d68ac5bf7dd838248e857fe7de9bf589c6e5eea163c2e83ab4b0de8'}
+2025-01-14 15:44:42,962 - DEBUG - Body: token=SvouyNxg8nGRob0Cb7HjidCx&team_id=T01EQ5VAYA2&team_domain=hyperhire&channel_id=D088BUC4B7U&channel_name=directmessage&user_id=U054JK0RHL3&user_name=jayden&command=%2Fconnect-github&text=&api_app_id=A0890NQE0G0&is_enterprise_install=false&response_url=https%3A%2F%2Fhooks.slack.com%2Fcommands%2FT01EQ5VAYA2%2F8287241843173%2FsnczxFWSqwcb776xD71al85D&trigger_id=8302774825601.1500199372342.5d0b54e6000f6c4e4f07ec12a5372b83
+2025-01-14 15:44:42,962 - DEBUG - URL: http://3128-220-85-91-47.ngrok-free.app/slack/events
+2025-01-14 15:44:42,962 - DEBUG - Method: POST
+2025-01-14 15:44:42,962 - INFO - Received request to /slack/events
+2025-01-14 15:44:42,963 - DEBUG - Request data: {'token': 'SvouyNxg8nGRob0Cb7HjidCx', 'team_id': 'T01EQ5VAYA2', 'team_domain': 'hyperhire', 'channel_id': 'D088BUC4B7U', 'channel_name': 'directmessage', 'user_id': 'U054JK0RHL3', 'user_name': 'jayden', 'command': '/connect-github', 'text': '', 'api_app_id': 'A0890NQE0G0', 'is_enterprise_install': 'false', 'response_url': 'https://hooks.slack.com/commands/T01EQ5VAYA2/8287241843173/snczxFWSqwcb776xD71al85D', 'trigger_id': '8302774825601.1500199372342.5d0b54e6000f6c4e4f07ec12a5372b83'}
+2025-01-14 15:44:42,963 - DEBUG - Applying slack_bolt.middleware.ssl_check.ssl_check.SslCheck
+2025-01-14 15:44:42,963 - DEBUG - Applying slack_bolt.middleware.request_verification.request_verification.RequestVerification
+2025-01-14 15:44:42,963 - DEBUG - Applying slack_bolt.middleware.authorization.multi_teams_authorization.MultiTeamsAuthorization
+2025-01-14 15:44:42,963 - DEBUG - Installation data missing for enterprise: none, team: T01EQ5VAYA2: [Errno 2] No such file or directory: '/Users/conan/.bolt-app-installation/1500199372342.8306772476544/none-T01EQ5VAYA2/installer-latest'
+2025-01-14 15:44:42,964 - DEBUG - Installation data missing for enterprise: none, team: T01EQ5VAYA2: [Errno 2] No such file or directory: '/Users/conan/.bolt-app-installation/1500199372342.8306772476544/none-T01EQ5VAYA2/bot-latest'
+2025-01-14 15:44:42,964 - DEBUG - No installation data found for enterprise_id: None team_id: T01EQ5VAYA2
+2025-01-14 15:44:42,964 - ERROR - Although the app should be installed into this workspace, the AuthorizeResult (returned value from authorize) for it was not found.
+2025-01-14 15:44:42,964 - DEBUG - Sending a request - url: https://hooks.slack.com/commands/T01EQ5VAYA2/8287241843173/snczxFWSqwcb776xD71al85D, body: {"text": ":warning: We apologize, but for some unknown reason, your installation with this app is no longer available. Please reinstall this app into your workspace :bow:"}, headers: {'Content-Type': 'application/json;charset=utf-8', 'User-Agent': 'Python/3.14.0 slackclient/3.34.0 Darwin/24.1.0'}
+2025-01-14 15:44:43,146 - ERROR - Failed to send a request to Slack API server: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1026)>
+2025-01-14 15:44:43,146 - INFO - A retry handler found: ConnectionErrorRetryHandler for POST https://hooks.slack.com/commands/T01EQ5VAYA2/8287241843173/snczxFWSqwcb776xD71al85D - <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1026)>
+2025-01-14 15:44:44,321 - INFO - Going to retry the same request: POST https://hooks.slack.com/commands/T01EQ5VAYA2/8287241843173/snczxFWSqwcb776xD71al85D
+2025-01-14 15:44:44,473 - ERROR - Failed to send a request to Slack API server: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1026)>
+2025-01-14 15:44:44,473 - ERROR - Failed to run a middleware (error: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1026)>)
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 1319, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers,
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              encode_chunked=req.has_header('Transfer-encoding'))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/client.py", line 1336, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/client.py", line 1382, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/client.py", line 1331, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/client.py", line 1091, in _send_output
+    self.send(msg)
+    ~~~~~~~~~^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/client.py", line 1035, in send
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/client.py", line 1477, in connect
+    self.sock = self._context.wrap_socket(self.sock,
+                ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+                                          server_hostname=server_hostname)
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/ssl.py", line 455, in wrap_socket
+    return self.sslsocket_class._create(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sock=sock,
+        ^^^^^^^^^^
+    ...<5 lines>...
+        session=session
+        ^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/ssl.py", line 1076, in _create
+    self.do_handshake()
+    ~~~~~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/ssl.py", line 1372, in do_handshake
+    self._sslobj.do_handshake()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1026)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/slack_bolt/app/app.py", line 562, in dispatch
+    resp = middleware.process(req=req, resp=resp, next=middleware_next)  # type: ignore[arg-type]
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/slack_bolt/middleware/authorization/multi_teams_authorization.py", line 103, in process
+    req.context.respond(self.user_facing_authorize_error_message)  # type: ignore[misc]
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/slack_bolt/context/respond/respond.py", line 61, in __call__
+    return client.send_dict(message)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/slack_sdk/webhook/client.py", line 137, in send_dict
+    return self._perform_http_request(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        body=_build_body(body),
+        ^^^^^^^^^^^^^^^^^^^^^^^
+        headers=_build_request_headers(self.default_headers, headers),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/slack_sdk/webhook/client.py", line 244, in _perform_http_request
+    raise err
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/slack_sdk/webhook/client.py", line 164, in _perform_http_request
+    resp = self._perform_http_request_internal(url, req)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/slack_sdk/webhook/client.py", line 270, in _perform_http_request_internal
+    http_resp = urlopen(req, context=self.ssl, timeout=self.timeout)  # skipcq: BAN-B310
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 189, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 489, in open
+    response = self._open(req, data)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 506, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+                              '_open', req)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 466, in _call_chain
+    result = func(*args)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 1367, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        context=self._context)
+                        ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 1322, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1026)>
+2025-01-14 15:44:44,480 - INFO - Event handled successfully in 1.52 seconds
+2025-01-14 15:44:44,481 - INFO - 127.0.0.1 - - [14/Jan/2025 15:44:44] "[35m[1mPOST /slack/events HTTP/1.1[0m" 500 -
+2025-01-14 15:46:59,923 - DEBUG - Headers: {'Host': '9d23-220-85-91-47.ngrok-free.app', 'User-Agent': 'Slackbot 1.0 (+https://api.slack.com/robots)', 'Content-Length': '129', 'Accept': '*/*', 'Accept-Encoding': 'gzip,deflate', 'Content-Type': 'application/json', 'X-Forwarded-For': '3.81.23.127', 'X-Forwarded-Host': '9d23-220-85-91-47.ngrok-free.app', 'X-Forwarded-Proto': 'https', 'X-Slack-Request-Timestamp': '1736837219', 'X-Slack-Signature': 'v0=46e2ebf7e390bb1432b60c87f054ff22b2bb3e6af61a442bd60c010e32f4107a'}
+2025-01-14 15:46:59,923 - DEBUG - Body: {"token":"SvouyNxg8nGRob0Cb7HjidCx","challenge":"xjePva9ajc35HTXdXr06BegraMhDo4JxJMcjnmSqla2wn6IExdKw","type":"url_verification"}
+2025-01-14 15:46:59,924 - DEBUG - URL: http://9d23-220-85-91-47.ngrok-free.app/
+2025-01-14 15:46:59,924 - DEBUG - Method: POST
+2025-01-14 15:46:59,924 - INFO - 127.0.0.1 - - [14/Jan/2025 15:46:59] "[31m[1mPOST / HTTP/1.1[0m" 405 -
+2025-01-14 15:47:01,381 - DEBUG - Headers: {'Host': '9d23-220-85-91-47.ngrok-free.app', 'User-Agent': 'Slackbot 1.0 (+https://api.slack.com/robots)', 'Content-Length': '129', 'Accept': '*/*', 'Accept-Encoding': 'gzip,deflate', 'Content-Type': 'application/json', 'X-Forwarded-For': '54.174.179.243', 'X-Forwarded-Host': '9d23-220-85-91-47.ngrok-free.app', 'X-Forwarded-Proto': 'https', 'X-Slack-Request-Timestamp': '1736837221', 'X-Slack-Signature': 'v0=32fe5b9604047ec2d06552b77bb7d3442a00f42baa0d7b4c770a67db496cd2b7'}
+2025-01-14 15:47:01,381 - DEBUG - Body: {"token":"SvouyNxg8nGRob0Cb7HjidCx","challenge":"6ULuaY2o1HRbhbg8mYg8B2d2qcZZIEGMdtlUVfVoxicZrRZXeNyR","type":"url_verification"}
+2025-01-14 15:47:01,381 - DEBUG - URL: http://9d23-220-85-91-47.ngrok-free.app/
+2025-01-14 15:47:01,381 - DEBUG - Method: POST
+2025-01-14 15:47:01,382 - INFO - 127.0.0.1 - - [14/Jan/2025 15:47:01] "[31m[1mPOST / HTTP/1.1[0m" 405 -
+2025-01-14 15:47:06,609 - DEBUG - Headers: {'Host': '9d23-220-85-91-47.ngrok-free.app', 'User-Agent': 'Slackbot 1.0 (+https://api.slack.com/robots)', 'Content-Length': '129', 'Accept': '*/*', 'Accept-Encoding': 'gzip,deflate', 'Content-Type': 'application/json', 'X-Forwarded-For': '3.238.181.177', 'X-Forwarded-Host': '9d23-220-85-91-47.ngrok-free.app', 'X-Forwarded-Proto': 'https', 'X-Slack-Request-Timestamp': '1736837226', 'X-Slack-Signature': 'v0=4d7d9128de302c62aa147323a5b02dc6a142d697adc867c782c10e267bde2e74'}
+2025-01-14 15:47:06,610 - DEBUG - Body: {"token":"SvouyNxg8nGRob0Cb7HjidCx","challenge":"jF927GLq4UAZc1RP5EsmlYuC6Tn9QWSNOgbqgHEeluvZGT9c19Sx","type":"url_verification"}
+2025-01-14 15:47:06,610 - DEBUG - URL: http://9d23-220-85-91-47.ngrok-free.app/slack/events
+2025-01-14 15:47:06,610 - DEBUG - Method: POST
+2025-01-14 15:47:06,610 - INFO - Received request to /slack/events
+2025-01-14 15:47:06,610 - DEBUG - Request data: {'token': 'SvouyNxg8nGRob0Cb7HjidCx', 'challenge': 'jF927GLq4UAZc1RP5EsmlYuC6Tn9QWSNOgbqgHEeluvZGT9c19Sx', 'type': 'url_verification'}
+2025-01-14 15:47:06,610 - INFO - Handling URL verification with challenge: jF927GLq4UAZc1RP5EsmlYuC6Tn9QWSNOgbqgHEeluvZGT9c19Sx
+2025-01-14 15:47:06,611 - INFO - 127.0.0.1 - - [14/Jan/2025 15:47:06] "POST /slack/events HTTP/1.1" 200 -
+2025-01-14 15:48:02,640 - DEBUG - Headers: {'Host': '9d23-220-85-91-47.ngrok-free.app', 'User-Agent': 'Slackbot 1.0 (+https://api.slack.com/robots)', 'Content-Length': '425', 'Accept': 'application/json,*/*', 'Accept-Encoding': 'gzip,deflate', 'Content-Type': 'application/x-www-form-urlencoded', 'X-Forwarded-For': '54.173.136.80', 'X-Forwarded-Host': '9d23-220-85-91-47.ngrok-free.app', 'X-Forwarded-Proto': 'https', 'X-Slack-Request-Timestamp': '1736837282', 'X-Slack-Signature': 'v0=d38ed1dacc2c57de9b86ab57975ba5a66834b5cc71284008aa9f6b1e4af61fac'}
+2025-01-14 15:48:02,640 - DEBUG - Body: token=SvouyNxg8nGRob0Cb7HjidCx&team_id=T01EQ5VAYA2&team_domain=hyperhire&channel_id=D088BUC4B7U&channel_name=directmessage&user_id=U054JK0RHL3&user_name=jayden&command=%2Fconnect-github&text=&api_app_id=A0890NQE0G0&is_enterprise_install=false&response_url=https%3A%2F%2Fhooks.slack.com%2Fcommands%2FT01EQ5VAYA2%2F8283470586950%2FeQMgjR8VMimpuWt3NOAhVbR5&trigger_id=8290000190339.1500199372342.903d868288c42e6ed6f7979a0d3fc9d4
+2025-01-14 15:48:02,641 - DEBUG - URL: http://9d23-220-85-91-47.ngrok-free.app/slack/events
+2025-01-14 15:48:02,641 - DEBUG - Method: POST
+2025-01-14 15:48:02,641 - INFO - Received request to /slack/events
+2025-01-14 15:48:02,641 - DEBUG - Request data: {'token': 'SvouyNxg8nGRob0Cb7HjidCx', 'team_id': 'T01EQ5VAYA2', 'team_domain': 'hyperhire', 'channel_id': 'D088BUC4B7U', 'channel_name': 'directmessage', 'user_id': 'U054JK0RHL3', 'user_name': 'jayden', 'command': '/connect-github', 'text': '', 'api_app_id': 'A0890NQE0G0', 'is_enterprise_install': 'false', 'response_url': 'https://hooks.slack.com/commands/T01EQ5VAYA2/8283470586950/eQMgjR8VMimpuWt3NOAhVbR5', 'trigger_id': '8290000190339.1500199372342.903d868288c42e6ed6f7979a0d3fc9d4'}
+2025-01-14 15:48:02,641 - DEBUG - Applying slack_bolt.middleware.ssl_check.ssl_check.SslCheck
+2025-01-14 15:48:02,641 - DEBUG - Applying slack_bolt.middleware.request_verification.request_verification.RequestVerification
+2025-01-14 15:48:02,641 - DEBUG - Applying slack_bolt.middleware.authorization.multi_teams_authorization.MultiTeamsAuthorization
+2025-01-14 15:48:02,641 - DEBUG - Installation data missing for enterprise: none, team: T01EQ5VAYA2: [Errno 2] No such file or directory: '/Users/conan/.bolt-app-installation/1500199372342.8306772476544/none-T01EQ5VAYA2/installer-latest'
+2025-01-14 15:48:02,641 - DEBUG - Installation data missing for enterprise: none, team: T01EQ5VAYA2: [Errno 2] No such file or directory: '/Users/conan/.bolt-app-installation/1500199372342.8306772476544/none-T01EQ5VAYA2/bot-latest'
+2025-01-14 15:48:02,641 - DEBUG - No installation data found for enterprise_id: None team_id: T01EQ5VAYA2
+2025-01-14 15:48:02,641 - ERROR - Although the app should be installed into this workspace, the AuthorizeResult (returned value from authorize) for it was not found.
+2025-01-14 15:48:02,642 - DEBUG - Sending a request - url: https://hooks.slack.com/commands/T01EQ5VAYA2/8283470586950/eQMgjR8VMimpuWt3NOAhVbR5, body: {"text": ":warning: We apologize, but for some unknown reason, your installation with this app is no longer available. Please reinstall this app into your workspace :bow:"}, headers: {'Content-Type': 'application/json;charset=utf-8', 'User-Agent': 'Python/3.14.0 slackclient/3.34.0 Darwin/24.1.0'}
+2025-01-14 15:48:02,815 - ERROR - Failed to send a request to Slack API server: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1026)>
+2025-01-14 15:48:02,815 - INFO - A retry handler found: ConnectionErrorRetryHandler for POST https://hooks.slack.com/commands/T01EQ5VAYA2/8283470586950/eQMgjR8VMimpuWt3NOAhVbR5 - <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1026)>
+2025-01-14 15:48:03,516 - INFO - Going to retry the same request: POST https://hooks.slack.com/commands/T01EQ5VAYA2/8283470586950/eQMgjR8VMimpuWt3NOAhVbR5
+2025-01-14 15:48:03,688 - ERROR - Failed to send a request to Slack API server: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1026)>
+2025-01-14 15:48:03,688 - ERROR - Failed to run a middleware (error: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1026)>)
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 1319, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers,
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              encode_chunked=req.has_header('Transfer-encoding'))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/client.py", line 1336, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/client.py", line 1382, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/client.py", line 1331, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/client.py", line 1091, in _send_output
+    self.send(msg)
+    ~~~~~~~~~^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/client.py", line 1035, in send
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/client.py", line 1477, in connect
+    self.sock = self._context.wrap_socket(self.sock,
+                ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+                                          server_hostname=server_hostname)
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/ssl.py", line 455, in wrap_socket
+    return self.sslsocket_class._create(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sock=sock,
+        ^^^^^^^^^^
+    ...<5 lines>...
+        session=session
+        ^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/ssl.py", line 1076, in _create
+    self.do_handshake()
+    ~~~~~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/ssl.py", line 1372, in do_handshake
+    self._sslobj.do_handshake()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1026)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/slack_bolt/app/app.py", line 562, in dispatch
+    resp = middleware.process(req=req, resp=resp, next=middleware_next)  # type: ignore[arg-type]
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/slack_bolt/middleware/authorization/multi_teams_authorization.py", line 103, in process
+    req.context.respond(self.user_facing_authorize_error_message)  # type: ignore[misc]
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/slack_bolt/context/respond/respond.py", line 61, in __call__
+    return client.send_dict(message)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/slack_sdk/webhook/client.py", line 137, in send_dict
+    return self._perform_http_request(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        body=_build_body(body),
+        ^^^^^^^^^^^^^^^^^^^^^^^
+        headers=_build_request_headers(self.default_headers, headers),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/slack_sdk/webhook/client.py", line 244, in _perform_http_request
+    raise err
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/slack_sdk/webhook/client.py", line 164, in _perform_http_request
+    resp = self._perform_http_request_internal(url, req)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/slack_sdk/webhook/client.py", line 270, in _perform_http_request_internal
+    http_resp = urlopen(req, context=self.ssl, timeout=self.timeout)  # skipcq: BAN-B310
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 189, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 489, in open
+    response = self._open(req, data)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 506, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+                              '_open', req)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 466, in _call_chain
+    result = func(*args)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 1367, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        context=self._context)
+                        ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 1322, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1026)>
+2025-01-14 15:48:03,691 - INFO - Event handled successfully in 1.05 seconds
+2025-01-14 15:48:03,691 - INFO - 127.0.0.1 - - [14/Jan/2025 15:48:03] "[35m[1mPOST /slack/events HTTP/1.1[0m" 500 -
+2025-01-14 15:48:05,784 - DEBUG - Headers: {'Host': '9d23-220-85-91-47.ngrok-free.app', 'User-Agent': 'Slackbot 1.0 (+https://api.slack.com/robots)', 'Content-Length': '425', 'Accept': 'application/json,*/*', 'Accept-Encoding': 'gzip,deflate', 'Content-Type': 'application/x-www-form-urlencoded', 'X-Forwarded-For': '44.201.133.159', 'X-Forwarded-Host': '9d23-220-85-91-47.ngrok-free.app', 'X-Forwarded-Proto': 'https', 'X-Slack-Request-Timestamp': '1736837285', 'X-Slack-Signature': 'v0=f32d443a127931f9d850309fd51eac6a2d70089af91996d0bb8955a7cba107e7'}
+2025-01-14 15:48:05,785 - DEBUG - Body: token=SvouyNxg8nGRob0Cb7HjidCx&team_id=T01EQ5VAYA2&team_domain=hyperhire&channel_id=D088BUC4B7U&channel_name=directmessage&user_id=U054JK0RHL3&user_name=jayden&command=%2Fconnect-github&text=&api_app_id=A0890NQE0G0&is_enterprise_install=false&response_url=https%3A%2F%2Fhooks.slack.com%2Fcommands%2FT01EQ5VAYA2%2F8302785012257%2FRyNXpBhuzEZlXuYzCQW3Lr5o&trigger_id=8292606732516.1500199372342.02e7866da4f6e14d3fd3a074e92d00a9
+2025-01-14 15:48:05,785 - DEBUG - URL: http://9d23-220-85-91-47.ngrok-free.app/slack/events
+2025-01-14 15:48:05,785 - DEBUG - Method: POST
+2025-01-14 15:48:05,785 - INFO - Received request to /slack/events
+2025-01-14 15:48:05,785 - DEBUG - Request data: {'token': 'SvouyNxg8nGRob0Cb7HjidCx', 'team_id': 'T01EQ5VAYA2', 'team_domain': 'hyperhire', 'channel_id': 'D088BUC4B7U', 'channel_name': 'directmessage', 'user_id': 'U054JK0RHL3', 'user_name': 'jayden', 'command': '/connect-github', 'text': '', 'api_app_id': 'A0890NQE0G0', 'is_enterprise_install': 'false', 'response_url': 'https://hooks.slack.com/commands/T01EQ5VAYA2/8302785012257/RyNXpBhuzEZlXuYzCQW3Lr5o', 'trigger_id': '8292606732516.1500199372342.02e7866da4f6e14d3fd3a074e92d00a9'}
+2025-01-14 15:48:05,786 - DEBUG - Applying slack_bolt.middleware.ssl_check.ssl_check.SslCheck
+2025-01-14 15:48:05,786 - DEBUG - Applying slack_bolt.middleware.request_verification.request_verification.RequestVerification
+2025-01-14 15:48:05,786 - DEBUG - Applying slack_bolt.middleware.authorization.multi_teams_authorization.MultiTeamsAuthorization
+2025-01-14 15:48:05,786 - DEBUG - Installation data missing for enterprise: none, team: T01EQ5VAYA2: [Errno 2] No such file or directory: '/Users/conan/.bolt-app-installation/1500199372342.8306772476544/none-T01EQ5VAYA2/installer-latest'
+2025-01-14 15:48:05,786 - DEBUG - Installation data missing for enterprise: none, team: T01EQ5VAYA2: [Errno 2] No such file or directory: '/Users/conan/.bolt-app-installation/1500199372342.8306772476544/none-T01EQ5VAYA2/bot-latest'
+2025-01-14 15:48:05,786 - DEBUG - No installation data found for enterprise_id: None team_id: T01EQ5VAYA2
+2025-01-14 15:48:05,786 - ERROR - Although the app should be installed into this workspace, the AuthorizeResult (returned value from authorize) for it was not found.
+2025-01-14 15:48:05,786 - DEBUG - Sending a request - url: https://hooks.slack.com/commands/T01EQ5VAYA2/8302785012257/RyNXpBhuzEZlXuYzCQW3Lr5o, body: {"text": ":warning: We apologize, but for some unknown reason, your installation with this app is no longer available. Please reinstall this app into your workspace :bow:"}, headers: {'Content-Type': 'application/json;charset=utf-8', 'User-Agent': 'Python/3.14.0 slackclient/3.34.0 Darwin/24.1.0'}
+2025-01-14 15:48:05,885 - ERROR - Failed to send a request to Slack API server: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1026)>
+2025-01-14 15:48:05,885 - INFO - A retry handler found: ConnectionErrorRetryHandler for POST https://hooks.slack.com/commands/T01EQ5VAYA2/8302785012257/RyNXpBhuzEZlXuYzCQW3Lr5o - <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1026)>
+2025-01-14 15:48:07,345 - INFO - Going to retry the same request: POST https://hooks.slack.com/commands/T01EQ5VAYA2/8302785012257/RyNXpBhuzEZlXuYzCQW3Lr5o
+2025-01-14 15:48:07,445 - ERROR - Failed to send a request to Slack API server: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1026)>
+2025-01-14 15:48:07,445 - ERROR - Failed to run a middleware (error: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1026)>)
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 1319, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers,
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              encode_chunked=req.has_header('Transfer-encoding'))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/client.py", line 1336, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/client.py", line 1382, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/client.py", line 1331, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/client.py", line 1091, in _send_output
+    self.send(msg)
+    ~~~~~~~~~^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/client.py", line 1035, in send
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/client.py", line 1477, in connect
+    self.sock = self._context.wrap_socket(self.sock,
+                ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+                                          server_hostname=server_hostname)
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/ssl.py", line 455, in wrap_socket
+    return self.sslsocket_class._create(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sock=sock,
+        ^^^^^^^^^^
+    ...<5 lines>...
+        session=session
+        ^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/ssl.py", line 1076, in _create
+    self.do_handshake()
+    ~~~~~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/ssl.py", line 1372, in do_handshake
+    self._sslobj.do_handshake()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1026)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/slack_bolt/app/app.py", line 562, in dispatch
+    resp = middleware.process(req=req, resp=resp, next=middleware_next)  # type: ignore[arg-type]
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/slack_bolt/middleware/authorization/multi_teams_authorization.py", line 103, in process
+    req.context.respond(self.user_facing_authorize_error_message)  # type: ignore[misc]
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/slack_bolt/context/respond/respond.py", line 61, in __call__
+    return client.send_dict(message)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/slack_sdk/webhook/client.py", line 137, in send_dict
+    return self._perform_http_request(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        body=_build_body(body),
+        ^^^^^^^^^^^^^^^^^^^^^^^
+        headers=_build_request_headers(self.default_headers, headers),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/slack_sdk/webhook/client.py", line 244, in _perform_http_request
+    raise err
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/slack_sdk/webhook/client.py", line 164, in _perform_http_request
+    resp = self._perform_http_request_internal(url, req)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/slack_sdk/webhook/client.py", line 270, in _perform_http_request_internal
+    http_resp = urlopen(req, context=self.ssl, timeout=self.timeout)  # skipcq: BAN-B310
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 189, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 489, in open
+    response = self._open(req, data)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 506, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+                              '_open', req)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 466, in _call_chain
+    result = func(*args)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 1367, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        context=self._context)
+                        ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 1322, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1026)>
+2025-01-14 15:48:07,447 - INFO - Event handled successfully in 1.66 seconds
+2025-01-14 15:48:07,448 - INFO - 127.0.0.1 - - [14/Jan/2025 15:48:07] "[35m[1mPOST /slack/events HTTP/1.1[0m" 500 -
+2025-01-14 15:48:12,083 - DEBUG - Headers: {'Host': '9d23-220-85-91-47.ngrok-free.app', 'User-Agent': 'Slackbot 1.0 (+https://api.slack.com/robots)', 'Content-Length': '425', 'Accept': 'application/json,*/*', 'Accept-Encoding': 'gzip,deflate', 'Content-Type': 'application/x-www-form-urlencoded', 'X-Forwarded-For': '54.243.7.137', 'X-Forwarded-Host': '9d23-220-85-91-47.ngrok-free.app', 'X-Forwarded-Proto': 'https', 'X-Slack-Request-Timestamp': '1736837291', 'X-Slack-Signature': 'v0=cc1e0f398410bbc2995abd3a01d4d0357cd5fc950a86d20fa9a07a46723ae5d8'}
+2025-01-14 15:48:12,084 - DEBUG - Body: token=SvouyNxg8nGRob0Cb7HjidCx&team_id=T01EQ5VAYA2&team_domain=hyperhire&channel_id=D088BUC4B7U&channel_name=directmessage&user_id=U054JK0RHL3&user_name=jayden&command=%2Fconnect-github&text=&api_app_id=A0890NQE0G0&is_enterprise_install=false&response_url=https%3A%2F%2Fhooks.slack.com%2Fcommands%2FT01EQ5VAYA2%2F8292607033428%2FAKBO85iD5O41cEr60EMAZuUq&trigger_id=8290000646499.1500199372342.615fdd7c0745a8b9de6249227227a993
+2025-01-14 15:48:12,084 - DEBUG - URL: http://9d23-220-85-91-47.ngrok-free.app/slack/events
+2025-01-14 15:48:12,084 - DEBUG - Method: POST
+2025-01-14 15:48:12,084 - INFO - Received request to /slack/events
+2025-01-14 15:48:12,084 - DEBUG - Request data: {'token': 'SvouyNxg8nGRob0Cb7HjidCx', 'team_id': 'T01EQ5VAYA2', 'team_domain': 'hyperhire', 'channel_id': 'D088BUC4B7U', 'channel_name': 'directmessage', 'user_id': 'U054JK0RHL3', 'user_name': 'jayden', 'command': '/connect-github', 'text': '', 'api_app_id': 'A0890NQE0G0', 'is_enterprise_install': 'false', 'response_url': 'https://hooks.slack.com/commands/T01EQ5VAYA2/8292607033428/AKBO85iD5O41cEr60EMAZuUq', 'trigger_id': '8290000646499.1500199372342.615fdd7c0745a8b9de6249227227a993'}
+2025-01-14 15:48:12,084 - DEBUG - Applying slack_bolt.middleware.ssl_check.ssl_check.SslCheck
+2025-01-14 15:48:12,085 - DEBUG - Applying slack_bolt.middleware.request_verification.request_verification.RequestVerification
+2025-01-14 15:48:12,085 - DEBUG - Applying slack_bolt.middleware.authorization.multi_teams_authorization.MultiTeamsAuthorization
+2025-01-14 15:48:12,085 - DEBUG - Installation data missing for enterprise: none, team: T01EQ5VAYA2: [Errno 2] No such file or directory: '/Users/conan/.bolt-app-installation/1500199372342.8306772476544/none-T01EQ5VAYA2/installer-latest'
+2025-01-14 15:48:12,085 - DEBUG - Installation data missing for enterprise: none, team: T01EQ5VAYA2: [Errno 2] No such file or directory: '/Users/conan/.bolt-app-installation/1500199372342.8306772476544/none-T01EQ5VAYA2/bot-latest'
+2025-01-14 15:48:12,085 - DEBUG - No installation data found for enterprise_id: None team_id: T01EQ5VAYA2
+2025-01-14 15:48:12,085 - ERROR - Although the app should be installed into this workspace, the AuthorizeResult (returned value from authorize) for it was not found.
+2025-01-14 15:48:12,085 - DEBUG - Sending a request - url: https://hooks.slack.com/commands/T01EQ5VAYA2/8292607033428/AKBO85iD5O41cEr60EMAZuUq, body: {"text": ":warning: We apologize, but for some unknown reason, your installation with this app is no longer available. Please reinstall this app into your workspace :bow:"}, headers: {'Content-Type': 'application/json;charset=utf-8', 'User-Agent': 'Python/3.14.0 slackclient/3.34.0 Darwin/24.1.0'}
+2025-01-14 15:48:12,170 - ERROR - Failed to send a request to Slack API server: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1026)>
+2025-01-14 15:48:12,171 - INFO - A retry handler found: ConnectionErrorRetryHandler for POST https://hooks.slack.com/commands/T01EQ5VAYA2/8292607033428/AKBO85iD5O41cEr60EMAZuUq - <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1026)>
+2025-01-14 15:48:12,845 - INFO - Going to retry the same request: POST https://hooks.slack.com/commands/T01EQ5VAYA2/8292607033428/AKBO85iD5O41cEr60EMAZuUq
+2025-01-14 15:48:12,933 - ERROR - Failed to send a request to Slack API server: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1026)>
+2025-01-14 15:48:12,934 - ERROR - Failed to run a middleware (error: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1026)>)
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 1319, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers,
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              encode_chunked=req.has_header('Transfer-encoding'))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/client.py", line 1336, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/client.py", line 1382, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/client.py", line 1331, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/client.py", line 1091, in _send_output
+    self.send(msg)
+    ~~~~~~~~~^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/client.py", line 1035, in send
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/client.py", line 1477, in connect
+    self.sock = self._context.wrap_socket(self.sock,
+                ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+                                          server_hostname=server_hostname)
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/ssl.py", line 455, in wrap_socket
+    return self.sslsocket_class._create(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sock=sock,
+        ^^^^^^^^^^
+    ...<5 lines>...
+        session=session
+        ^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/ssl.py", line 1076, in _create
+    self.do_handshake()
+    ~~~~~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/ssl.py", line 1372, in do_handshake
+    self._sslobj.do_handshake()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1026)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/slack_bolt/app/app.py", line 562, in dispatch
+    resp = middleware.process(req=req, resp=resp, next=middleware_next)  # type: ignore[arg-type]
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/slack_bolt/middleware/authorization/multi_teams_authorization.py", line 103, in process
+    req.context.respond(self.user_facing_authorize_error_message)  # type: ignore[misc]
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/slack_bolt/context/respond/respond.py", line 61, in __call__
+    return client.send_dict(message)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/slack_sdk/webhook/client.py", line 137, in send_dict
+    return self._perform_http_request(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        body=_build_body(body),
+        ^^^^^^^^^^^^^^^^^^^^^^^
+        headers=_build_request_headers(self.default_headers, headers),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/slack_sdk/webhook/client.py", line 244, in _perform_http_request
+    raise err
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/slack_sdk/webhook/client.py", line 164, in _perform_http_request
+    resp = self._perform_http_request_internal(url, req)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/slack_sdk/webhook/client.py", line 270, in _perform_http_request_internal
+    http_resp = urlopen(req, context=self.ssl, timeout=self.timeout)  # skipcq: BAN-B310
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 189, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 489, in open
+    response = self._open(req, data)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 506, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+                              '_open', req)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 466, in _call_chain
+    result = func(*args)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 1367, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        context=self._context)
+                        ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 1322, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1026)>
+2025-01-14 15:48:12,938 - INFO - Event handled successfully in 0.85 seconds
+2025-01-14 15:48:12,938 - INFO - 127.0.0.1 - - [14/Jan/2025 15:48:12] "[35m[1mPOST /slack/events HTTP/1.1[0m" 500 -
+2025-01-14 15:54:55,203 - DEBUG - Headers: {'Host': '7a15-220-85-91-47.ngrok-free.app', 'User-Agent': 'Slackbot 1.0 (+https://api.slack.com/robots)', 'Content-Length': '129', 'Accept': '*/*', 'Accept-Encoding': 'gzip,deflate', 'Content-Type': 'application/json', 'X-Forwarded-For': '44.200.29.37', 'X-Forwarded-Host': '7a15-220-85-91-47.ngrok-free.app', 'X-Forwarded-Proto': 'https', 'X-Slack-Request-Timestamp': '1736837694', 'X-Slack-Signature': 'v0=644ef6b24d2ae42e3d67de45bbc51443d055fa4bf3fa39ffa060423db777f9c9'}
+2025-01-14 15:54:55,204 - DEBUG - Body: {"token":"SvouyNxg8nGRob0Cb7HjidCx","challenge":"sBP4hDzvBco3pdh6ODG2ZGFLn5DSknhja7Xk1gKacYphIaJYGYNo","type":"url_verification"}
+2025-01-14 15:54:55,205 - DEBUG - URL: http://7a15-220-85-91-47.ngrok-free.app/slack/events
+2025-01-14 15:54:55,205 - DEBUG - Method: POST
+2025-01-14 15:54:55,205 - INFO - Received request to /slack/events
+2025-01-14 15:54:55,205 - DEBUG - Request data: {'token': 'SvouyNxg8nGRob0Cb7HjidCx', 'challenge': 'sBP4hDzvBco3pdh6ODG2ZGFLn5DSknhja7Xk1gKacYphIaJYGYNo', 'type': 'url_verification'}
+2025-01-14 15:54:55,205 - INFO - Handling URL verification with challenge: sBP4hDzvBco3pdh6ODG2ZGFLn5DSknhja7Xk1gKacYphIaJYGYNo
+2025-01-14 15:54:55,205 - INFO - 127.0.0.1 - - [14/Jan/2025 15:54:55] "POST /slack/events HTTP/1.1" 200 -
+2025-01-14 15:55:02,953 - DEBUG - Headers: {'Host': '7a15-220-85-91-47.ngrok-free.app', 'User-Agent': 'Slackbot 1.0 (+https://api.slack.com/robots)', 'Content-Length': '425', 'Accept': 'application/json,*/*', 'Accept-Encoding': 'gzip,deflate', 'Content-Type': 'application/x-www-form-urlencoded', 'X-Forwarded-For': '54.144.2.187', 'X-Forwarded-Host': '7a15-220-85-91-47.ngrok-free.app', 'X-Forwarded-Proto': 'https', 'X-Slack-Request-Timestamp': '1736837702', 'X-Slack-Signature': 'v0=c1fa84dd3ef437153209dafb5a6fb72e8b4cc652cfa1170efee4b52314be2ebe'}
+2025-01-14 15:55:02,954 - DEBUG - Body: token=SvouyNxg8nGRob0Cb7HjidCx&team_id=T01EQ5VAYA2&team_domain=hyperhire&channel_id=D088BUC4B7U&channel_name=directmessage&user_id=U054JK0RHL3&user_name=jayden&command=%2Fconnect-github&text=&api_app_id=A0890NQE0G0&is_enterprise_install=false&response_url=https%3A%2F%2Fhooks.slack.com%2Fcommands%2FT01EQ5VAYA2%2F8312925343152%2F1x4WQIQX5JII835KJV3rvPOK&trigger_id=8283491143878.1500199372342.e9deef85d3eb9a02d3367a9e035ef5d8
+2025-01-14 15:55:02,954 - DEBUG - URL: http://7a15-220-85-91-47.ngrok-free.app/slack/events
+2025-01-14 15:55:02,954 - DEBUG - Method: POST
+2025-01-14 15:55:02,954 - INFO - Received request to /slack/events
+2025-01-14 15:55:02,955 - DEBUG - Request data: {'token': 'SvouyNxg8nGRob0Cb7HjidCx', 'team_id': 'T01EQ5VAYA2', 'team_domain': 'hyperhire', 'channel_id': 'D088BUC4B7U', 'channel_name': 'directmessage', 'user_id': 'U054JK0RHL3', 'user_name': 'jayden', 'command': '/connect-github', 'text': '', 'api_app_id': 'A0890NQE0G0', 'is_enterprise_install': 'false', 'response_url': 'https://hooks.slack.com/commands/T01EQ5VAYA2/8312925343152/1x4WQIQX5JII835KJV3rvPOK', 'trigger_id': '8283491143878.1500199372342.e9deef85d3eb9a02d3367a9e035ef5d8'}
+2025-01-14 15:55:02,955 - DEBUG - Applying slack_bolt.middleware.ssl_check.ssl_check.SslCheck
+2025-01-14 15:55:02,955 - DEBUG - Applying slack_bolt.middleware.request_verification.request_verification.RequestVerification
+2025-01-14 15:55:02,956 - DEBUG - Applying slack_bolt.middleware.authorization.multi_teams_authorization.MultiTeamsAuthorization
+2025-01-14 15:55:02,956 - DEBUG - Installation data missing for enterprise: none, team: T01EQ5VAYA2: [Errno 2] No such file or directory: '/Users/conan/.bolt-app-installation/1500199372342.8306772476544/none-T01EQ5VAYA2/installer-latest'
+2025-01-14 15:55:02,956 - DEBUG - Installation data missing for enterprise: none, team: T01EQ5VAYA2: [Errno 2] No such file or directory: '/Users/conan/.bolt-app-installation/1500199372342.8306772476544/none-T01EQ5VAYA2/bot-latest'
+2025-01-14 15:55:02,956 - DEBUG - No installation data found for enterprise_id: None team_id: T01EQ5VAYA2
+2025-01-14 15:55:02,956 - ERROR - Although the app should be installed into this workspace, the AuthorizeResult (returned value from authorize) for it was not found.
+2025-01-14 15:55:02,957 - DEBUG - Sending a request - url: https://hooks.slack.com/commands/T01EQ5VAYA2/8312925343152/1x4WQIQX5JII835KJV3rvPOK, body: {"text": ":warning: We apologize, but for some unknown reason, your installation with this app is no longer available. Please reinstall this app into your workspace :bow:"}, headers: {'Content-Type': 'application/json;charset=utf-8', 'User-Agent': 'Python/3.14.0 slackclient/3.34.0 Darwin/24.1.0'}
+2025-01-14 15:55:03,139 - ERROR - Failed to send a request to Slack API server: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1026)>
+2025-01-14 15:55:03,141 - INFO - A retry handler found: ConnectionErrorRetryHandler for POST https://hooks.slack.com/commands/T01EQ5VAYA2/8312925343152/1x4WQIQX5JII835KJV3rvPOK - <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1026)>
+2025-01-14 15:55:04,391 - INFO - Going to retry the same request: POST https://hooks.slack.com/commands/T01EQ5VAYA2/8312925343152/1x4WQIQX5JII835KJV3rvPOK
+2025-01-14 15:55:04,481 - ERROR - Failed to send a request to Slack API server: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1026)>
+2025-01-14 15:55:04,482 - ERROR - Failed to run a middleware (error: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1026)>)
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 1319, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers,
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              encode_chunked=req.has_header('Transfer-encoding'))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/client.py", line 1336, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/client.py", line 1382, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/client.py", line 1331, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/client.py", line 1091, in _send_output
+    self.send(msg)
+    ~~~~~~~~~^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/client.py", line 1035, in send
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/client.py", line 1477, in connect
+    self.sock = self._context.wrap_socket(self.sock,
+                ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+                                          server_hostname=server_hostname)
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/ssl.py", line 455, in wrap_socket
+    return self.sslsocket_class._create(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sock=sock,
+        ^^^^^^^^^^
+    ...<5 lines>...
+        session=session
+        ^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/ssl.py", line 1076, in _create
+    self.do_handshake()
+    ~~~~~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/ssl.py", line 1372, in do_handshake
+    self._sslobj.do_handshake()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1026)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/slack_bolt/app/app.py", line 562, in dispatch
+    resp = middleware.process(req=req, resp=resp, next=middleware_next)  # type: ignore[arg-type]
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/slack_bolt/middleware/authorization/multi_teams_authorization.py", line 103, in process
+    req.context.respond(self.user_facing_authorize_error_message)  # type: ignore[misc]
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/slack_bolt/context/respond/respond.py", line 61, in __call__
+    return client.send_dict(message)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/slack_sdk/webhook/client.py", line 137, in send_dict
+    return self._perform_http_request(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        body=_build_body(body),
+        ^^^^^^^^^^^^^^^^^^^^^^^
+        headers=_build_request_headers(self.default_headers, headers),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/slack_sdk/webhook/client.py", line 244, in _perform_http_request
+    raise err
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/slack_sdk/webhook/client.py", line 164, in _perform_http_request
+    resp = self._perform_http_request_internal(url, req)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/slack_sdk/webhook/client.py", line 270, in _perform_http_request_internal
+    http_resp = urlopen(req, context=self.ssl, timeout=self.timeout)  # skipcq: BAN-B310
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 189, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 489, in open
+    response = self._open(req, data)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 506, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+                              '_open', req)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 466, in _call_chain
+    result = func(*args)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 1367, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        context=self._context)
+                        ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 1322, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1026)>
+2025-01-14 15:55:04,487 - INFO - Event handled successfully in 1.53 seconds
+2025-01-14 15:55:04,488 - INFO - 127.0.0.1 - - [14/Jan/2025 15:55:04] "[35m[1mPOST /slack/events HTTP/1.1[0m" 500 -
+2025-01-14 15:55:18,095 - DEBUG - Headers: {'Host': '7a15-220-85-91-47.ngrok-free.app', 'User-Agent': 'Slackbot 1.0 (+https://api.slack.com/robots)', 'Content-Length': '425', 'Accept': 'application/json,*/*', 'Accept-Encoding': 'gzip,deflate', 'Content-Type': 'application/x-www-form-urlencoded', 'X-Forwarded-For': '3.238.174.199', 'X-Forwarded-Host': '7a15-220-85-91-47.ngrok-free.app', 'X-Forwarded-Proto': 'https', 'X-Slack-Request-Timestamp': '1736837717', 'X-Slack-Signature': 'v0=513c829fa3aec5dc8a9a8ad96f559ba23951775266f8861d14a116fe143726d0'}
+2025-01-14 15:55:18,097 - DEBUG - Body: token=SvouyNxg8nGRob0Cb7HjidCx&team_id=T01EQ5VAYA2&team_domain=hyperhire&channel_id=D088BUC4B7U&channel_name=directmessage&user_id=U054JK0RHL3&user_name=jayden&command=%2Fconnect-github&text=&api_app_id=A0890NQE0G0&is_enterprise_install=false&response_url=https%3A%2F%2Fhooks.slack.com%2Fcommands%2FT01EQ5VAYA2%2F8283491919686%2FMekZnm8udKDNeaYENmGHNB8p&trigger_id=8290106715298.1500199372342.a1566a65b72f21f6ace43bfd80edcecb
+2025-01-14 15:55:18,097 - DEBUG - URL: http://7a15-220-85-91-47.ngrok-free.app/slack/events
+2025-01-14 15:55:18,098 - DEBUG - Method: POST
+2025-01-14 15:55:18,098 - INFO - Received request to /slack/events
+2025-01-14 15:55:18,098 - DEBUG - Request data: {'token': 'SvouyNxg8nGRob0Cb7HjidCx', 'team_id': 'T01EQ5VAYA2', 'team_domain': 'hyperhire', 'channel_id': 'D088BUC4B7U', 'channel_name': 'directmessage', 'user_id': 'U054JK0RHL3', 'user_name': 'jayden', 'command': '/connect-github', 'text': '', 'api_app_id': 'A0890NQE0G0', 'is_enterprise_install': 'false', 'response_url': 'https://hooks.slack.com/commands/T01EQ5VAYA2/8283491919686/MekZnm8udKDNeaYENmGHNB8p', 'trigger_id': '8290106715298.1500199372342.a1566a65b72f21f6ace43bfd80edcecb'}
+2025-01-14 15:55:18,098 - DEBUG - Applying slack_bolt.middleware.ssl_check.ssl_check.SslCheck
+2025-01-14 15:55:18,098 - DEBUG - Applying slack_bolt.middleware.request_verification.request_verification.RequestVerification
+2025-01-14 15:55:18,098 - DEBUG - Applying slack_bolt.middleware.authorization.multi_teams_authorization.MultiTeamsAuthorization
+2025-01-14 15:55:18,099 - DEBUG - Installation data missing for enterprise: none, team: T01EQ5VAYA2: [Errno 2] No such file or directory: '/Users/conan/.bolt-app-installation/1500199372342.8306772476544/none-T01EQ5VAYA2/installer-latest'
+2025-01-14 15:55:18,099 - DEBUG - Installation data missing for enterprise: none, team: T01EQ5VAYA2: [Errno 2] No such file or directory: '/Users/conan/.bolt-app-installation/1500199372342.8306772476544/none-T01EQ5VAYA2/bot-latest'
+2025-01-14 15:55:18,099 - DEBUG - No installation data found for enterprise_id: None team_id: T01EQ5VAYA2
+2025-01-14 15:55:18,099 - ERROR - Although the app should be installed into this workspace, the AuthorizeResult (returned value from authorize) for it was not found.
+2025-01-14 15:55:18,099 - DEBUG - Sending a request - url: https://hooks.slack.com/commands/T01EQ5VAYA2/8283491919686/MekZnm8udKDNeaYENmGHNB8p, body: {"text": ":warning: We apologize, but for some unknown reason, your installation with this app is no longer available. Please reinstall this app into your workspace :bow:"}, headers: {'Content-Type': 'application/json;charset=utf-8', 'User-Agent': 'Python/3.14.0 slackclient/3.34.0 Darwin/24.1.0'}
+2025-01-14 15:55:18,186 - ERROR - Failed to send a request to Slack API server: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1026)>
+2025-01-14 15:55:18,187 - INFO - A retry handler found: ConnectionErrorRetryHandler for POST https://hooks.slack.com/commands/T01EQ5VAYA2/8283491919686/MekZnm8udKDNeaYENmGHNB8p - <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1026)>
+2025-01-14 15:55:18,946 - INFO - Going to retry the same request: POST https://hooks.slack.com/commands/T01EQ5VAYA2/8283491919686/MekZnm8udKDNeaYENmGHNB8p
+2025-01-14 15:55:19,061 - ERROR - Failed to send a request to Slack API server: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1026)>
+2025-01-14 15:55:19,062 - ERROR - Failed to run a middleware (error: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1026)>)
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 1319, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers,
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              encode_chunked=req.has_header('Transfer-encoding'))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/client.py", line 1336, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/client.py", line 1382, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/client.py", line 1331, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/client.py", line 1091, in _send_output
+    self.send(msg)
+    ~~~~~~~~~^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/client.py", line 1035, in send
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/client.py", line 1477, in connect
+    self.sock = self._context.wrap_socket(self.sock,
+                ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+                                          server_hostname=server_hostname)
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/ssl.py", line 455, in wrap_socket
+    return self.sslsocket_class._create(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sock=sock,
+        ^^^^^^^^^^
+    ...<5 lines>...
+        session=session
+        ^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/ssl.py", line 1076, in _create
+    self.do_handshake()
+    ~~~~~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/ssl.py", line 1372, in do_handshake
+    self._sslobj.do_handshake()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1026)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/slack_bolt/app/app.py", line 562, in dispatch
+    resp = middleware.process(req=req, resp=resp, next=middleware_next)  # type: ignore[arg-type]
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/slack_bolt/middleware/authorization/multi_teams_authorization.py", line 103, in process
+    req.context.respond(self.user_facing_authorize_error_message)  # type: ignore[misc]
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/slack_bolt/context/respond/respond.py", line 61, in __call__
+    return client.send_dict(message)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/slack_sdk/webhook/client.py", line 137, in send_dict
+    return self._perform_http_request(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        body=_build_body(body),
+        ^^^^^^^^^^^^^^^^^^^^^^^
+        headers=_build_request_headers(self.default_headers, headers),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/slack_sdk/webhook/client.py", line 244, in _perform_http_request
+    raise err
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/slack_sdk/webhook/client.py", line 164, in _perform_http_request
+    resp = self._perform_http_request_internal(url, req)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/slack_sdk/webhook/client.py", line 270, in _perform_http_request_internal
+    http_resp = urlopen(req, context=self.ssl, timeout=self.timeout)  # skipcq: BAN-B310
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 189, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 489, in open
+    response = self._open(req, data)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 506, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+                              '_open', req)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 466, in _call_chain
+    result = func(*args)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 1367, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        context=self._context)
+                        ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 1322, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1026)>
+2025-01-14 15:55:19,068 - INFO - Event handled successfully in 0.97 seconds
+2025-01-14 15:55:19,068 - INFO - 127.0.0.1 - - [14/Jan/2025 15:55:19] "[35m[1mPOST /slack/events HTTP/1.1[0m" 500 -
+2025-01-14 15:55:45,567 - INFO -  * Detected change in '/Users/conan/Documents/Slack_Ai_Backendbot/app.py', reloading
+2025-01-14 15:55:45,852 - INFO - Environment variables loaded
+2025-01-14 15:55:45,865 - INFO - As you've set SLACK_CLIENT_ID and SLACK_CLIENT_SECRET env variables, Bolt has enabled the file-based InstallationStore/OAuthStateStore for you. Note that these file-based stores are for local development. If you'd like to use a different data store, set the oauth_settings argument in the App constructor. Please refer to https://slack.dev/bolt-python/concepts#authenticating-oauth for more details.
+2025-01-14 15:55:45,865 - WARNING - As `installation_store` or `authorize` has been used, `token` (or SLACK_BOT_TOKEN env variable) will be ignored.
+2025-01-14 15:55:45,865 - INFO - Slack app initialized with token and signing secret
+2025-01-14 15:55:45,866 - INFO - Starting Flask application
+2025-01-14 15:55:45,890 - WARNING -  * Debugger is active!
+2025-01-14 15:55:45,898 - INFO -  * Debugger PIN: 454-586-817
+2025-01-14 15:55:57,445 - INFO - Environment variables loaded
+2025-01-14 15:55:57,459 - INFO - As you've set SLACK_CLIENT_ID and SLACK_CLIENT_SECRET env variables, Bolt has enabled the file-based InstallationStore/OAuthStateStore for you. Note that these file-based stores are for local development. If you'd like to use a different data store, set the oauth_settings argument in the App constructor. Please refer to https://slack.dev/bolt-python/concepts#authenticating-oauth for more details.
+2025-01-14 15:55:57,459 - WARNING - As `installation_store` or `authorize` has been used, `token` (or SLACK_BOT_TOKEN env variable) will be ignored.
+2025-01-14 15:55:57,459 - INFO - Slack app initialized with token and signing secret
+2025-01-14 15:55:57,459 - INFO - Starting Flask application
+2025-01-14 15:55:57,502 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-14 15:55:57,502 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-14 15:55:57,503 - INFO -  * Restarting with stat
+2025-01-14 15:55:57,645 - INFO - Environment variables loaded
+2025-01-14 15:55:57,658 - INFO - As you've set SLACK_CLIENT_ID and SLACK_CLIENT_SECRET env variables, Bolt has enabled the file-based InstallationStore/OAuthStateStore for you. Note that these file-based stores are for local development. If you'd like to use a different data store, set the oauth_settings argument in the App constructor. Please refer to https://slack.dev/bolt-python/concepts#authenticating-oauth for more details.
+2025-01-14 15:55:57,658 - WARNING - As `installation_store` or `authorize` has been used, `token` (or SLACK_BOT_TOKEN env variable) will be ignored.
+2025-01-14 15:55:57,658 - INFO - Slack app initialized with token and signing secret
+2025-01-14 15:55:57,659 - INFO - Starting Flask application
+2025-01-14 15:55:57,675 - WARNING -  * Debugger is active!
+2025-01-14 15:55:57,682 - INFO -  * Debugger PIN: 454-586-817
+2025-01-14 15:56:03,697 - DEBUG - Headers: {'Host': '7a15-220-85-91-47.ngrok-free.app', 'User-Agent': 'Slackbot 1.0 (+https://api.slack.com/robots)', 'Content-Length': '425', 'Accept': 'application/json,*/*', 'Accept-Encoding': 'gzip,deflate', 'Content-Type': 'application/x-www-form-urlencoded', 'X-Forwarded-For': '34.205.139.223', 'X-Forwarded-Host': '7a15-220-85-91-47.ngrok-free.app', 'X-Forwarded-Proto': 'https', 'X-Slack-Request-Timestamp': '1736837763', 'X-Slack-Signature': 'v0=ee8570804ff461d42c2e166a13dec90a9b05641f71b67234918475d37655791b'}
+2025-01-14 15:56:03,697 - DEBUG - Body: token=SvouyNxg8nGRob0Cb7HjidCx&team_id=T01EQ5VAYA2&team_domain=hyperhire&channel_id=D088BUC4B7U&channel_name=directmessage&user_id=U054JK0RHL3&user_name=jayden&command=%2Fconnect-github&text=&api_app_id=A0890NQE0G0&is_enterprise_install=false&response_url=https%3A%2F%2Fhooks.slack.com%2Fcommands%2FT01EQ5VAYA2%2F8302808347873%2Fv3IbEjFNU68ccRbbkt4UOx9s&trigger_id=8290023697779.1500199372342.54cf7f0dcba5094524b6bdc86faadf51
+2025-01-14 15:56:03,697 - DEBUG - URL: http://7a15-220-85-91-47.ngrok-free.app/slack/events
+2025-01-14 15:56:03,697 - DEBUG - Method: POST
+2025-01-14 15:56:03,697 - INFO - Received request to /slack/events
+2025-01-14 15:56:03,698 - DEBUG - Request data: {'token': 'SvouyNxg8nGRob0Cb7HjidCx', 'team_id': 'T01EQ5VAYA2', 'team_domain': 'hyperhire', 'channel_id': 'D088BUC4B7U', 'channel_name': 'directmessage', 'user_id': 'U054JK0RHL3', 'user_name': 'jayden', 'command': '/connect-github', 'text': '', 'api_app_id': 'A0890NQE0G0', 'is_enterprise_install': 'false', 'response_url': 'https://hooks.slack.com/commands/T01EQ5VAYA2/8302808347873/v3IbEjFNU68ccRbbkt4UOx9s', 'trigger_id': '8290023697779.1500199372342.54cf7f0dcba5094524b6bdc86faadf51'}
+2025-01-14 15:56:03,699 - DEBUG - Applying slack_bolt.middleware.ssl_check.ssl_check.SslCheck
+2025-01-14 15:56:03,699 - DEBUG - Applying slack_bolt.middleware.request_verification.request_verification.RequestVerification
+2025-01-14 15:56:03,699 - DEBUG - Applying slack_bolt.middleware.authorization.multi_teams_authorization.MultiTeamsAuthorization
+2025-01-14 15:56:03,699 - DEBUG - Installation data missing for enterprise: none, team: T01EQ5VAYA2: [Errno 2] No such file or directory: '/Users/conan/.bolt-app-installation/1500199372342.8306772476544/none-T01EQ5VAYA2/installer-latest'
+2025-01-14 15:56:03,699 - DEBUG - Installation data missing for enterprise: none, team: T01EQ5VAYA2: [Errno 2] No such file or directory: '/Users/conan/.bolt-app-installation/1500199372342.8306772476544/none-T01EQ5VAYA2/bot-latest'
+2025-01-14 15:56:03,699 - DEBUG - No installation data found for enterprise_id: None team_id: T01EQ5VAYA2
+2025-01-14 15:56:03,699 - ERROR - Although the app should be installed into this workspace, the AuthorizeResult (returned value from authorize) for it was not found.
+2025-01-14 15:56:03,699 - DEBUG - Sending a request - url: https://hooks.slack.com/commands/T01EQ5VAYA2/8302808347873/v3IbEjFNU68ccRbbkt4UOx9s, body: {"text": ":warning: We apologize, but for some unknown reason, your installation with this app is no longer available. Please reinstall this app into your workspace :bow:"}, headers: {'Content-Type': 'application/json;charset=utf-8', 'User-Agent': 'Python/3.14.0 slackclient/3.34.0 Darwin/24.1.0'}
+2025-01-14 15:56:04,072 - DEBUG - Received the following response - status: 200, headers: {'date': 'Tue, 14 Jan 2025 06:56:03 GMT', 'server': 'Apache', 'vary': 'Accept-Encoding', 'strict-transport-security': 'max-age=31536000; includeSubDomains; preload', 'referrer-policy': 'no-referrer', 'x-slack-unique-id': 'Z4YKg2OaRlR2tKHhHI_IDgAAQCs', 'x-slack-backend': 'r', 'access-control-allow-origin': '*', 'x-frame-options': 'SAMEORIGIN', 'content-type': 'text/html', 'content-length': '2', 'via': '1.1 slack-prod.tinyspeck.com, envoy-www-iad-sfizevcw,envoy-edge-nrt-lpwjasev', 'x-envoy-attempt-count': '1', 'x-envoy-upstream-service-time': '174', 'x-backend': 'main_normal main_canary_with_overflow main_control_with_overflow', 'x-server': 'slack-www-hhvm-main-iad-atmm', 'x-slack-shared-secret-outcome': 'no-match', 'x-edge-backend': 'envoy-www', 'x-slack-edge-shared-secret-outcome': 'no-match', 'connection': 'close'}, body: ok
+2025-01-14 15:56:04,074 - INFO - Event handled successfully in 0.38 seconds
+2025-01-14 15:56:04,074 - INFO - 127.0.0.1 - - [14/Jan/2025 15:56:04] "POST /slack/events HTTP/1.1" 200 -
+2025-01-14 15:56:45,913 - DEBUG - Headers: {'Host': '7a15-220-85-91-47.ngrok-free.app', 'User-Agent': 'Slackbot 1.0 (+https://api.slack.com/robots)', 'Content-Length': '425', 'Accept': 'application/json,*/*', 'Accept-Encoding': 'gzip,deflate', 'Content-Type': 'application/x-www-form-urlencoded', 'X-Forwarded-For': '3.90.241.226', 'X-Forwarded-Host': '7a15-220-85-91-47.ngrok-free.app', 'X-Forwarded-Proto': 'https', 'X-Slack-Request-Timestamp': '1736837805', 'X-Slack-Signature': 'v0=683b3d0f8de6801f414ca85e45e3cd80ae36ab3c67bba4e2f3143ea7b019107e'}
+2025-01-14 15:56:45,914 - DEBUG - Body: token=SvouyNxg8nGRob0Cb7HjidCx&team_id=T01EQ5VAYA2&team_domain=hyperhire&channel_id=D088BUC4B7U&channel_name=directmessage&user_id=U054JK0RHL3&user_name=jayden&command=%2Fconnect-github&text=&api_app_id=A0890NQE0G0&is_enterprise_install=false&response_url=https%3A%2F%2Fhooks.slack.com%2Fcommands%2FT01EQ5VAYA2%2F8275581255767%2FJxG8Hqq305FfND5O5ZZns1Wh&trigger_id=8312930389744.1500199372342.ef6b0402a15c456deb13c26989902414
+2025-01-14 15:56:45,915 - DEBUG - URL: http://7a15-220-85-91-47.ngrok-free.app/slack/events
+2025-01-14 15:56:45,915 - DEBUG - Method: POST
+2025-01-14 15:56:45,915 - INFO - Received request to /slack/events
+2025-01-14 15:56:45,915 - DEBUG - Request data: {'token': 'SvouyNxg8nGRob0Cb7HjidCx', 'team_id': 'T01EQ5VAYA2', 'team_domain': 'hyperhire', 'channel_id': 'D088BUC4B7U', 'channel_name': 'directmessage', 'user_id': 'U054JK0RHL3', 'user_name': 'jayden', 'command': '/connect-github', 'text': '', 'api_app_id': 'A0890NQE0G0', 'is_enterprise_install': 'false', 'response_url': 'https://hooks.slack.com/commands/T01EQ5VAYA2/8275581255767/JxG8Hqq305FfND5O5ZZns1Wh', 'trigger_id': '8312930389744.1500199372342.ef6b0402a15c456deb13c26989902414'}
+2025-01-14 15:56:45,915 - DEBUG - Applying slack_bolt.middleware.ssl_check.ssl_check.SslCheck
+2025-01-14 15:56:45,916 - DEBUG - Applying slack_bolt.middleware.request_verification.request_verification.RequestVerification
+2025-01-14 15:56:45,916 - DEBUG - Applying slack_bolt.middleware.authorization.multi_teams_authorization.MultiTeamsAuthorization
+2025-01-14 15:56:45,916 - DEBUG - Installation data missing for enterprise: none, team: T01EQ5VAYA2: [Errno 2] No such file or directory: '/Users/conan/.bolt-app-installation/1500199372342.8306772476544/none-T01EQ5VAYA2/installer-latest'
+2025-01-14 15:56:45,916 - DEBUG - Installation data missing for enterprise: none, team: T01EQ5VAYA2: [Errno 2] No such file or directory: '/Users/conan/.bolt-app-installation/1500199372342.8306772476544/none-T01EQ5VAYA2/bot-latest'
+2025-01-14 15:56:45,916 - DEBUG - No installation data found for enterprise_id: None team_id: T01EQ5VAYA2
+2025-01-14 15:56:45,916 - ERROR - Although the app should be installed into this workspace, the AuthorizeResult (returned value from authorize) for it was not found.
+2025-01-14 15:56:45,916 - DEBUG - Sending a request - url: https://hooks.slack.com/commands/T01EQ5VAYA2/8275581255767/JxG8Hqq305FfND5O5ZZns1Wh, body: {"text": ":warning: We apologize, but for some unknown reason, your installation with this app is no longer available. Please reinstall this app into your workspace :bow:"}, headers: {'Content-Type': 'application/json;charset=utf-8', 'User-Agent': 'Python/3.14.0 slackclient/3.34.0 Darwin/24.1.0'}
+2025-01-14 15:56:46,421 - DEBUG - Received the following response - status: 200, headers: {'date': 'Tue, 14 Jan 2025 06:56:46 GMT', 'server': 'Apache', 'vary': 'Accept-Encoding', 'strict-transport-security': 'max-age=31536000; includeSubDomains; preload', 'referrer-policy': 'no-referrer', 'x-slack-unique-id': 'Z4YKrq13dhrG-9Zo6YBVIQAA0Do', 'x-slack-backend': 'r', 'access-control-allow-origin': '*', 'x-frame-options': 'SAMEORIGIN', 'content-type': 'text/html', 'content-length': '2', 'via': '1.1 slack-prod.tinyspeck.com, envoy-www-iad-rcttrkus,envoy-edge-nrt-avkrzavw', 'x-envoy-attempt-count': '1', 'x-envoy-upstream-service-time': '174', 'x-backend': 'main_normal main_canary_with_overflow main_control_with_overflow', 'x-server': 'slack-www-hhvm-main-iad-okqe', 'x-slack-shared-secret-outcome': 'no-match', 'x-edge-backend': 'envoy-www', 'x-slack-edge-shared-secret-outcome': 'no-match', 'connection': 'close'}, body: ok
+2025-01-14 15:56:46,422 - INFO - Event handled successfully in 0.51 seconds
+2025-01-14 15:56:46,422 - INFO - 127.0.0.1 - - [14/Jan/2025 15:56:46] "POST /slack/events HTTP/1.1" 200 -
+2025-01-14 15:57:54,357 - DEBUG - Headers: {'Host': '7a15-220-85-91-47.ngrok-free.app', 'User-Agent': 'Slackbot 1.0 (+https://api.slack.com/robots)', 'Content-Length': '425', 'Accept': 'application/json,*/*', 'Accept-Encoding': 'gzip,deflate', 'Content-Type': 'application/x-www-form-urlencoded', 'X-Forwarded-For': '44.199.204.106', 'X-Forwarded-Host': '7a15-220-85-91-47.ngrok-free.app', 'X-Forwarded-Proto': 'https', 'X-Slack-Request-Timestamp': '1736837874', 'X-Slack-Signature': 'v0=11b313e1977a16e24b750406ab67b5cb6585dff776137669a15b1ed530802e75'}
+2025-01-14 15:57:54,358 - DEBUG - Body: token=SvouyNxg8nGRob0Cb7HjidCx&team_id=T01EQ5VAYA2&team_domain=hyperhire&channel_id=D088BUC4B7U&channel_name=directmessage&user_id=U054JK0RHL3&user_name=jayden&command=%2Fconnect-github&text=&api_app_id=A0890NQE0G0&is_enterprise_install=false&response_url=https%3A%2F%2Fhooks.slack.com%2Fcommands%2FT01EQ5VAYA2%2F8290114325634%2FUNiPqlOpPdMmXE95EMiWKSQ3&trigger_id=8275584597015.1500199372342.556d837abd6cab6e90585c991557bb83
+2025-01-14 15:57:54,358 - DEBUG - URL: http://7a15-220-85-91-47.ngrok-free.app/slack/events
+2025-01-14 15:57:54,358 - DEBUG - Method: POST
+2025-01-14 15:57:54,358 - INFO - Received request to /slack/events
+2025-01-14 15:57:54,358 - DEBUG - Request data: {'token': 'SvouyNxg8nGRob0Cb7HjidCx', 'team_id': 'T01EQ5VAYA2', 'team_domain': 'hyperhire', 'channel_id': 'D088BUC4B7U', 'channel_name': 'directmessage', 'user_id': 'U054JK0RHL3', 'user_name': 'jayden', 'command': '/connect-github', 'text': '', 'api_app_id': 'A0890NQE0G0', 'is_enterprise_install': 'false', 'response_url': 'https://hooks.slack.com/commands/T01EQ5VAYA2/8290114325634/UNiPqlOpPdMmXE95EMiWKSQ3', 'trigger_id': '8275584597015.1500199372342.556d837abd6cab6e90585c991557bb83'}
+2025-01-14 15:57:54,358 - DEBUG - Applying slack_bolt.middleware.ssl_check.ssl_check.SslCheck
+2025-01-14 15:57:54,359 - DEBUG - Applying slack_bolt.middleware.request_verification.request_verification.RequestVerification
+2025-01-14 15:57:54,359 - DEBUG - Applying slack_bolt.middleware.authorization.multi_teams_authorization.MultiTeamsAuthorization
+2025-01-14 15:57:54,359 - DEBUG - Installation data missing for enterprise: none, team: T01EQ5VAYA2: [Errno 2] No such file or directory: '/Users/conan/.bolt-app-installation/1500199372342.8306772476544/none-T01EQ5VAYA2/installer-latest'
+2025-01-14 15:57:54,359 - DEBUG - Installation data missing for enterprise: none, team: T01EQ5VAYA2: [Errno 2] No such file or directory: '/Users/conan/.bolt-app-installation/1500199372342.8306772476544/none-T01EQ5VAYA2/bot-latest'
+2025-01-14 15:57:54,359 - DEBUG - No installation data found for enterprise_id: None team_id: T01EQ5VAYA2
+2025-01-14 15:57:54,359 - ERROR - Although the app should be installed into this workspace, the AuthorizeResult (returned value from authorize) for it was not found.
+2025-01-14 15:57:54,359 - DEBUG - Sending a request - url: https://hooks.slack.com/commands/T01EQ5VAYA2/8290114325634/UNiPqlOpPdMmXE95EMiWKSQ3, body: {"text": ":warning: We apologize, but for some unknown reason, your installation with this app is no longer available. Please reinstall this app into your workspace :bow:"}, headers: {'Content-Type': 'application/json;charset=utf-8', 'User-Agent': 'Python/3.14.0 slackclient/3.34.0 Darwin/24.1.0'}
+2025-01-14 15:57:54,702 - DEBUG - Received the following response - status: 200, headers: {'date': 'Tue, 14 Jan 2025 06:57:54 GMT', 'server': 'Apache', 'vary': 'Accept-Encoding', 'strict-transport-security': 'max-age=31536000; includeSubDomains; preload', 'referrer-policy': 'no-referrer', 'x-slack-unique-id': 'Z4YK8oOF5NcbCrNhmBntFQAAECk', 'x-slack-backend': 'r', 'access-control-allow-origin': '*', 'x-frame-options': 'SAMEORIGIN', 'content-type': 'text/html', 'content-length': '2', 'via': '1.1 slack-prod.tinyspeck.com, envoy-www-iad-ybajutrc,envoy-edge-nrt-aetmssnz', 'x-envoy-attempt-count': '1', 'x-envoy-upstream-service-time': '174', 'x-backend': 'main_normal main_canary_with_overflow main_control_with_overflow', 'x-server': 'slack-www-hhvm-main-iad-pzzq', 'x-slack-shared-secret-outcome': 'no-match', 'x-edge-backend': 'envoy-www', 'x-slack-edge-shared-secret-outcome': 'no-match', 'connection': 'close'}, body: ok
+2025-01-14 15:57:54,702 - INFO - Event handled successfully in 0.34 seconds
+2025-01-14 15:57:54,702 - INFO - 127.0.0.1 - - [14/Jan/2025 15:57:54] "POST /slack/events HTTP/1.1" 200 -
+2025-01-14 16:10:29,379 - DEBUG - Headers: {'Host': '7a15-220-85-91-47.ngrok-free.app', 'User-Agent': 'Slackbot 1.0 (+https://api.slack.com/robots)', 'Content-Length': '129', 'Accept': '*/*', 'Accept-Encoding': 'gzip,deflate', 'Content-Type': 'application/json', 'X-Forwarded-For': '54.174.179.243', 'X-Forwarded-Host': '7a15-220-85-91-47.ngrok-free.app', 'X-Forwarded-Proto': 'https', 'X-Slack-Request-Timestamp': '1736838629', 'X-Slack-Signature': 'v0=3038f811153a5230489f4005eb0fdaa056420001974c78cbf6a8435830c00bcf'}
+2025-01-14 16:10:29,383 - DEBUG - Body: {"token":"fvnpCcQj3ngFfGr8ODhEPEAJ","challenge":"0vCwe9uWQ1KOfVOTqs4eR618Qqy4MhAPTXL9SD2uRGcu5kvTtf1T","type":"url_verification"}
+2025-01-14 16:10:29,383 - DEBUG - URL: http://7a15-220-85-91-47.ngrok-free.app/
+2025-01-14 16:10:29,383 - DEBUG - Method: POST
+2025-01-14 16:10:29,384 - INFO - 127.0.0.1 - - [14/Jan/2025 16:10:29] "[31m[1mPOST / HTTP/1.1[0m" 405 -
+2025-01-14 16:10:31,610 - DEBUG - Headers: {'Host': '7a15-220-85-91-47.ngrok-free.app', 'User-Agent': 'Slackbot 1.0 (+https://api.slack.com/robots)', 'Content-Length': '129', 'Accept': '*/*', 'Accept-Encoding': 'gzip,deflate', 'Content-Type': 'application/json', 'X-Forwarded-For': '35.173.182.48', 'X-Forwarded-Host': '7a15-220-85-91-47.ngrok-free.app', 'X-Forwarded-Proto': 'https', 'X-Slack-Request-Timestamp': '1736838631', 'X-Slack-Signature': 'v0=32bf9c09f4f95982fc39cde5743acdaf49f65e3c98a992a8ea78caccc3b4108a'}
+2025-01-14 16:10:31,610 - DEBUG - Body: {"token":"fvnpCcQj3ngFfGr8ODhEPEAJ","challenge":"XvUULe3sGWOSj4E3CW9BxTaOQotdKAj9wYnBdPuGaNpLsQPvYbra","type":"url_verification"}
+2025-01-14 16:10:31,611 - DEBUG - URL: http://7a15-220-85-91-47.ngrok-free.app/
+2025-01-14 16:10:31,611 - DEBUG - Method: POST
+2025-01-14 16:10:31,611 - INFO - 127.0.0.1 - - [14/Jan/2025 16:10:31] "[31m[1mPOST / HTTP/1.1[0m" 405 -
+2025-01-14 16:10:37,915 - DEBUG - Headers: {'Host': '7a15-220-85-91-47.ngrok-free.app', 'User-Agent': 'Slackbot 1.0 (+https://api.slack.com/robots)', 'Content-Length': '129', 'Accept': '*/*', 'Accept-Encoding': 'gzip,deflate', 'Content-Type': 'application/json', 'X-Forwarded-For': '3.238.181.177', 'X-Forwarded-Host': '7a15-220-85-91-47.ngrok-free.app', 'X-Forwarded-Proto': 'https', 'X-Slack-Request-Timestamp': '1736838637', 'X-Slack-Signature': 'v0=b0a4e09580bd101e1f36e194d926879b296b8ee7909bcb6787708dc7a4cf9702'}
+2025-01-14 16:10:37,915 - DEBUG - Body: {"token":"fvnpCcQj3ngFfGr8ODhEPEAJ","challenge":"v6Nj7cD50jg1auL1TmhVtL6mcktOzz4QxR7WMX7ZfMWECMPvxVJK","type":"url_verification"}
+2025-01-14 16:10:37,916 - DEBUG - URL: http://7a15-220-85-91-47.ngrok-free.app/slack/events
+2025-01-14 16:10:37,916 - DEBUG - Method: POST
+2025-01-14 16:10:37,916 - INFO - Received request to /slack/events
+2025-01-14 16:10:37,916 - DEBUG - Request data: {'token': 'fvnpCcQj3ngFfGr8ODhEPEAJ', 'challenge': 'v6Nj7cD50jg1auL1TmhVtL6mcktOzz4QxR7WMX7ZfMWECMPvxVJK', 'type': 'url_verification'}
+2025-01-14 16:10:37,916 - INFO - Handling URL verification with challenge: v6Nj7cD50jg1auL1TmhVtL6mcktOzz4QxR7WMX7ZfMWECMPvxVJK
+2025-01-14 16:10:37,917 - INFO - 127.0.0.1 - - [14/Jan/2025 16:10:37] "POST /slack/events HTTP/1.1" 200 -
+2025-01-14 16:48:12,664 - DEBUG - Headers: {'Host': '7a15-220-85-91-47.ngrok-free.app', 'User-Agent': 'Slackbot 1.0 (+https://api.slack.com/robots)', 'Content-Length': '948', 'Accept': '*/*', 'Accept-Encoding': 'gzip,deflate', 'Content-Type': 'application/json', 'X-Forwarded-For': '3.236.55.168', 'X-Forwarded-Host': '7a15-220-85-91-47.ngrok-free.app', 'X-Forwarded-Proto': 'https', 'X-Slack-Request-Timestamp': '1736840892', 'X-Slack-Signature': 'v0=f0ceb7a3db55820c861ad76a7e341f9afffe53a34984b51ec44532165d99dd17'}
+2025-01-14 16:48:12,664 - DEBUG - Body: {"token":"fvnpCcQj3ngFfGr8ODhEPEAJ","team_id":"T01EQ5VAYA2","context_team_id":"T01EQ5VAYA2","context_enterprise_id":null,"api_app_id":"A088J1965RR","event":{"user":"U054JK0RHL3","type":"message","ts":"1736840891.743219","client_msg_id":"77ade304-8c2d-49f7-b263-4c92f9822115","text":"hello","team":"T01EQ5VAYA2","thread_ts":"1736840877.899059","parent_user_id":"U088J5MRCRZ","blocks":[{"type":"rich_text","block_id":"ZL1yL","elements":[{"type":"rich_text_section","elements":[{"type":"text","text":"hello"}]}]}],"channel":"D088J8BTTGA","event_ts":"1736840891.743219","channel_type":"im"},"type":"event_callback","event_id":"Ev088J8CP43U","event_time":1736840891,"authorizations":[{"enterprise_id":null,"team_id":"T01EQ5VAYA2","user_id":"U088J5MRCRZ","is_bot":true,"is_enterprise_install":false}],"is_ext_shared_channel":false,"event_context":"4-eyJldCI6Im1lc3NhZ2UiLCJ0aWQiOiJUMDFFUTVWQVlBMiIsImFpZCI6IkEwODhKMTk2NVJSIiwiY2lkIjoiRDA4OEo4QlRUR0EifQ"}
+2025-01-14 16:48:12,665 - DEBUG - URL: http://7a15-220-85-91-47.ngrok-free.app/slack/events
+2025-01-14 16:48:12,665 - DEBUG - Method: POST
+2025-01-14 16:48:12,665 - INFO - Received request to /slack/events
+2025-01-14 16:48:12,665 - DEBUG - Request data: {'token': 'fvnpCcQj3ngFfGr8ODhEPEAJ', 'team_id': 'T01EQ5VAYA2', 'context_team_id': 'T01EQ5VAYA2', 'context_enterprise_id': None, 'api_app_id': 'A088J1965RR', 'event': {'user': 'U054JK0RHL3', 'type': 'message', 'ts': '1736840891.743219', 'client_msg_id': '77ade304-8c2d-49f7-b263-4c92f9822115', 'text': 'hello', 'team': 'T01EQ5VAYA2', 'thread_ts': '1736840877.899059', 'parent_user_id': 'U088J5MRCRZ', 'blocks': [{'type': 'rich_text', 'block_id': 'ZL1yL', 'elements': [{'type': 'rich_text_section', 'elements': [{'type': 'text', 'text': 'hello'}]}]}], 'channel': 'D088J8BTTGA', 'event_ts': '1736840891.743219', 'channel_type': 'im'}, 'type': 'event_callback', 'event_id': 'Ev088J8CP43U', 'event_time': 1736840891, 'authorizations': [{'enterprise_id': None, 'team_id': 'T01EQ5VAYA2', 'user_id': 'U088J5MRCRZ', 'is_bot': True, 'is_enterprise_install': False}], 'is_ext_shared_channel': False, 'event_context': '4-eyJldCI6Im1lc3NhZ2UiLCJ0aWQiOiJUMDFFUTVWQVlBMiIsImFpZCI6IkEwODhKMTk2NVJSIiwiY2lkIjoiRDA4OEo4QlRUR0EifQ'}
+2025-01-14 16:48:12,666 - DEBUG - Applying slack_bolt.middleware.ssl_check.ssl_check.SslCheck
+2025-01-14 16:48:12,666 - DEBUG - Applying slack_bolt.middleware.request_verification.request_verification.RequestVerification
+2025-01-14 16:48:12,666 - INFO - Invalid request signature detected (signature: v0=f0ceb7a3db55820c861ad76a7e341f9afffe53a34984b51ec44532165d99dd17, timestamp: 1736840892, body: {"token":"fvnpCcQj3ngFfGr8ODhEPEAJ","team_id":"T01EQ5VAYA2","context_team_id":"T01EQ5VAYA2","context_enterprise_id":null,"api_app_id":"A088J1965RR","event":{"user":"U054JK0RHL3","type":"message","ts":"1736840891.743219","client_msg_id":"77ade304-8c2d-49f7-b263-4c92f9822115","text":"hello","team":"T01EQ5VAYA2","thread_ts":"1736840877.899059","parent_user_id":"U088J5MRCRZ","blocks":[{"type":"rich_text","block_id":"ZL1yL","elements":[{"type":"rich_text_section","elements":[{"type":"text","text":"hello"}]}]}],"channel":"D088J8BTTGA","event_ts":"1736840891.743219","channel_type":"im"},"type":"event_callback","event_id":"Ev088J8CP43U","event_time":1736840891,"authorizations":[{"enterprise_id":null,"team_id":"T01EQ5VAYA2","user_id":"U088J5MRCRZ","is_bot":true,"is_enterprise_install":false}],"is_ext_shared_channel":false,"event_context":"4-eyJldCI6Im1lc3NhZ2UiLCJ0aWQiOiJUMDFFUTVWQVlBMiIsImFpZCI6IkEwODhKMTk2NVJSIiwiY2lkIjoiRDA4OEo4QlRUR0EifQ"})
+2025-01-14 16:48:12,666 - INFO - Event handled successfully in 0.00 seconds
+2025-01-14 16:48:12,667 - INFO - 127.0.0.1 - - [14/Jan/2025 16:48:12] "[31m[1mPOST /slack/events HTTP/1.1[0m" 401 -
+2025-01-14 16:48:13,017 - DEBUG - Headers: {'Host': '7a15-220-85-91-47.ngrok-free.app', 'User-Agent': 'Slackbot 1.0 (+https://api.slack.com/robots)', 'Content-Length': '1876', 'Accept': '*/*', 'Accept-Encoding': 'gzip,deflate', 'Content-Type': 'application/json', 'X-Forwarded-For': '3.85.26.105', 'X-Forwarded-Host': '7a15-220-85-91-47.ngrok-free.app', 'X-Forwarded-Proto': 'https', 'X-Slack-Request-Timestamp': '1736840892', 'X-Slack-Signature': 'v0=38bb55108dd38b708aa7f756ad49a50432faf265a6c31875cc3d06b1d879988c'}
+2025-01-14 16:48:13,020 - DEBUG - Body: {"token":"fvnpCcQj3ngFfGr8ODhEPEAJ","team_id":"T01EQ5VAYA2","context_team_id":"T01EQ5VAYA2","context_enterprise_id":null,"api_app_id":"A088J1965RR","event":{"type":"message","subtype":"message_changed","message":{"text":"\uc0c8 \ucc44\ud305","subtype":"assistant_app_thread","user":"U088J5MRCRZ","type":"message","edited":{"user":"U088J5MRCRZ","ts":"1736840892.000000"},"team":"T01EQ5VAYA2","thread_ts":"1736840877.899059","reply_count":1,"reply_users_count":1,"latest_reply":"1736840891.743219","reply_users":["U054JK0RHL3"],"is_locked":false,"blocks":[{"type":"rich_text","block_id":"L5\/","elements":[{"type":"rich_text_section","elements":[{"type":"text","text":"\uc0c8 \ucc44\ud305"}]}]}],"assistant_app_thread":{"title":"hello","title_blocks":[{"type":"rich_text","block_id":"tKxD","elements":[{"type":"rich_text_section","elements":[{"type":"text","text":"hello"}]}]}],"artifacts":[],"context":{}},"ts":"1736840877.899059"},"previous_message":{"text":"\uc0c8 \ucc44\ud305","subtype":"assistant_app_thread","user":"U088J5MRCRZ","type":"message","ts":"1736840877.899059","team":"T01EQ5VAYA2","thread_ts":"1736840877.899059","reply_count":1,"reply_users_count":1,"latest_reply":"1736840891.743219","reply_users":["U054JK0RHL3"],"is_locked":false,"blocks":[{"type":"rich_text","block_id":"=pi","elements":[{"type":"rich_text_section","elements":[{"type":"text","text":"\uc0c8 \ucc44\ud305"}]}]}]},"channel":"D088J8BTTGA","hidden":true,"ts":"1736840892.000200","event_ts":"1736840892.000200","channel_type":"im"},"type":"event_callback","event_id":"Ev089732663S","event_time":1736840892,"authorizations":[{"enterprise_id":null,"team_id":"T01EQ5VAYA2","user_id":"U088J5MRCRZ","is_bot":true,"is_enterprise_install":false}],"is_ext_shared_channel":false,"event_context":"4-eyJldCI6Im1lc3NhZ2UiLCJ0aWQiOiJUMDFFUTVWQVlBMiIsImFpZCI6IkEwODhKMTk2NVJSIiwiY2lkIjoiRDA4OEo4QlRUR0EifQ"}
+2025-01-14 16:48:13,021 - DEBUG - URL: http://7a15-220-85-91-47.ngrok-free.app/slack/events
+2025-01-14 16:48:13,021 - DEBUG - Method: POST
+2025-01-14 16:48:13,021 - INFO - Received request to /slack/events
+2025-01-14 16:48:13,021 - DEBUG - Request data: {'token': 'fvnpCcQj3ngFfGr8ODhEPEAJ', 'team_id': 'T01EQ5VAYA2', 'context_team_id': 'T01EQ5VAYA2', 'context_enterprise_id': None, 'api_app_id': 'A088J1965RR', 'event': {'type': 'message', 'subtype': 'message_changed', 'message': {'text': '새 채팅', 'subtype': 'assistant_app_thread', 'user': 'U088J5MRCRZ', 'type': 'message', 'edited': {'user': 'U088J5MRCRZ', 'ts': '1736840892.000000'}, 'team': 'T01EQ5VAYA2', 'thread_ts': '1736840877.899059', 'reply_count': 1, 'reply_users_count': 1, 'latest_reply': '1736840891.743219', 'reply_users': ['U054JK0RHL3'], 'is_locked': False, 'blocks': [{'type': 'rich_text', 'block_id': 'L5/', 'elements': [{'type': 'rich_text_section', 'elements': [{'type': 'text', 'text': '새 채팅'}]}]}], 'assistant_app_thread': {'title': 'hello', 'title_blocks': [{'type': 'rich_text', 'block_id': 'tKxD', 'elements': [{'type': 'rich_text_section', 'elements': [{'type': 'text', 'text': 'hello'}]}]}], 'artifacts': [], 'context': {}}, 'ts': '1736840877.899059'}, 'previous_message': {'text': '새 채팅', 'subtype': 'assistant_app_thread', 'user': 'U088J5MRCRZ', 'type': 'message', 'ts': '1736840877.899059', 'team': 'T01EQ5VAYA2', 'thread_ts': '1736840877.899059', 'reply_count': 1, 'reply_users_count': 1, 'latest_reply': '1736840891.743219', 'reply_users': ['U054JK0RHL3'], 'is_locked': False, 'blocks': [{'type': 'rich_text', 'block_id': '=pi', 'elements': [{'type': 'rich_text_section', 'elements': [{'type': 'text', 'text': '새 채팅'}]}]}]}, 'channel': 'D088J8BTTGA', 'hidden': True, 'ts': '1736840892.000200', 'event_ts': '1736840892.000200', 'channel_type': 'im'}, 'type': 'event_callback', 'event_id': 'Ev089732663S', 'event_time': 1736840892, 'authorizations': [{'enterprise_id': None, 'team_id': 'T01EQ5VAYA2', 'user_id': 'U088J5MRCRZ', 'is_bot': True, 'is_enterprise_install': False}], 'is_ext_shared_channel': False, 'event_context': '4-eyJldCI6Im1lc3NhZ2UiLCJ0aWQiOiJUMDFFUTVWQVlBMiIsImFpZCI6IkEwODhKMTk2NVJSIiwiY2lkIjoiRDA4OEo4QlRUR0EifQ'}
+2025-01-14 16:48:13,024 - DEBUG - Applying slack_bolt.middleware.ssl_check.ssl_check.SslCheck
+2025-01-14 16:48:13,024 - DEBUG - Applying slack_bolt.middleware.request_verification.request_verification.RequestVerification
+2025-01-14 16:48:13,024 - INFO - Invalid request signature detected (signature: v0=38bb55108dd38b708aa7f756ad49a50432faf265a6c31875cc3d06b1d879988c, timestamp: 1736840892, body: {"token":"fvnpCcQj3ngFfGr8ODhEPEAJ","team_id":"T01EQ5VAYA2","context_team_id":"T01EQ5VAYA2","context_enterprise_id":null,"api_app_id":"A088J1965RR","event":{"type":"message","subtype":"message_changed","message":{"text":"\uc0c8 \ucc44\ud305","subtype":"assistant_app_thread","user":"U088J5MRCRZ","type":"message","edited":{"user":"U088J5MRCRZ","ts":"1736840892.000000"},"team":"T01EQ5VAYA2","thread_ts":"1736840877.899059","reply_count":1,"reply_users_count":1,"latest_reply":"1736840891.743219","reply_users":["U054JK0RHL3"],"is_locked":false,"blocks":[{"type":"rich_text","block_id":"L5\/","elements":[{"type":"rich_text_section","elements":[{"type":"text","text":"\uc0c8 \ucc44\ud305"}]}]}],"assistant_app_thread":{"title":"hello","title_blocks":[{"type":"rich_text","block_id":"tKxD","elements":[{"type":"rich_text_section","elements":[{"type":"text","text":"hello"}]}]}],"artifacts":[],"context":{}},"ts":"1736840877.899059"},"previous_message":{"text":"\uc0c8 \ucc44\ud305","subtype":"assistant_app_thread","user":"U088J5MRCRZ","type":"message","ts":"1736840877.899059","team":"T01EQ5VAYA2","thread_ts":"1736840877.899059","reply_count":1,"reply_users_count":1,"latest_reply":"1736840891.743219","reply_users":["U054JK0RHL3"],"is_locked":false,"blocks":[{"type":"rich_text","block_id":"=pi","elements":[{"type":"rich_text_section","elements":[{"type":"text","text":"\uc0c8 \ucc44\ud305"}]}]}]},"channel":"D088J8BTTGA","hidden":true,"ts":"1736840892.000200","event_ts":"1736840892.000200","channel_type":"im"},"type":"event_callback","event_id":"Ev089732663S","event_time":1736840892,"authorizations":[{"enterprise_id":null,"team_id":"T01EQ5VAYA2","user_id":"U088J5MRCRZ","is_bot":true,"is_enterprise_install":false}],"is_ext_shared_channel":false,"event_context":"4-eyJldCI6Im1lc3NhZ2UiLCJ0aWQiOiJUMDFFUTVWQVlBMiIsImFpZCI6IkEwODhKMTk2NVJSIiwiY2lkIjoiRDA4OEo4QlRUR0EifQ"})
+2025-01-14 16:48:13,026 - INFO - Event handled successfully in 0.01 seconds
+2025-01-14 16:48:13,027 - INFO - 127.0.0.1 - - [14/Jan/2025 16:48:13] "[31m[1mPOST /slack/events HTTP/1.1[0m" 401 -
+2025-01-14 16:48:13,124 - DEBUG - Headers: {'Host': '7a15-220-85-91-47.ngrok-free.app', 'User-Agent': 'Slackbot 1.0 (+https://api.slack.com/robots)', 'Content-Length': '948', 'Accept': '*/*', 'Accept-Encoding': 'gzip,deflate', 'Content-Type': 'application/json', 'X-Forwarded-For': '54.172.255.19', 'X-Forwarded-Host': '7a15-220-85-91-47.ngrok-free.app', 'X-Forwarded-Proto': 'https', 'X-Slack-Request-Timestamp': '1736840892', 'X-Slack-Retry-Num': '1', 'X-Slack-Retry-Reason': 'http_error', 'X-Slack-Signature': 'v0=f0ceb7a3db55820c861ad76a7e341f9afffe53a34984b51ec44532165d99dd17'}
+2025-01-14 16:48:13,124 - DEBUG - Body: {"token":"fvnpCcQj3ngFfGr8ODhEPEAJ","team_id":"T01EQ5VAYA2","context_team_id":"T01EQ5VAYA2","context_enterprise_id":null,"api_app_id":"A088J1965RR","event":{"user":"U054JK0RHL3","type":"message","ts":"1736840891.743219","client_msg_id":"77ade304-8c2d-49f7-b263-4c92f9822115","text":"hello","team":"T01EQ5VAYA2","thread_ts":"1736840877.899059","parent_user_id":"U088J5MRCRZ","blocks":[{"type":"rich_text","block_id":"ZL1yL","elements":[{"type":"rich_text_section","elements":[{"type":"text","text":"hello"}]}]}],"channel":"D088J8BTTGA","event_ts":"1736840891.743219","channel_type":"im"},"type":"event_callback","event_id":"Ev088J8CP43U","event_time":1736840891,"authorizations":[{"enterprise_id":null,"team_id":"T01EQ5VAYA2","user_id":"U088J5MRCRZ","is_bot":true,"is_enterprise_install":false}],"is_ext_shared_channel":false,"event_context":"4-eyJldCI6Im1lc3NhZ2UiLCJ0aWQiOiJUMDFFUTVWQVlBMiIsImFpZCI6IkEwODhKMTk2NVJSIiwiY2lkIjoiRDA4OEo4QlRUR0EifQ"}
+2025-01-14 16:48:13,124 - DEBUG - URL: http://7a15-220-85-91-47.ngrok-free.app/slack/events
+2025-01-14 16:48:13,124 - DEBUG - Method: POST
+2025-01-14 16:48:13,124 - INFO - Received request to /slack/events
+2025-01-14 16:48:13,125 - DEBUG - Request data: {'token': 'fvnpCcQj3ngFfGr8ODhEPEAJ', 'team_id': 'T01EQ5VAYA2', 'context_team_id': 'T01EQ5VAYA2', 'context_enterprise_id': None, 'api_app_id': 'A088J1965RR', 'event': {'user': 'U054JK0RHL3', 'type': 'message', 'ts': '1736840891.743219', 'client_msg_id': '77ade304-8c2d-49f7-b263-4c92f9822115', 'text': 'hello', 'team': 'T01EQ5VAYA2', 'thread_ts': '1736840877.899059', 'parent_user_id': 'U088J5MRCRZ', 'blocks': [{'type': 'rich_text', 'block_id': 'ZL1yL', 'elements': [{'type': 'rich_text_section', 'elements': [{'type': 'text', 'text': 'hello'}]}]}], 'channel': 'D088J8BTTGA', 'event_ts': '1736840891.743219', 'channel_type': 'im'}, 'type': 'event_callback', 'event_id': 'Ev088J8CP43U', 'event_time': 1736840891, 'authorizations': [{'enterprise_id': None, 'team_id': 'T01EQ5VAYA2', 'user_id': 'U088J5MRCRZ', 'is_bot': True, 'is_enterprise_install': False}], 'is_ext_shared_channel': False, 'event_context': '4-eyJldCI6Im1lc3NhZ2UiLCJ0aWQiOiJUMDFFUTVWQVlBMiIsImFpZCI6IkEwODhKMTk2NVJSIiwiY2lkIjoiRDA4OEo4QlRUR0EifQ'}
+2025-01-14 16:48:13,125 - DEBUG - Applying slack_bolt.middleware.ssl_check.ssl_check.SslCheck
+2025-01-14 16:48:13,125 - DEBUG - Applying slack_bolt.middleware.request_verification.request_verification.RequestVerification
+2025-01-14 16:48:13,125 - INFO - Invalid request signature detected (signature: v0=f0ceb7a3db55820c861ad76a7e341f9afffe53a34984b51ec44532165d99dd17, timestamp: 1736840892, body: {"token":"fvnpCcQj3ngFfGr8ODhEPEAJ","team_id":"T01EQ5VAYA2","context_team_id":"T01EQ5VAYA2","context_enterprise_id":null,"api_app_id":"A088J1965RR","event":{"user":"U054JK0RHL3","type":"message","ts":"1736840891.743219","client_msg_id":"77ade304-8c2d-49f7-b263-4c92f9822115","text":"hello","team":"T01EQ5VAYA2","thread_ts":"1736840877.899059","parent_user_id":"U088J5MRCRZ","blocks":[{"type":"rich_text","block_id":"ZL1yL","elements":[{"type":"rich_text_section","elements":[{"type":"text","text":"hello"}]}]}],"channel":"D088J8BTTGA","event_ts":"1736840891.743219","channel_type":"im"},"type":"event_callback","event_id":"Ev088J8CP43U","event_time":1736840891,"authorizations":[{"enterprise_id":null,"team_id":"T01EQ5VAYA2","user_id":"U088J5MRCRZ","is_bot":true,"is_enterprise_install":false}],"is_ext_shared_channel":false,"event_context":"4-eyJldCI6Im1lc3NhZ2UiLCJ0aWQiOiJUMDFFUTVWQVlBMiIsImFpZCI6IkEwODhKMTk2NVJSIiwiY2lkIjoiRDA4OEo4QlRUR0EifQ"})
+2025-01-14 16:48:13,125 - INFO - Event handled successfully in 0.00 seconds
+2025-01-14 16:48:13,125 - INFO - 127.0.0.1 - - [14/Jan/2025 16:48:13] "[31m[1mPOST /slack/events HTTP/1.1[0m" 401 -
+2025-01-14 16:48:13,485 - DEBUG - Headers: {'Host': '7a15-220-85-91-47.ngrok-free.app', 'User-Agent': 'Slackbot 1.0 (+https://api.slack.com/robots)', 'Content-Length': '1876', 'Accept': '*/*', 'Accept-Encoding': 'gzip,deflate', 'Content-Type': 'application/json', 'X-Forwarded-For': '3.237.197.116', 'X-Forwarded-Host': '7a15-220-85-91-47.ngrok-free.app', 'X-Forwarded-Proto': 'https', 'X-Slack-Request-Timestamp': '1736840893', 'X-Slack-Retry-Num': '1', 'X-Slack-Retry-Reason': 'http_error', 'X-Slack-Signature': 'v0=b24fc92a763ac02e53b40198d0c9f45ab4492eb9fd1ee457dbd223cbbe6ba57a'}
+2025-01-14 16:48:13,486 - DEBUG - Body: {"token":"fvnpCcQj3ngFfGr8ODhEPEAJ","team_id":"T01EQ5VAYA2","context_team_id":"T01EQ5VAYA2","context_enterprise_id":null,"api_app_id":"A088J1965RR","event":{"type":"message","subtype":"message_changed","message":{"text":"\uc0c8 \ucc44\ud305","subtype":"assistant_app_thread","user":"U088J5MRCRZ","type":"message","edited":{"user":"U088J5MRCRZ","ts":"1736840892.000000"},"team":"T01EQ5VAYA2","thread_ts":"1736840877.899059","reply_count":1,"reply_users_count":1,"latest_reply":"1736840891.743219","reply_users":["U054JK0RHL3"],"is_locked":false,"blocks":[{"type":"rich_text","block_id":"L5\/","elements":[{"type":"rich_text_section","elements":[{"type":"text","text":"\uc0c8 \ucc44\ud305"}]}]}],"assistant_app_thread":{"title":"hello","title_blocks":[{"type":"rich_text","block_id":"tKxD","elements":[{"type":"rich_text_section","elements":[{"type":"text","text":"hello"}]}]}],"artifacts":[],"context":{}},"ts":"1736840877.899059"},"previous_message":{"text":"\uc0c8 \ucc44\ud305","subtype":"assistant_app_thread","user":"U088J5MRCRZ","type":"message","ts":"1736840877.899059","team":"T01EQ5VAYA2","thread_ts":"1736840877.899059","reply_count":1,"reply_users_count":1,"latest_reply":"1736840891.743219","reply_users":["U054JK0RHL3"],"is_locked":false,"blocks":[{"type":"rich_text","block_id":"=pi","elements":[{"type":"rich_text_section","elements":[{"type":"text","text":"\uc0c8 \ucc44\ud305"}]}]}]},"channel":"D088J8BTTGA","hidden":true,"ts":"1736840892.000200","event_ts":"1736840892.000200","channel_type":"im"},"type":"event_callback","event_id":"Ev089732663S","event_time":1736840892,"authorizations":[{"enterprise_id":null,"team_id":"T01EQ5VAYA2","user_id":"U088J5MRCRZ","is_bot":true,"is_enterprise_install":false}],"is_ext_shared_channel":false,"event_context":"4-eyJldCI6Im1lc3NhZ2UiLCJ0aWQiOiJUMDFFUTVWQVlBMiIsImFpZCI6IkEwODhKMTk2NVJSIiwiY2lkIjoiRDA4OEo4QlRUR0EifQ"}
+2025-01-14 16:48:13,486 - DEBUG - URL: http://7a15-220-85-91-47.ngrok-free.app/slack/events
+2025-01-14 16:48:13,486 - DEBUG - Method: POST
+2025-01-14 16:48:13,486 - INFO - Received request to /slack/events
+2025-01-14 16:48:13,487 - DEBUG - Request data: {'token': 'fvnpCcQj3ngFfGr8ODhEPEAJ', 'team_id': 'T01EQ5VAYA2', 'context_team_id': 'T01EQ5VAYA2', 'context_enterprise_id': None, 'api_app_id': 'A088J1965RR', 'event': {'type': 'message', 'subtype': 'message_changed', 'message': {'text': '새 채팅', 'subtype': 'assistant_app_thread', 'user': 'U088J5MRCRZ', 'type': 'message', 'edited': {'user': 'U088J5MRCRZ', 'ts': '1736840892.000000'}, 'team': 'T01EQ5VAYA2', 'thread_ts': '1736840877.899059', 'reply_count': 1, 'reply_users_count': 1, 'latest_reply': '1736840891.743219', 'reply_users': ['U054JK0RHL3'], 'is_locked': False, 'blocks': [{'type': 'rich_text', 'block_id': 'L5/', 'elements': [{'type': 'rich_text_section', 'elements': [{'type': 'text', 'text': '새 채팅'}]}]}], 'assistant_app_thread': {'title': 'hello', 'title_blocks': [{'type': 'rich_text', 'block_id': 'tKxD', 'elements': [{'type': 'rich_text_section', 'elements': [{'type': 'text', 'text': 'hello'}]}]}], 'artifacts': [], 'context': {}}, 'ts': '1736840877.899059'}, 'previous_message': {'text': '새 채팅', 'subtype': 'assistant_app_thread', 'user': 'U088J5MRCRZ', 'type': 'message', 'ts': '1736840877.899059', 'team': 'T01EQ5VAYA2', 'thread_ts': '1736840877.899059', 'reply_count': 1, 'reply_users_count': 1, 'latest_reply': '1736840891.743219', 'reply_users': ['U054JK0RHL3'], 'is_locked': False, 'blocks': [{'type': 'rich_text', 'block_id': '=pi', 'elements': [{'type': 'rich_text_section', 'elements': [{'type': 'text', 'text': '새 채팅'}]}]}]}, 'channel': 'D088J8BTTGA', 'hidden': True, 'ts': '1736840892.000200', 'event_ts': '1736840892.000200', 'channel_type': 'im'}, 'type': 'event_callback', 'event_id': 'Ev089732663S', 'event_time': 1736840892, 'authorizations': [{'enterprise_id': None, 'team_id': 'T01EQ5VAYA2', 'user_id': 'U088J5MRCRZ', 'is_bot': True, 'is_enterprise_install': False}], 'is_ext_shared_channel': False, 'event_context': '4-eyJldCI6Im1lc3NhZ2UiLCJ0aWQiOiJUMDFFUTVWQVlBMiIsImFpZCI6IkEwODhKMTk2NVJSIiwiY2lkIjoiRDA4OEo4QlRUR0EifQ'}
+2025-01-14 16:48:13,489 - DEBUG - Applying slack_bolt.middleware.ssl_check.ssl_check.SslCheck
+2025-01-14 16:48:13,489 - DEBUG - Applying slack_bolt.middleware.request_verification.request_verification.RequestVerification
+2025-01-14 16:48:13,489 - INFO - Invalid request signature detected (signature: v0=b24fc92a763ac02e53b40198d0c9f45ab4492eb9fd1ee457dbd223cbbe6ba57a, timestamp: 1736840893, body: {"token":"fvnpCcQj3ngFfGr8ODhEPEAJ","team_id":"T01EQ5VAYA2","context_team_id":"T01EQ5VAYA2","context_enterprise_id":null,"api_app_id":"A088J1965RR","event":{"type":"message","subtype":"message_changed","message":{"text":"\uc0c8 \ucc44\ud305","subtype":"assistant_app_thread","user":"U088J5MRCRZ","type":"message","edited":{"user":"U088J5MRCRZ","ts":"1736840892.000000"},"team":"T01EQ5VAYA2","thread_ts":"1736840877.899059","reply_count":1,"reply_users_count":1,"latest_reply":"1736840891.743219","reply_users":["U054JK0RHL3"],"is_locked":false,"blocks":[{"type":"rich_text","block_id":"L5\/","elements":[{"type":"rich_text_section","elements":[{"type":"text","text":"\uc0c8 \ucc44\ud305"}]}]}],"assistant_app_thread":{"title":"hello","title_blocks":[{"type":"rich_text","block_id":"tKxD","elements":[{"type":"rich_text_section","elements":[{"type":"text","text":"hello"}]}]}],"artifacts":[],"context":{}},"ts":"1736840877.899059"},"previous_message":{"text":"\uc0c8 \ucc44\ud305","subtype":"assistant_app_thread","user":"U088J5MRCRZ","type":"message","ts":"1736840877.899059","team":"T01EQ5VAYA2","thread_ts":"1736840877.899059","reply_count":1,"reply_users_count":1,"latest_reply":"1736840891.743219","reply_users":["U054JK0RHL3"],"is_locked":false,"blocks":[{"type":"rich_text","block_id":"=pi","elements":[{"type":"rich_text_section","elements":[{"type":"text","text":"\uc0c8 \ucc44\ud305"}]}]}]},"channel":"D088J8BTTGA","hidden":true,"ts":"1736840892.000200","event_ts":"1736840892.000200","channel_type":"im"},"type":"event_callback","event_id":"Ev089732663S","event_time":1736840892,"authorizations":[{"enterprise_id":null,"team_id":"T01EQ5VAYA2","user_id":"U088J5MRCRZ","is_bot":true,"is_enterprise_install":false}],"is_ext_shared_channel":false,"event_context":"4-eyJldCI6Im1lc3NhZ2UiLCJ0aWQiOiJUMDFFUTVWQVlBMiIsImFpZCI6IkEwODhKMTk2NVJSIiwiY2lkIjoiRDA4OEo4QlRUR0EifQ"})
+2025-01-14 16:48:13,489 - INFO - Event handled successfully in 0.00 seconds
+2025-01-14 16:48:13,489 - INFO - 127.0.0.1 - - [14/Jan/2025 16:48:13] "[31m[1mPOST /slack/events HTTP/1.1[0m" 401 -
+2025-01-14 16:48:32,541 - DEBUG - Headers: {'Host': '7a15-220-85-91-47.ngrok-free.app', 'User-Agent': 'Slackbot 1.0 (+https://api.slack.com/robots)', 'Content-Length': '966', 'Accept': '*/*', 'Accept-Encoding': 'gzip,deflate', 'Content-Type': 'application/json', 'X-Forwarded-For': '204.236.213.188', 'X-Forwarded-Host': '7a15-220-85-91-47.ngrok-free.app', 'X-Forwarded-Proto': 'https', 'X-Slack-Request-Timestamp': '1736840912', 'X-Slack-Signature': 'v0=3741cd0eacfb9c0f52d7e538ff05dfc567d3073e40297cca8f91a0ad03d811b3'}
+2025-01-14 16:48:32,542 - DEBUG - Body: {"token":"fvnpCcQj3ngFfGr8ODhEPEAJ","team_id":"T01EQ5VAYA2","context_team_id":"T01EQ5VAYA2","context_enterprise_id":null,"api_app_id":"A088J1965RR","event":{"user":"U054JK0RHL3","type":"message","ts":"1736840911.617279","client_msg_id":"91cc0694-1da7-471b-ade2-97715e827f7a","text":"connect-github","team":"T01EQ5VAYA2","thread_ts":"1736840877.899059","parent_user_id":"U088J5MRCRZ","blocks":[{"type":"rich_text","block_id":"Is9uP","elements":[{"type":"rich_text_section","elements":[{"type":"text","text":"connect-github"}]}]}],"channel":"D088J8BTTGA","event_ts":"1736840911.617279","channel_type":"im"},"type":"event_callback","event_id":"Ev088BKR346S","event_time":1736840911,"authorizations":[{"enterprise_id":null,"team_id":"T01EQ5VAYA2","user_id":"U088J5MRCRZ","is_bot":true,"is_enterprise_install":false}],"is_ext_shared_channel":false,"event_context":"4-eyJldCI6Im1lc3NhZ2UiLCJ0aWQiOiJUMDFFUTVWQVlBMiIsImFpZCI6IkEwODhKMTk2NVJSIiwiY2lkIjoiRDA4OEo4QlRUR0EifQ"}
+2025-01-14 16:48:32,542 - DEBUG - URL: http://7a15-220-85-91-47.ngrok-free.app/slack/events
+2025-01-14 16:48:32,542 - DEBUG - Method: POST
+2025-01-14 16:48:32,543 - INFO - Received request to /slack/events
+2025-01-14 16:48:32,543 - DEBUG - Request data: {'token': 'fvnpCcQj3ngFfGr8ODhEPEAJ', 'team_id': 'T01EQ5VAYA2', 'context_team_id': 'T01EQ5VAYA2', 'context_enterprise_id': None, 'api_app_id': 'A088J1965RR', 'event': {'user': 'U054JK0RHL3', 'type': 'message', 'ts': '1736840911.617279', 'client_msg_id': '91cc0694-1da7-471b-ade2-97715e827f7a', 'text': 'connect-github', 'team': 'T01EQ5VAYA2', 'thread_ts': '1736840877.899059', 'parent_user_id': 'U088J5MRCRZ', 'blocks': [{'type': 'rich_text', 'block_id': 'Is9uP', 'elements': [{'type': 'rich_text_section', 'elements': [{'type': 'text', 'text': 'connect-github'}]}]}], 'channel': 'D088J8BTTGA', 'event_ts': '1736840911.617279', 'channel_type': 'im'}, 'type': 'event_callback', 'event_id': 'Ev088BKR346S', 'event_time': 1736840911, 'authorizations': [{'enterprise_id': None, 'team_id': 'T01EQ5VAYA2', 'user_id': 'U088J5MRCRZ', 'is_bot': True, 'is_enterprise_install': False}], 'is_ext_shared_channel': False, 'event_context': '4-eyJldCI6Im1lc3NhZ2UiLCJ0aWQiOiJUMDFFUTVWQVlBMiIsImFpZCI6IkEwODhKMTk2NVJSIiwiY2lkIjoiRDA4OEo4QlRUR0EifQ'}
+2025-01-14 16:48:32,543 - DEBUG - Applying slack_bolt.middleware.ssl_check.ssl_check.SslCheck
+2025-01-14 16:48:32,543 - DEBUG - Applying slack_bolt.middleware.request_verification.request_verification.RequestVerification
+2025-01-14 16:48:32,543 - INFO - Invalid request signature detected (signature: v0=3741cd0eacfb9c0f52d7e538ff05dfc567d3073e40297cca8f91a0ad03d811b3, timestamp: 1736840912, body: {"token":"fvnpCcQj3ngFfGr8ODhEPEAJ","team_id":"T01EQ5VAYA2","context_team_id":"T01EQ5VAYA2","context_enterprise_id":null,"api_app_id":"A088J1965RR","event":{"user":"U054JK0RHL3","type":"message","ts":"1736840911.617279","client_msg_id":"91cc0694-1da7-471b-ade2-97715e827f7a","text":"connect-github","team":"T01EQ5VAYA2","thread_ts":"1736840877.899059","parent_user_id":"U088J5MRCRZ","blocks":[{"type":"rich_text","block_id":"Is9uP","elements":[{"type":"rich_text_section","elements":[{"type":"text","text":"connect-github"}]}]}],"channel":"D088J8BTTGA","event_ts":"1736840911.617279","channel_type":"im"},"type":"event_callback","event_id":"Ev088BKR346S","event_time":1736840911,"authorizations":[{"enterprise_id":null,"team_id":"T01EQ5VAYA2","user_id":"U088J5MRCRZ","is_bot":true,"is_enterprise_install":false}],"is_ext_shared_channel":false,"event_context":"4-eyJldCI6Im1lc3NhZ2UiLCJ0aWQiOiJUMDFFUTVWQVlBMiIsImFpZCI6IkEwODhKMTk2NVJSIiwiY2lkIjoiRDA4OEo4QlRUR0EifQ"})
+2025-01-14 16:48:32,544 - INFO - Event handled successfully in 0.00 seconds
+2025-01-14 16:48:32,544 - INFO - 127.0.0.1 - - [14/Jan/2025 16:48:32] "[31m[1mPOST /slack/events HTTP/1.1[0m" 401 -
+2025-01-14 16:48:33,041 - DEBUG - Headers: {'Host': '7a15-220-85-91-47.ngrok-free.app', 'User-Agent': 'Slackbot 1.0 (+https://api.slack.com/robots)', 'Content-Length': '966', 'Accept': '*/*', 'Accept-Encoding': 'gzip,deflate', 'Content-Type': 'application/json', 'X-Forwarded-For': '3.89.64.136', 'X-Forwarded-Host': '7a15-220-85-91-47.ngrok-free.app', 'X-Forwarded-Proto': 'https', 'X-Slack-Request-Timestamp': '1736840912', 'X-Slack-Retry-Num': '1', 'X-Slack-Retry-Reason': 'http_error', 'X-Slack-Signature': 'v0=3741cd0eacfb9c0f52d7e538ff05dfc567d3073e40297cca8f91a0ad03d811b3'}
+2025-01-14 16:48:33,041 - DEBUG - Body: {"token":"fvnpCcQj3ngFfGr8ODhEPEAJ","team_id":"T01EQ5VAYA2","context_team_id":"T01EQ5VAYA2","context_enterprise_id":null,"api_app_id":"A088J1965RR","event":{"user":"U054JK0RHL3","type":"message","ts":"1736840911.617279","client_msg_id":"91cc0694-1da7-471b-ade2-97715e827f7a","text":"connect-github","team":"T01EQ5VAYA2","thread_ts":"1736840877.899059","parent_user_id":"U088J5MRCRZ","blocks":[{"type":"rich_text","block_id":"Is9uP","elements":[{"type":"rich_text_section","elements":[{"type":"text","text":"connect-github"}]}]}],"channel":"D088J8BTTGA","event_ts":"1736840911.617279","channel_type":"im"},"type":"event_callback","event_id":"Ev088BKR346S","event_time":1736840911,"authorizations":[{"enterprise_id":null,"team_id":"T01EQ5VAYA2","user_id":"U088J5MRCRZ","is_bot":true,"is_enterprise_install":false}],"is_ext_shared_channel":false,"event_context":"4-eyJldCI6Im1lc3NhZ2UiLCJ0aWQiOiJUMDFFUTVWQVlBMiIsImFpZCI6IkEwODhKMTk2NVJSIiwiY2lkIjoiRDA4OEo4QlRUR0EifQ"}
+2025-01-14 16:48:33,042 - DEBUG - URL: http://7a15-220-85-91-47.ngrok-free.app/slack/events
+2025-01-14 16:48:33,042 - DEBUG - Method: POST
+2025-01-14 16:48:33,042 - INFO - Received request to /slack/events
+2025-01-14 16:48:33,042 - DEBUG - Request data: {'token': 'fvnpCcQj3ngFfGr8ODhEPEAJ', 'team_id': 'T01EQ5VAYA2', 'context_team_id': 'T01EQ5VAYA2', 'context_enterprise_id': None, 'api_app_id': 'A088J1965RR', 'event': {'user': 'U054JK0RHL3', 'type': 'message', 'ts': '1736840911.617279', 'client_msg_id': '91cc0694-1da7-471b-ade2-97715e827f7a', 'text': 'connect-github', 'team': 'T01EQ5VAYA2', 'thread_ts': '1736840877.899059', 'parent_user_id': 'U088J5MRCRZ', 'blocks': [{'type': 'rich_text', 'block_id': 'Is9uP', 'elements': [{'type': 'rich_text_section', 'elements': [{'type': 'text', 'text': 'connect-github'}]}]}], 'channel': 'D088J8BTTGA', 'event_ts': '1736840911.617279', 'channel_type': 'im'}, 'type': 'event_callback', 'event_id': 'Ev088BKR346S', 'event_time': 1736840911, 'authorizations': [{'enterprise_id': None, 'team_id': 'T01EQ5VAYA2', 'user_id': 'U088J5MRCRZ', 'is_bot': True, 'is_enterprise_install': False}], 'is_ext_shared_channel': False, 'event_context': '4-eyJldCI6Im1lc3NhZ2UiLCJ0aWQiOiJUMDFFUTVWQVlBMiIsImFpZCI6IkEwODhKMTk2NVJSIiwiY2lkIjoiRDA4OEo4QlRUR0EifQ'}
+2025-01-14 16:48:33,042 - DEBUG - Applying slack_bolt.middleware.ssl_check.ssl_check.SslCheck
+2025-01-14 16:48:33,042 - DEBUG - Applying slack_bolt.middleware.request_verification.request_verification.RequestVerification
+2025-01-14 16:48:33,042 - INFO - Invalid request signature detected (signature: v0=3741cd0eacfb9c0f52d7e538ff05dfc567d3073e40297cca8f91a0ad03d811b3, timestamp: 1736840912, body: {"token":"fvnpCcQj3ngFfGr8ODhEPEAJ","team_id":"T01EQ5VAYA2","context_team_id":"T01EQ5VAYA2","context_enterprise_id":null,"api_app_id":"A088J1965RR","event":{"user":"U054JK0RHL3","type":"message","ts":"1736840911.617279","client_msg_id":"91cc0694-1da7-471b-ade2-97715e827f7a","text":"connect-github","team":"T01EQ5VAYA2","thread_ts":"1736840877.899059","parent_user_id":"U088J5MRCRZ","blocks":[{"type":"rich_text","block_id":"Is9uP","elements":[{"type":"rich_text_section","elements":[{"type":"text","text":"connect-github"}]}]}],"channel":"D088J8BTTGA","event_ts":"1736840911.617279","channel_type":"im"},"type":"event_callback","event_id":"Ev088BKR346S","event_time":1736840911,"authorizations":[{"enterprise_id":null,"team_id":"T01EQ5VAYA2","user_id":"U088J5MRCRZ","is_bot":true,"is_enterprise_install":false}],"is_ext_shared_channel":false,"event_context":"4-eyJldCI6Im1lc3NhZ2UiLCJ0aWQiOiJUMDFFUTVWQVlBMiIsImFpZCI6IkEwODhKMTk2NVJSIiwiY2lkIjoiRDA4OEo4QlRUR0EifQ"})
+2025-01-14 16:48:33,043 - INFO - Event handled successfully in 0.00 seconds
+2025-01-14 16:48:33,043 - INFO - 127.0.0.1 - - [14/Jan/2025 16:48:33] "[31m[1mPOST /slack/events HTTP/1.1[0m" 401 -
+2025-01-14 16:48:34,991 - DEBUG - Headers: {'Host': '7a15-220-85-91-47.ngrok-free.app', 'User-Agent': 'Slackbot 1.0 (+https://api.slack.com/robots)', 'Content-Length': '966', 'Accept': '*/*', 'Accept-Encoding': 'gzip,deflate', 'Content-Type': 'application/json', 'X-Forwarded-For': '3.231.24.232', 'X-Forwarded-Host': '7a15-220-85-91-47.ngrok-free.app', 'X-Forwarded-Proto': 'https', 'X-Slack-Request-Timestamp': '1736840914', 'X-Slack-Signature': 'v0=580332782ea454d65c36ceac4c3e9b0a9e3ebe590cc39bf16e25216d69f6725e'}
+2025-01-14 16:48:34,992 - DEBUG - Body: {"token":"fvnpCcQj3ngFfGr8ODhEPEAJ","team_id":"T01EQ5VAYA2","context_team_id":"T01EQ5VAYA2","context_enterprise_id":null,"api_app_id":"A088J1965RR","event":{"user":"U054JK0RHL3","type":"message","ts":"1736840914.155199","client_msg_id":"9231e7f7-8ba0-435d-b004-1e49528417e2","text":"connect-github","team":"T01EQ5VAYA2","thread_ts":"1736840877.899059","parent_user_id":"U088J5MRCRZ","blocks":[{"type":"rich_text","block_id":"Is9uP","elements":[{"type":"rich_text_section","elements":[{"type":"text","text":"connect-github"}]}]}],"channel":"D088J8BTTGA","event_ts":"1736840914.155199","channel_type":"im"},"type":"event_callback","event_id":"Ev088WUZDQJD","event_time":1736840914,"authorizations":[{"enterprise_id":null,"team_id":"T01EQ5VAYA2","user_id":"U088J5MRCRZ","is_bot":true,"is_enterprise_install":false}],"is_ext_shared_channel":false,"event_context":"4-eyJldCI6Im1lc3NhZ2UiLCJ0aWQiOiJUMDFFUTVWQVlBMiIsImFpZCI6IkEwODhKMTk2NVJSIiwiY2lkIjoiRDA4OEo4QlRUR0EifQ"}
+2025-01-14 16:48:34,992 - DEBUG - URL: http://7a15-220-85-91-47.ngrok-free.app/slack/events
+2025-01-14 16:48:34,992 - DEBUG - Method: POST
+2025-01-14 16:48:34,992 - INFO - Received request to /slack/events
+2025-01-14 16:48:34,992 - DEBUG - Request data: {'token': 'fvnpCcQj3ngFfGr8ODhEPEAJ', 'team_id': 'T01EQ5VAYA2', 'context_team_id': 'T01EQ5VAYA2', 'context_enterprise_id': None, 'api_app_id': 'A088J1965RR', 'event': {'user': 'U054JK0RHL3', 'type': 'message', 'ts': '1736840914.155199', 'client_msg_id': '9231e7f7-8ba0-435d-b004-1e49528417e2', 'text': 'connect-github', 'team': 'T01EQ5VAYA2', 'thread_ts': '1736840877.899059', 'parent_user_id': 'U088J5MRCRZ', 'blocks': [{'type': 'rich_text', 'block_id': 'Is9uP', 'elements': [{'type': 'rich_text_section', 'elements': [{'type': 'text', 'text': 'connect-github'}]}]}], 'channel': 'D088J8BTTGA', 'event_ts': '1736840914.155199', 'channel_type': 'im'}, 'type': 'event_callback', 'event_id': 'Ev088WUZDQJD', 'event_time': 1736840914, 'authorizations': [{'enterprise_id': None, 'team_id': 'T01EQ5VAYA2', 'user_id': 'U088J5MRCRZ', 'is_bot': True, 'is_enterprise_install': False}], 'is_ext_shared_channel': False, 'event_context': '4-eyJldCI6Im1lc3NhZ2UiLCJ0aWQiOiJUMDFFUTVWQVlBMiIsImFpZCI6IkEwODhKMTk2NVJSIiwiY2lkIjoiRDA4OEo4QlRUR0EifQ'}
+2025-01-14 16:48:34,993 - DEBUG - Applying slack_bolt.middleware.ssl_check.ssl_check.SslCheck
+2025-01-14 16:48:34,993 - DEBUG - Applying slack_bolt.middleware.request_verification.request_verification.RequestVerification
+2025-01-14 16:48:34,993 - INFO - Invalid request signature detected (signature: v0=580332782ea454d65c36ceac4c3e9b0a9e3ebe590cc39bf16e25216d69f6725e, timestamp: 1736840914, body: {"token":"fvnpCcQj3ngFfGr8ODhEPEAJ","team_id":"T01EQ5VAYA2","context_team_id":"T01EQ5VAYA2","context_enterprise_id":null,"api_app_id":"A088J1965RR","event":{"user":"U054JK0RHL3","type":"message","ts":"1736840914.155199","client_msg_id":"9231e7f7-8ba0-435d-b004-1e49528417e2","text":"connect-github","team":"T01EQ5VAYA2","thread_ts":"1736840877.899059","parent_user_id":"U088J5MRCRZ","blocks":[{"type":"rich_text","block_id":"Is9uP","elements":[{"type":"rich_text_section","elements":[{"type":"text","text":"connect-github"}]}]}],"channel":"D088J8BTTGA","event_ts":"1736840914.155199","channel_type":"im"},"type":"event_callback","event_id":"Ev088WUZDQJD","event_time":1736840914,"authorizations":[{"enterprise_id":null,"team_id":"T01EQ5VAYA2","user_id":"U088J5MRCRZ","is_bot":true,"is_enterprise_install":false}],"is_ext_shared_channel":false,"event_context":"4-eyJldCI6Im1lc3NhZ2UiLCJ0aWQiOiJUMDFFUTVWQVlBMiIsImFpZCI6IkEwODhKMTk2NVJSIiwiY2lkIjoiRDA4OEo4QlRUR0EifQ"})
+2025-01-14 16:48:34,993 - INFO - Event handled successfully in 0.00 seconds
+2025-01-14 16:48:34,993 - INFO - 127.0.0.1 - - [14/Jan/2025 16:48:34] "[31m[1mPOST /slack/events HTTP/1.1[0m" 401 -
+2025-01-14 16:48:35,494 - DEBUG - Headers: {'Host': '7a15-220-85-91-47.ngrok-free.app', 'User-Agent': 'Slackbot 1.0 (+https://api.slack.com/robots)', 'Content-Length': '966', 'Accept': '*/*', 'Accept-Encoding': 'gzip,deflate', 'Content-Type': 'application/json', 'X-Forwarded-For': '44.222.196.142', 'X-Forwarded-Host': '7a15-220-85-91-47.ngrok-free.app', 'X-Forwarded-Proto': 'https', 'X-Slack-Request-Timestamp': '1736840915', 'X-Slack-Retry-Num': '1', 'X-Slack-Retry-Reason': 'http_error', 'X-Slack-Signature': 'v0=4a180250fa767588777bb3e26494211bd57c0a995bbed94b1748a69e6da2620b'}
+2025-01-14 16:48:35,495 - DEBUG - Body: {"token":"fvnpCcQj3ngFfGr8ODhEPEAJ","team_id":"T01EQ5VAYA2","context_team_id":"T01EQ5VAYA2","context_enterprise_id":null,"api_app_id":"A088J1965RR","event":{"user":"U054JK0RHL3","type":"message","ts":"1736840914.155199","client_msg_id":"9231e7f7-8ba0-435d-b004-1e49528417e2","text":"connect-github","team":"T01EQ5VAYA2","thread_ts":"1736840877.899059","parent_user_id":"U088J5MRCRZ","blocks":[{"type":"rich_text","block_id":"Is9uP","elements":[{"type":"rich_text_section","elements":[{"type":"text","text":"connect-github"}]}]}],"channel":"D088J8BTTGA","event_ts":"1736840914.155199","channel_type":"im"},"type":"event_callback","event_id":"Ev088WUZDQJD","event_time":1736840914,"authorizations":[{"enterprise_id":null,"team_id":"T01EQ5VAYA2","user_id":"U088J5MRCRZ","is_bot":true,"is_enterprise_install":false}],"is_ext_shared_channel":false,"event_context":"4-eyJldCI6Im1lc3NhZ2UiLCJ0aWQiOiJUMDFFUTVWQVlBMiIsImFpZCI6IkEwODhKMTk2NVJSIiwiY2lkIjoiRDA4OEo4QlRUR0EifQ"}
+2025-01-14 16:48:35,495 - DEBUG - URL: http://7a15-220-85-91-47.ngrok-free.app/slack/events
+2025-01-14 16:48:35,495 - DEBUG - Method: POST
+2025-01-14 16:48:35,495 - INFO - Received request to /slack/events
+2025-01-14 16:48:35,495 - DEBUG - Request data: {'token': 'fvnpCcQj3ngFfGr8ODhEPEAJ', 'team_id': 'T01EQ5VAYA2', 'context_team_id': 'T01EQ5VAYA2', 'context_enterprise_id': None, 'api_app_id': 'A088J1965RR', 'event': {'user': 'U054JK0RHL3', 'type': 'message', 'ts': '1736840914.155199', 'client_msg_id': '9231e7f7-8ba0-435d-b004-1e49528417e2', 'text': 'connect-github', 'team': 'T01EQ5VAYA2', 'thread_ts': '1736840877.899059', 'parent_user_id': 'U088J5MRCRZ', 'blocks': [{'type': 'rich_text', 'block_id': 'Is9uP', 'elements': [{'type': 'rich_text_section', 'elements': [{'type': 'text', 'text': 'connect-github'}]}]}], 'channel': 'D088J8BTTGA', 'event_ts': '1736840914.155199', 'channel_type': 'im'}, 'type': 'event_callback', 'event_id': 'Ev088WUZDQJD', 'event_time': 1736840914, 'authorizations': [{'enterprise_id': None, 'team_id': 'T01EQ5VAYA2', 'user_id': 'U088J5MRCRZ', 'is_bot': True, 'is_enterprise_install': False}], 'is_ext_shared_channel': False, 'event_context': '4-eyJldCI6Im1lc3NhZ2UiLCJ0aWQiOiJUMDFFUTVWQVlBMiIsImFpZCI6IkEwODhKMTk2NVJSIiwiY2lkIjoiRDA4OEo4QlRUR0EifQ'}
+2025-01-14 16:48:35,496 - DEBUG - Applying slack_bolt.middleware.ssl_check.ssl_check.SslCheck
+2025-01-14 16:48:35,496 - DEBUG - Applying slack_bolt.middleware.request_verification.request_verification.RequestVerification
+2025-01-14 16:48:35,496 - INFO - Invalid request signature detected (signature: v0=4a180250fa767588777bb3e26494211bd57c0a995bbed94b1748a69e6da2620b, timestamp: 1736840915, body: {"token":"fvnpCcQj3ngFfGr8ODhEPEAJ","team_id":"T01EQ5VAYA2","context_team_id":"T01EQ5VAYA2","context_enterprise_id":null,"api_app_id":"A088J1965RR","event":{"user":"U054JK0RHL3","type":"message","ts":"1736840914.155199","client_msg_id":"9231e7f7-8ba0-435d-b004-1e49528417e2","text":"connect-github","team":"T01EQ5VAYA2","thread_ts":"1736840877.899059","parent_user_id":"U088J5MRCRZ","blocks":[{"type":"rich_text","block_id":"Is9uP","elements":[{"type":"rich_text_section","elements":[{"type":"text","text":"connect-github"}]}]}],"channel":"D088J8BTTGA","event_ts":"1736840914.155199","channel_type":"im"},"type":"event_callback","event_id":"Ev088WUZDQJD","event_time":1736840914,"authorizations":[{"enterprise_id":null,"team_id":"T01EQ5VAYA2","user_id":"U088J5MRCRZ","is_bot":true,"is_enterprise_install":false}],"is_ext_shared_channel":false,"event_context":"4-eyJldCI6Im1lc3NhZ2UiLCJ0aWQiOiJUMDFFUTVWQVlBMiIsImFpZCI6IkEwODhKMTk2NVJSIiwiY2lkIjoiRDA4OEo4QlRUR0EifQ"})
+2025-01-14 16:48:35,496 - INFO - Event handled successfully in 0.00 seconds
+2025-01-14 16:48:35,496 - INFO - 127.0.0.1 - - [14/Jan/2025 16:48:35] "[31m[1mPOST /slack/events HTTP/1.1[0m" 401 -
+2025-01-14 16:49:13,901 - DEBUG - Headers: {'Host': '7a15-220-85-91-47.ngrok-free.app', 'User-Agent': 'Slackbot 1.0 (+https://api.slack.com/robots)', 'Content-Length': '948', 'Accept': '*/*', 'Accept-Encoding': 'gzip,deflate', 'Content-Type': 'application/json', 'X-Forwarded-For': '3.238.181.177', 'X-Forwarded-Host': '7a15-220-85-91-47.ngrok-free.app', 'X-Forwarded-Proto': 'https', 'X-Slack-Request-Timestamp': '1736840953', 'X-Slack-Retry-Num': '2', 'X-Slack-Retry-Reason': 'http_error', 'X-Slack-Signature': 'v0=7578c60b0b57ddfc58b601f164c248be88e2c32e6a302abf6e5a6a169a688069'}
+2025-01-14 16:49:13,901 - DEBUG - Body: {"token":"fvnpCcQj3ngFfGr8ODhEPEAJ","team_id":"T01EQ5VAYA2","context_team_id":"T01EQ5VAYA2","context_enterprise_id":null,"api_app_id":"A088J1965RR","event":{"user":"U054JK0RHL3","type":"message","ts":"1736840891.743219","client_msg_id":"77ade304-8c2d-49f7-b263-4c92f9822115","text":"hello","team":"T01EQ5VAYA2","thread_ts":"1736840877.899059","parent_user_id":"U088J5MRCRZ","blocks":[{"type":"rich_text","block_id":"ZL1yL","elements":[{"type":"rich_text_section","elements":[{"type":"text","text":"hello"}]}]}],"channel":"D088J8BTTGA","event_ts":"1736840891.743219","channel_type":"im"},"type":"event_callback","event_id":"Ev088J8CP43U","event_time":1736840891,"authorizations":[{"enterprise_id":null,"team_id":"T01EQ5VAYA2","user_id":"U088J5MRCRZ","is_bot":true,"is_enterprise_install":false}],"is_ext_shared_channel":false,"event_context":"4-eyJldCI6Im1lc3NhZ2UiLCJ0aWQiOiJUMDFFUTVWQVlBMiIsImFpZCI6IkEwODhKMTk2NVJSIiwiY2lkIjoiRDA4OEo4QlRUR0EifQ"}
+2025-01-14 16:49:13,901 - DEBUG - URL: http://7a15-220-85-91-47.ngrok-free.app/slack/events
+2025-01-14 16:49:13,901 - DEBUG - Method: POST
+2025-01-14 16:49:13,901 - INFO - Received request to /slack/events
+2025-01-14 16:49:13,901 - DEBUG - Request data: {'token': 'fvnpCcQj3ngFfGr8ODhEPEAJ', 'team_id': 'T01EQ5VAYA2', 'context_team_id': 'T01EQ5VAYA2', 'context_enterprise_id': None, 'api_app_id': 'A088J1965RR', 'event': {'user': 'U054JK0RHL3', 'type': 'message', 'ts': '1736840891.743219', 'client_msg_id': '77ade304-8c2d-49f7-b263-4c92f9822115', 'text': 'hello', 'team': 'T01EQ5VAYA2', 'thread_ts': '1736840877.899059', 'parent_user_id': 'U088J5MRCRZ', 'blocks': [{'type': 'rich_text', 'block_id': 'ZL1yL', 'elements': [{'type': 'rich_text_section', 'elements': [{'type': 'text', 'text': 'hello'}]}]}], 'channel': 'D088J8BTTGA', 'event_ts': '1736840891.743219', 'channel_type': 'im'}, 'type': 'event_callback', 'event_id': 'Ev088J8CP43U', 'event_time': 1736840891, 'authorizations': [{'enterprise_id': None, 'team_id': 'T01EQ5VAYA2', 'user_id': 'U088J5MRCRZ', 'is_bot': True, 'is_enterprise_install': False}], 'is_ext_shared_channel': False, 'event_context': '4-eyJldCI6Im1lc3NhZ2UiLCJ0aWQiOiJUMDFFUTVWQVlBMiIsImFpZCI6IkEwODhKMTk2NVJSIiwiY2lkIjoiRDA4OEo4QlRUR0EifQ'}
+2025-01-14 16:49:13,901 - DEBUG - Applying slack_bolt.middleware.ssl_check.ssl_check.SslCheck
+2025-01-14 16:49:13,902 - DEBUG - Applying slack_bolt.middleware.request_verification.request_verification.RequestVerification
+2025-01-14 16:49:13,902 - INFO - Invalid request signature detected (signature: v0=7578c60b0b57ddfc58b601f164c248be88e2c32e6a302abf6e5a6a169a688069, timestamp: 1736840953, body: {"token":"fvnpCcQj3ngFfGr8ODhEPEAJ","team_id":"T01EQ5VAYA2","context_team_id":"T01EQ5VAYA2","context_enterprise_id":null,"api_app_id":"A088J1965RR","event":{"user":"U054JK0RHL3","type":"message","ts":"1736840891.743219","client_msg_id":"77ade304-8c2d-49f7-b263-4c92f9822115","text":"hello","team":"T01EQ5VAYA2","thread_ts":"1736840877.899059","parent_user_id":"U088J5MRCRZ","blocks":[{"type":"rich_text","block_id":"ZL1yL","elements":[{"type":"rich_text_section","elements":[{"type":"text","text":"hello"}]}]}],"channel":"D088J8BTTGA","event_ts":"1736840891.743219","channel_type":"im"},"type":"event_callback","event_id":"Ev088J8CP43U","event_time":1736840891,"authorizations":[{"enterprise_id":null,"team_id":"T01EQ5VAYA2","user_id":"U088J5MRCRZ","is_bot":true,"is_enterprise_install":false}],"is_ext_shared_channel":false,"event_context":"4-eyJldCI6Im1lc3NhZ2UiLCJ0aWQiOiJUMDFFUTVWQVlBMiIsImFpZCI6IkEwODhKMTk2NVJSIiwiY2lkIjoiRDA4OEo4QlRUR0EifQ"})
+2025-01-14 16:49:13,902 - INFO - Event handled successfully in 0.00 seconds
+2025-01-14 16:49:13,902 - INFO - 127.0.0.1 - - [14/Jan/2025 16:49:13] "[31m[1mPOST /slack/events HTTP/1.1[0m" 401 -
+2025-01-14 16:49:14,051 - DEBUG - Headers: {'Host': '7a15-220-85-91-47.ngrok-free.app', 'User-Agent': 'Slackbot 1.0 (+https://api.slack.com/robots)', 'Content-Length': '1876', 'Accept': '*/*', 'Accept-Encoding': 'gzip,deflate', 'Content-Type': 'application/json', 'X-Forwarded-For': '3.220.230.2', 'X-Forwarded-Host': '7a15-220-85-91-47.ngrok-free.app', 'X-Forwarded-Proto': 'https', 'X-Slack-Request-Timestamp': '1736840953', 'X-Slack-Retry-Num': '2', 'X-Slack-Retry-Reason': 'http_error', 'X-Slack-Signature': 'v0=1c080e439aee93f812c23fc8b1af7a4ba22225331be9497991271e1d773077a9'}
+2025-01-14 16:49:14,051 - DEBUG - Body: {"token":"fvnpCcQj3ngFfGr8ODhEPEAJ","team_id":"T01EQ5VAYA2","context_team_id":"T01EQ5VAYA2","context_enterprise_id":null,"api_app_id":"A088J1965RR","event":{"type":"message","subtype":"message_changed","message":{"text":"\uc0c8 \ucc44\ud305","subtype":"assistant_app_thread","user":"U088J5MRCRZ","type":"message","edited":{"user":"U088J5MRCRZ","ts":"1736840892.000000"},"team":"T01EQ5VAYA2","thread_ts":"1736840877.899059","reply_count":1,"reply_users_count":1,"latest_reply":"1736840891.743219","reply_users":["U054JK0RHL3"],"is_locked":false,"blocks":[{"type":"rich_text","block_id":"L5\/","elements":[{"type":"rich_text_section","elements":[{"type":"text","text":"\uc0c8 \ucc44\ud305"}]}]}],"assistant_app_thread":{"title":"hello","title_blocks":[{"type":"rich_text","block_id":"tKxD","elements":[{"type":"rich_text_section","elements":[{"type":"text","text":"hello"}]}]}],"artifacts":[],"context":{}},"ts":"1736840877.899059"},"previous_message":{"text":"\uc0c8 \ucc44\ud305","subtype":"assistant_app_thread","user":"U088J5MRCRZ","type":"message","ts":"1736840877.899059","team":"T01EQ5VAYA2","thread_ts":"1736840877.899059","reply_count":1,"reply_users_count":1,"latest_reply":"1736840891.743219","reply_users":["U054JK0RHL3"],"is_locked":false,"blocks":[{"type":"rich_text","block_id":"=pi","elements":[{"type":"rich_text_section","elements":[{"type":"text","text":"\uc0c8 \ucc44\ud305"}]}]}]},"channel":"D088J8BTTGA","hidden":true,"ts":"1736840892.000200","event_ts":"1736840892.000200","channel_type":"im"},"type":"event_callback","event_id":"Ev089732663S","event_time":1736840892,"authorizations":[{"enterprise_id":null,"team_id":"T01EQ5VAYA2","user_id":"U088J5MRCRZ","is_bot":true,"is_enterprise_install":false}],"is_ext_shared_channel":false,"event_context":"4-eyJldCI6Im1lc3NhZ2UiLCJ0aWQiOiJUMDFFUTVWQVlBMiIsImFpZCI6IkEwODhKMTk2NVJSIiwiY2lkIjoiRDA4OEo4QlRUR0EifQ"}
+2025-01-14 16:49:14,051 - DEBUG - URL: http://7a15-220-85-91-47.ngrok-free.app/slack/events
+2025-01-14 16:49:14,051 - DEBUG - Method: POST
+2025-01-14 16:49:14,051 - INFO - Received request to /slack/events
+2025-01-14 16:49:14,051 - DEBUG - Request data: {'token': 'fvnpCcQj3ngFfGr8ODhEPEAJ', 'team_id': 'T01EQ5VAYA2', 'context_team_id': 'T01EQ5VAYA2', 'context_enterprise_id': None, 'api_app_id': 'A088J1965RR', 'event': {'type': 'message', 'subtype': 'message_changed', 'message': {'text': '새 채팅', 'subtype': 'assistant_app_thread', 'user': 'U088J5MRCRZ', 'type': 'message', 'edited': {'user': 'U088J5MRCRZ', 'ts': '1736840892.000000'}, 'team': 'T01EQ5VAYA2', 'thread_ts': '1736840877.899059', 'reply_count': 1, 'reply_users_count': 1, 'latest_reply': '1736840891.743219', 'reply_users': ['U054JK0RHL3'], 'is_locked': False, 'blocks': [{'type': 'rich_text', 'block_id': 'L5/', 'elements': [{'type': 'rich_text_section', 'elements': [{'type': 'text', 'text': '새 채팅'}]}]}], 'assistant_app_thread': {'title': 'hello', 'title_blocks': [{'type': 'rich_text', 'block_id': 'tKxD', 'elements': [{'type': 'rich_text_section', 'elements': [{'type': 'text', 'text': 'hello'}]}]}], 'artifacts': [], 'context': {}}, 'ts': '1736840877.899059'}, 'previous_message': {'text': '새 채팅', 'subtype': 'assistant_app_thread', 'user': 'U088J5MRCRZ', 'type': 'message', 'ts': '1736840877.899059', 'team': 'T01EQ5VAYA2', 'thread_ts': '1736840877.899059', 'reply_count': 1, 'reply_users_count': 1, 'latest_reply': '1736840891.743219', 'reply_users': ['U054JK0RHL3'], 'is_locked': False, 'blocks': [{'type': 'rich_text', 'block_id': '=pi', 'elements': [{'type': 'rich_text_section', 'elements': [{'type': 'text', 'text': '새 채팅'}]}]}]}, 'channel': 'D088J8BTTGA', 'hidden': True, 'ts': '1736840892.000200', 'event_ts': '1736840892.000200', 'channel_type': 'im'}, 'type': 'event_callback', 'event_id': 'Ev089732663S', 'event_time': 1736840892, 'authorizations': [{'enterprise_id': None, 'team_id': 'T01EQ5VAYA2', 'user_id': 'U088J5MRCRZ', 'is_bot': True, 'is_enterprise_install': False}], 'is_ext_shared_channel': False, 'event_context': '4-eyJldCI6Im1lc3NhZ2UiLCJ0aWQiOiJUMDFFUTVWQVlBMiIsImFpZCI6IkEwODhKMTk2NVJSIiwiY2lkIjoiRDA4OEo4QlRUR0EifQ'}
+2025-01-14 16:49:14,052 - DEBUG - Applying slack_bolt.middleware.ssl_check.ssl_check.SslCheck
+2025-01-14 16:49:14,052 - DEBUG - Applying slack_bolt.middleware.request_verification.request_verification.RequestVerification
+2025-01-14 16:49:14,052 - INFO - Invalid request signature detected (signature: v0=1c080e439aee93f812c23fc8b1af7a4ba22225331be9497991271e1d773077a9, timestamp: 1736840953, body: {"token":"fvnpCcQj3ngFfGr8ODhEPEAJ","team_id":"T01EQ5VAYA2","context_team_id":"T01EQ5VAYA2","context_enterprise_id":null,"api_app_id":"A088J1965RR","event":{"type":"message","subtype":"message_changed","message":{"text":"\uc0c8 \ucc44\ud305","subtype":"assistant_app_thread","user":"U088J5MRCRZ","type":"message","edited":{"user":"U088J5MRCRZ","ts":"1736840892.000000"},"team":"T01EQ5VAYA2","thread_ts":"1736840877.899059","reply_count":1,"reply_users_count":1,"latest_reply":"1736840891.743219","reply_users":["U054JK0RHL3"],"is_locked":false,"blocks":[{"type":"rich_text","block_id":"L5\/","elements":[{"type":"rich_text_section","elements":[{"type":"text","text":"\uc0c8 \ucc44\ud305"}]}]}],"assistant_app_thread":{"title":"hello","title_blocks":[{"type":"rich_text","block_id":"tKxD","elements":[{"type":"rich_text_section","elements":[{"type":"text","text":"hello"}]}]}],"artifacts":[],"context":{}},"ts":"1736840877.899059"},"previous_message":{"text":"\uc0c8 \ucc44\ud305","subtype":"assistant_app_thread","user":"U088J5MRCRZ","type":"message","ts":"1736840877.899059","team":"T01EQ5VAYA2","thread_ts":"1736840877.899059","reply_count":1,"reply_users_count":1,"latest_reply":"1736840891.743219","reply_users":["U054JK0RHL3"],"is_locked":false,"blocks":[{"type":"rich_text","block_id":"=pi","elements":[{"type":"rich_text_section","elements":[{"type":"text","text":"\uc0c8 \ucc44\ud305"}]}]}]},"channel":"D088J8BTTGA","hidden":true,"ts":"1736840892.000200","event_ts":"1736840892.000200","channel_type":"im"},"type":"event_callback","event_id":"Ev089732663S","event_time":1736840892,"authorizations":[{"enterprise_id":null,"team_id":"T01EQ5VAYA2","user_id":"U088J5MRCRZ","is_bot":true,"is_enterprise_install":false}],"is_ext_shared_channel":false,"event_context":"4-eyJldCI6Im1lc3NhZ2UiLCJ0aWQiOiJUMDFFUTVWQVlBMiIsImFpZCI6IkEwODhKMTk2NVJSIiwiY2lkIjoiRDA4OEo4QlRUR0EifQ"})
+2025-01-14 16:49:14,052 - INFO - Event handled successfully in 0.00 seconds
+2025-01-14 16:49:14,052 - INFO - 127.0.0.1 - - [14/Jan/2025 16:49:14] "[31m[1mPOST /slack/events HTTP/1.1[0m" 401 -
+2025-01-14 16:49:33,694 - DEBUG - Headers: {'Host': '7a15-220-85-91-47.ngrok-free.app', 'User-Agent': 'Slackbot 1.0 (+https://api.slack.com/robots)', 'Content-Length': '966', 'Accept': '*/*', 'Accept-Encoding': 'gzip,deflate', 'Content-Type': 'application/json', 'X-Forwarded-For': '34.200.238.44', 'X-Forwarded-Host': '7a15-220-85-91-47.ngrok-free.app', 'X-Forwarded-Proto': 'https', 'X-Slack-Request-Timestamp': '1736840973', 'X-Slack-Retry-Num': '2', 'X-Slack-Retry-Reason': 'http_error', 'X-Slack-Signature': 'v0=67db7f337d55bf6fedc7db739af03a3538bd01b1eb1d6fd1bfec65ce2b80913c'}
+2025-01-14 16:49:33,694 - DEBUG - Body: {"token":"fvnpCcQj3ngFfGr8ODhEPEAJ","team_id":"T01EQ5VAYA2","context_team_id":"T01EQ5VAYA2","context_enterprise_id":null,"api_app_id":"A088J1965RR","event":{"user":"U054JK0RHL3","type":"message","ts":"1736840911.617279","client_msg_id":"91cc0694-1da7-471b-ade2-97715e827f7a","text":"connect-github","team":"T01EQ5VAYA2","thread_ts":"1736840877.899059","parent_user_id":"U088J5MRCRZ","blocks":[{"type":"rich_text","block_id":"Is9uP","elements":[{"type":"rich_text_section","elements":[{"type":"text","text":"connect-github"}]}]}],"channel":"D088J8BTTGA","event_ts":"1736840911.617279","channel_type":"im"},"type":"event_callback","event_id":"Ev088BKR346S","event_time":1736840911,"authorizations":[{"enterprise_id":null,"team_id":"T01EQ5VAYA2","user_id":"U088J5MRCRZ","is_bot":true,"is_enterprise_install":false}],"is_ext_shared_channel":false,"event_context":"4-eyJldCI6Im1lc3NhZ2UiLCJ0aWQiOiJUMDFFUTVWQVlBMiIsImFpZCI6IkEwODhKMTk2NVJSIiwiY2lkIjoiRDA4OEo4QlRUR0EifQ"}
+2025-01-14 16:49:33,694 - DEBUG - URL: http://7a15-220-85-91-47.ngrok-free.app/slack/events
+2025-01-14 16:49:33,694 - DEBUG - Method: POST
+2025-01-14 16:49:33,694 - INFO - Received request to /slack/events
+2025-01-14 16:49:33,695 - DEBUG - Request data: {'token': 'fvnpCcQj3ngFfGr8ODhEPEAJ', 'team_id': 'T01EQ5VAYA2', 'context_team_id': 'T01EQ5VAYA2', 'context_enterprise_id': None, 'api_app_id': 'A088J1965RR', 'event': {'user': 'U054JK0RHL3', 'type': 'message', 'ts': '1736840911.617279', 'client_msg_id': '91cc0694-1da7-471b-ade2-97715e827f7a', 'text': 'connect-github', 'team': 'T01EQ5VAYA2', 'thread_ts': '1736840877.899059', 'parent_user_id': 'U088J5MRCRZ', 'blocks': [{'type': 'rich_text', 'block_id': 'Is9uP', 'elements': [{'type': 'rich_text_section', 'elements': [{'type': 'text', 'text': 'connect-github'}]}]}], 'channel': 'D088J8BTTGA', 'event_ts': '1736840911.617279', 'channel_type': 'im'}, 'type': 'event_callback', 'event_id': 'Ev088BKR346S', 'event_time': 1736840911, 'authorizations': [{'enterprise_id': None, 'team_id': 'T01EQ5VAYA2', 'user_id': 'U088J5MRCRZ', 'is_bot': True, 'is_enterprise_install': False}], 'is_ext_shared_channel': False, 'event_context': '4-eyJldCI6Im1lc3NhZ2UiLCJ0aWQiOiJUMDFFUTVWQVlBMiIsImFpZCI6IkEwODhKMTk2NVJSIiwiY2lkIjoiRDA4OEo4QlRUR0EifQ'}
+2025-01-14 16:49:33,695 - DEBUG - Applying slack_bolt.middleware.ssl_check.ssl_check.SslCheck
+2025-01-14 16:49:33,695 - DEBUG - Applying slack_bolt.middleware.request_verification.request_verification.RequestVerification
+2025-01-14 16:49:33,695 - INFO - Invalid request signature detected (signature: v0=67db7f337d55bf6fedc7db739af03a3538bd01b1eb1d6fd1bfec65ce2b80913c, timestamp: 1736840973, body: {"token":"fvnpCcQj3ngFfGr8ODhEPEAJ","team_id":"T01EQ5VAYA2","context_team_id":"T01EQ5VAYA2","context_enterprise_id":null,"api_app_id":"A088J1965RR","event":{"user":"U054JK0RHL3","type":"message","ts":"1736840911.617279","client_msg_id":"91cc0694-1da7-471b-ade2-97715e827f7a","text":"connect-github","team":"T01EQ5VAYA2","thread_ts":"1736840877.899059","parent_user_id":"U088J5MRCRZ","blocks":[{"type":"rich_text","block_id":"Is9uP","elements":[{"type":"rich_text_section","elements":[{"type":"text","text":"connect-github"}]}]}],"channel":"D088J8BTTGA","event_ts":"1736840911.617279","channel_type":"im"},"type":"event_callback","event_id":"Ev088BKR346S","event_time":1736840911,"authorizations":[{"enterprise_id":null,"team_id":"T01EQ5VAYA2","user_id":"U088J5MRCRZ","is_bot":true,"is_enterprise_install":false}],"is_ext_shared_channel":false,"event_context":"4-eyJldCI6Im1lc3NhZ2UiLCJ0aWQiOiJUMDFFUTVWQVlBMiIsImFpZCI6IkEwODhKMTk2NVJSIiwiY2lkIjoiRDA4OEo4QlRUR0EifQ"})
+2025-01-14 16:49:33,695 - INFO - Event handled successfully in 0.00 seconds
+2025-01-14 16:49:33,696 - INFO - 127.0.0.1 - - [14/Jan/2025 16:49:33] "[31m[1mPOST /slack/events HTTP/1.1[0m" 401 -
+2025-01-14 16:49:36,049 - DEBUG - Headers: {'Host': '7a15-220-85-91-47.ngrok-free.app', 'User-Agent': 'Slackbot 1.0 (+https://api.slack.com/robots)', 'Content-Length': '966', 'Accept': '*/*', 'Accept-Encoding': 'gzip,deflate', 'Content-Type': 'application/json', 'X-Forwarded-For': '34.224.78.71', 'X-Forwarded-Host': '7a15-220-85-91-47.ngrok-free.app', 'X-Forwarded-Proto': 'https', 'X-Slack-Request-Timestamp': '1736840975', 'X-Slack-Retry-Num': '2', 'X-Slack-Retry-Reason': 'http_error', 'X-Slack-Signature': 'v0=574f46ca0edf3cfcb5485f468794facd9139d2cc664197a7cb59ca167b8bbf28'}
+2025-01-14 16:49:36,049 - DEBUG - Body: {"token":"fvnpCcQj3ngFfGr8ODhEPEAJ","team_id":"T01EQ5VAYA2","context_team_id":"T01EQ5VAYA2","context_enterprise_id":null,"api_app_id":"A088J1965RR","event":{"user":"U054JK0RHL3","type":"message","ts":"1736840914.155199","client_msg_id":"9231e7f7-8ba0-435d-b004-1e49528417e2","text":"connect-github","team":"T01EQ5VAYA2","thread_ts":"1736840877.899059","parent_user_id":"U088J5MRCRZ","blocks":[{"type":"rich_text","block_id":"Is9uP","elements":[{"type":"rich_text_section","elements":[{"type":"text","text":"connect-github"}]}]}],"channel":"D088J8BTTGA","event_ts":"1736840914.155199","channel_type":"im"},"type":"event_callback","event_id":"Ev088WUZDQJD","event_time":1736840914,"authorizations":[{"enterprise_id":null,"team_id":"T01EQ5VAYA2","user_id":"U088J5MRCRZ","is_bot":true,"is_enterprise_install":false}],"is_ext_shared_channel":false,"event_context":"4-eyJldCI6Im1lc3NhZ2UiLCJ0aWQiOiJUMDFFUTVWQVlBMiIsImFpZCI6IkEwODhKMTk2NVJSIiwiY2lkIjoiRDA4OEo4QlRUR0EifQ"}
+2025-01-14 16:49:36,049 - DEBUG - URL: http://7a15-220-85-91-47.ngrok-free.app/slack/events
+2025-01-14 16:49:36,049 - DEBUG - Method: POST
+2025-01-14 16:49:36,049 - INFO - Received request to /slack/events
+2025-01-14 16:49:36,050 - DEBUG - Request data: {'token': 'fvnpCcQj3ngFfGr8ODhEPEAJ', 'team_id': 'T01EQ5VAYA2', 'context_team_id': 'T01EQ5VAYA2', 'context_enterprise_id': None, 'api_app_id': 'A088J1965RR', 'event': {'user': 'U054JK0RHL3', 'type': 'message', 'ts': '1736840914.155199', 'client_msg_id': '9231e7f7-8ba0-435d-b004-1e49528417e2', 'text': 'connect-github', 'team': 'T01EQ5VAYA2', 'thread_ts': '1736840877.899059', 'parent_user_id': 'U088J5MRCRZ', 'blocks': [{'type': 'rich_text', 'block_id': 'Is9uP', 'elements': [{'type': 'rich_text_section', 'elements': [{'type': 'text', 'text': 'connect-github'}]}]}], 'channel': 'D088J8BTTGA', 'event_ts': '1736840914.155199', 'channel_type': 'im'}, 'type': 'event_callback', 'event_id': 'Ev088WUZDQJD', 'event_time': 1736840914, 'authorizations': [{'enterprise_id': None, 'team_id': 'T01EQ5VAYA2', 'user_id': 'U088J5MRCRZ', 'is_bot': True, 'is_enterprise_install': False}], 'is_ext_shared_channel': False, 'event_context': '4-eyJldCI6Im1lc3NhZ2UiLCJ0aWQiOiJUMDFFUTVWQVlBMiIsImFpZCI6IkEwODhKMTk2NVJSIiwiY2lkIjoiRDA4OEo4QlRUR0EifQ'}
+2025-01-14 16:49:36,050 - DEBUG - Applying slack_bolt.middleware.ssl_check.ssl_check.SslCheck
+2025-01-14 16:49:36,050 - DEBUG - Applying slack_bolt.middleware.request_verification.request_verification.RequestVerification
+2025-01-14 16:49:36,050 - INFO - Invalid request signature detected (signature: v0=574f46ca0edf3cfcb5485f468794facd9139d2cc664197a7cb59ca167b8bbf28, timestamp: 1736840975, body: {"token":"fvnpCcQj3ngFfGr8ODhEPEAJ","team_id":"T01EQ5VAYA2","context_team_id":"T01EQ5VAYA2","context_enterprise_id":null,"api_app_id":"A088J1965RR","event":{"user":"U054JK0RHL3","type":"message","ts":"1736840914.155199","client_msg_id":"9231e7f7-8ba0-435d-b004-1e49528417e2","text":"connect-github","team":"T01EQ5VAYA2","thread_ts":"1736840877.899059","parent_user_id":"U088J5MRCRZ","blocks":[{"type":"rich_text","block_id":"Is9uP","elements":[{"type":"rich_text_section","elements":[{"type":"text","text":"connect-github"}]}]}],"channel":"D088J8BTTGA","event_ts":"1736840914.155199","channel_type":"im"},"type":"event_callback","event_id":"Ev088WUZDQJD","event_time":1736840914,"authorizations":[{"enterprise_id":null,"team_id":"T01EQ5VAYA2","user_id":"U088J5MRCRZ","is_bot":true,"is_enterprise_install":false}],"is_ext_shared_channel":false,"event_context":"4-eyJldCI6Im1lc3NhZ2UiLCJ0aWQiOiJUMDFFUTVWQVlBMiIsImFpZCI6IkEwODhKMTk2NVJSIiwiY2lkIjoiRDA4OEo4QlRUR0EifQ"})
+2025-01-14 16:49:36,050 - INFO - Event handled successfully in 0.00 seconds
+2025-01-14 16:49:36,051 - INFO - 127.0.0.1 - - [14/Jan/2025 16:49:36] "[31m[1mPOST /slack/events HTTP/1.1[0m" 401 -
+2025-01-14 16:50:08,717 - INFO -  * Detected change in '/Users/conan/Documents/Slack_Ai_Backendbot/app.py', reloading
+2025-01-14 16:50:08,757 - INFO -  * Restarting with stat
+2025-01-14 16:50:09,009 - INFO - Environment variables loaded
+2025-01-14 16:50:09,023 - INFO - As you've set SLACK_CLIENT_ID and SLACK_CLIENT_SECRET env variables, Bolt has enabled the file-based InstallationStore/OAuthStateStore for you. Note that these file-based stores are for local development. If you'd like to use a different data store, set the oauth_settings argument in the App constructor. Please refer to https://slack.dev/bolt-python/concepts#authenticating-oauth for more details.
+2025-01-14 16:50:09,023 - WARNING - As `installation_store` or `authorize` has been used, `token` (or SLACK_BOT_TOKEN env variable) will be ignored.
+2025-01-14 16:50:09,023 - INFO - Slack app initialized with token and signing secret
+2025-01-14 16:50:09,024 - INFO - Starting Flask application
+2025-01-14 16:50:09,049 - WARNING -  * Debugger is active!
+2025-01-14 16:50:09,060 - INFO -  * Debugger PIN: 454-586-817
+2025-01-14 16:50:27,133 - DEBUG - Headers: {'Host': '7a15-220-85-91-47.ngrok-free.app', 'User-Agent': 'Slackbot 1.0 (+https://api.slack.com/robots)', 'Content-Length': '425', 'Accept': 'application/json,*/*', 'Accept-Encoding': 'gzip,deflate', 'Content-Type': 'application/x-www-form-urlencoded', 'X-Forwarded-For': '3.238.113.71', 'X-Forwarded-Host': '7a15-220-85-91-47.ngrok-free.app', 'X-Forwarded-Proto': 'https', 'X-Slack-Request-Timestamp': '1736841026', 'X-Slack-Signature': 'v0=a376c35c4084e4cd70f6cf6e76535465f8f10fca004c4d1a72e36e8ab0335e6e'}
+2025-01-14 16:50:27,133 - DEBUG - Body: token=fvnpCcQj3ngFfGr8ODhEPEAJ&team_id=T01EQ5VAYA2&team_domain=hyperhire&channel_id=D07DGAAE1EG&channel_name=directmessage&user_id=U054JK0RHL3&user_name=jayden&command=%2Fconnect-github&text=&api_app_id=A088J1965RR&is_enterprise_install=false&response_url=https%3A%2F%2Fhooks.slack.com%2Fcommands%2FT01EQ5VAYA2%2F8290292426530%2FCSx8dLf3RUrioonW00o8s3au&trigger_id=8290207234227.1500199372342.fe1e47971d498cf8327a597e3d65bc6c
+2025-01-14 16:50:27,133 - DEBUG - URL: http://7a15-220-85-91-47.ngrok-free.app/slack/events
+2025-01-14 16:50:27,134 - DEBUG - Method: POST
+2025-01-14 16:50:27,134 - INFO - Received request to /slack/events
+2025-01-14 16:50:27,136 - DEBUG - Request data: {'token': 'fvnpCcQj3ngFfGr8ODhEPEAJ', 'team_id': 'T01EQ5VAYA2', 'team_domain': 'hyperhire', 'channel_id': 'D07DGAAE1EG', 'channel_name': 'directmessage', 'user_id': 'U054JK0RHL3', 'user_name': 'jayden', 'command': '/connect-github', 'text': '', 'api_app_id': 'A088J1965RR', 'is_enterprise_install': 'false', 'response_url': 'https://hooks.slack.com/commands/T01EQ5VAYA2/8290292426530/CSx8dLf3RUrioonW00o8s3au', 'trigger_id': '8290207234227.1500199372342.fe1e47971d498cf8327a597e3d65bc6c'}
+2025-01-14 16:50:27,136 - DEBUG - Applying slack_bolt.middleware.ssl_check.ssl_check.SslCheck
+2025-01-14 16:50:27,136 - DEBUG - Applying slack_bolt.middleware.request_verification.request_verification.RequestVerification
+2025-01-14 16:50:27,137 - INFO - Invalid request signature detected (signature: v0=a376c35c4084e4cd70f6cf6e76535465f8f10fca004c4d1a72e36e8ab0335e6e, timestamp: 1736841026, body: token=fvnpCcQj3ngFfGr8ODhEPEAJ&team_id=T01EQ5VAYA2&team_domain=hyperhire&channel_id=D07DGAAE1EG&channel_name=directmessage&user_id=U054JK0RHL3&user_name=jayden&command=%2Fconnect-github&text=&api_app_id=A088J1965RR&is_enterprise_install=false&response_url=https%3A%2F%2Fhooks.slack.com%2Fcommands%2FT01EQ5VAYA2%2F8290292426530%2FCSx8dLf3RUrioonW00o8s3au&trigger_id=8290207234227.1500199372342.fe1e47971d498cf8327a597e3d65bc6c)
+2025-01-14 16:50:27,137 - INFO - Event handled successfully in 0.00 seconds
+2025-01-14 16:50:27,137 - INFO - 127.0.0.1 - - [14/Jan/2025 16:50:27] "[31m[1mPOST /slack/events HTTP/1.1[0m" 401 -
+2025-01-14 16:50:33,829 - DEBUG - Headers: {'Host': '7a15-220-85-91-47.ngrok-free.app', 'User-Agent': 'Slackbot 1.0 (+https://api.slack.com/robots)', 'Content-Length': '442', 'Accept': 'application/json,*/*', 'Accept-Encoding': 'gzip,deflate', 'Content-Type': 'application/x-www-form-urlencoded', 'X-Forwarded-For': '35.173.182.48', 'X-Forwarded-Host': '7a15-220-85-91-47.ngrok-free.app', 'X-Forwarded-Proto': 'https', 'X-Slack-Request-Timestamp': '1736841033', 'X-Slack-Signature': 'v0=433dab1aee1ba9fdc23ab4bb71c7e609ec08ce68087bc271da79c98750580a22'}
+2025-01-14 16:50:33,831 - DEBUG - Body: token=fvnpCcQj3ngFfGr8ODhEPEAJ&team_id=T01EQ5VAYA2&team_domain=hyperhire&channel_id=D07DGAAE1EG&channel_name=directmessage&user_id=U054JK0RHL3&user_name=jayden&command=%2Fconnect-github&text=%2Fconnect-github&api_app_id=A088J1965RR&is_enterprise_install=false&response_url=https%3A%2F%2Fhooks.slack.com%2Fcommands%2FT01EQ5VAYA2%2F8292813996788%2FodaPkBZlYUdxT0drnQMl1Kbs&trigger_id=8287459347941.1500199372342.2a5a04dc2819c1e96484a2c3e10864b6
+2025-01-14 16:50:33,831 - DEBUG - URL: http://7a15-220-85-91-47.ngrok-free.app/slack/events
+2025-01-14 16:50:33,831 - DEBUG - Method: POST
+2025-01-14 16:50:33,831 - INFO - Received request to /slack/events
+2025-01-14 16:50:33,831 - DEBUG - Request data: {'token': 'fvnpCcQj3ngFfGr8ODhEPEAJ', 'team_id': 'T01EQ5VAYA2', 'team_domain': 'hyperhire', 'channel_id': 'D07DGAAE1EG', 'channel_name': 'directmessage', 'user_id': 'U054JK0RHL3', 'user_name': 'jayden', 'command': '/connect-github', 'text': '/connect-github', 'api_app_id': 'A088J1965RR', 'is_enterprise_install': 'false', 'response_url': 'https://hooks.slack.com/commands/T01EQ5VAYA2/8292813996788/odaPkBZlYUdxT0drnQMl1Kbs', 'trigger_id': '8287459347941.1500199372342.2a5a04dc2819c1e96484a2c3e10864b6'}
+2025-01-14 16:50:33,831 - DEBUG - Applying slack_bolt.middleware.ssl_check.ssl_check.SslCheck
+2025-01-14 16:50:33,831 - DEBUG - Applying slack_bolt.middleware.request_verification.request_verification.RequestVerification
+2025-01-14 16:50:33,831 - INFO - Invalid request signature detected (signature: v0=433dab1aee1ba9fdc23ab4bb71c7e609ec08ce68087bc271da79c98750580a22, timestamp: 1736841033, body: token=fvnpCcQj3ngFfGr8ODhEPEAJ&team_id=T01EQ5VAYA2&team_domain=hyperhire&channel_id=D07DGAAE1EG&channel_name=directmessage&user_id=U054JK0RHL3&user_name=jayden&command=%2Fconnect-github&text=%2Fconnect-github&api_app_id=A088J1965RR&is_enterprise_install=false&response_url=https%3A%2F%2Fhooks.slack.com%2Fcommands%2FT01EQ5VAYA2%2F8292813996788%2FodaPkBZlYUdxT0drnQMl1Kbs&trigger_id=8287459347941.1500199372342.2a5a04dc2819c1e96484a2c3e10864b6)
+2025-01-14 16:50:33,831 - INFO - Event handled successfully in 0.00 seconds
+2025-01-14 16:50:33,831 - INFO - 127.0.0.1 - - [14/Jan/2025 16:50:33] "[31m[1mPOST /slack/events HTTP/1.1[0m" 401 -
+2025-01-14 16:50:35,407 - DEBUG - Headers: {'Host': '7a15-220-85-91-47.ngrok-free.app', 'User-Agent': 'Slackbot 1.0 (+https://api.slack.com/robots)', 'Content-Length': '462', 'Accept': 'application/json,*/*', 'Accept-Encoding': 'gzip,deflate', 'Content-Type': 'application/x-www-form-urlencoded', 'X-Forwarded-For': '44.203.150.219', 'X-Forwarded-Host': '7a15-220-85-91-47.ngrok-free.app', 'X-Forwarded-Proto': 'https', 'X-Slack-Request-Timestamp': '1736841034', 'X-Slack-Signature': 'v0=da81186f652bcbac8ca6c4e6f11197f45ab075f17bce082362c7b7f3663a0ebd'}
+2025-01-14 16:50:35,407 - DEBUG - Body: token=fvnpCcQj3ngFfGr8ODhEPEAJ&team_id=T01EQ5VAYA2&team_domain=hyperhire&channel_id=D07DGAAE1EG&channel_name=directmessage&user_id=U054JK0RHL3&user_name=jayden&command=%2Fconnect-github&text=%2Fconnect-github%0A%2Fconnect-github&api_app_id=A088J1965RR&is_enterprise_install=false&response_url=https%3A%2F%2Fhooks.slack.com%2Fcommands%2FT01EQ5VAYA2%2F8287459433253%2F6rMjZDBXXeL5RG5YKxa02XEJ&trigger_id=8275763184247.1500199372342.26c43ca54fa7cb165ba25ab2206a7e60
+2025-01-14 16:50:35,407 - DEBUG - URL: http://7a15-220-85-91-47.ngrok-free.app/slack/events
+2025-01-14 16:50:35,407 - DEBUG - Method: POST
+2025-01-14 16:50:35,407 - INFO - Received request to /slack/events
+2025-01-14 16:50:35,408 - DEBUG - Request data: {'token': 'fvnpCcQj3ngFfGr8ODhEPEAJ', 'team_id': 'T01EQ5VAYA2', 'team_domain': 'hyperhire', 'channel_id': 'D07DGAAE1EG', 'channel_name': 'directmessage', 'user_id': 'U054JK0RHL3', 'user_name': 'jayden', 'command': '/connect-github', 'text': '/connect-github\n/connect-github', 'api_app_id': 'A088J1965RR', 'is_enterprise_install': 'false', 'response_url': 'https://hooks.slack.com/commands/T01EQ5VAYA2/8287459433253/6rMjZDBXXeL5RG5YKxa02XEJ', 'trigger_id': '8275763184247.1500199372342.26c43ca54fa7cb165ba25ab2206a7e60'}
+2025-01-14 16:50:35,408 - DEBUG - Applying slack_bolt.middleware.ssl_check.ssl_check.SslCheck
+2025-01-14 16:50:35,408 - DEBUG - Applying slack_bolt.middleware.request_verification.request_verification.RequestVerification
+2025-01-14 16:50:35,408 - INFO - Invalid request signature detected (signature: v0=da81186f652bcbac8ca6c4e6f11197f45ab075f17bce082362c7b7f3663a0ebd, timestamp: 1736841034, body: token=fvnpCcQj3ngFfGr8ODhEPEAJ&team_id=T01EQ5VAYA2&team_domain=hyperhire&channel_id=D07DGAAE1EG&channel_name=directmessage&user_id=U054JK0RHL3&user_name=jayden&command=%2Fconnect-github&text=%2Fconnect-github%0A%2Fconnect-github&api_app_id=A088J1965RR&is_enterprise_install=false&response_url=https%3A%2F%2Fhooks.slack.com%2Fcommands%2FT01EQ5VAYA2%2F8287459433253%2F6rMjZDBXXeL5RG5YKxa02XEJ&trigger_id=8275763184247.1500199372342.26c43ca54fa7cb165ba25ab2206a7e60)
+2025-01-14 16:50:35,409 - INFO - Event handled successfully in 0.00 seconds
+2025-01-14 16:50:35,409 - INFO - 127.0.0.1 - - [14/Jan/2025 16:50:35] "[31m[1mPOST /slack/events HTTP/1.1[0m" 401 -
+2025-01-14 16:51:04,435 - INFO -  * Detected change in '/Users/conan/Documents/Slack_Ai_Backendbot/app.py', reloading
+2025-01-14 16:51:04,471 - INFO -  * Restarting with stat
+2025-01-14 16:51:04,685 - INFO - Environment variables loaded
+2025-01-14 16:51:04,698 - INFO - As you've set SLACK_CLIENT_ID and SLACK_CLIENT_SECRET env variables, Bolt has enabled the file-based InstallationStore/OAuthStateStore for you. Note that these file-based stores are for local development. If you'd like to use a different data store, set the oauth_settings argument in the App constructor. Please refer to https://slack.dev/bolt-python/concepts#authenticating-oauth for more details.
+2025-01-14 16:51:04,698 - WARNING - As `installation_store` or `authorize` has been used, `token` (or SLACK_BOT_TOKEN env variable) will be ignored.
+2025-01-14 16:51:04,698 - INFO - Slack app initialized with token and signing secret
+2025-01-14 16:51:04,699 - INFO - Starting Flask application
+2025-01-14 16:51:04,722 - WARNING -  * Debugger is active!
+2025-01-14 16:51:04,730 - INFO -  * Debugger PIN: 454-586-817
+2025-01-14 16:52:04,852 - DEBUG - Headers: {'Host': '7a15-220-85-91-47.ngrok-free.app', 'User-Agent': 'Slackbot 1.0 (+https://api.slack.com/robots)', 'Content-Length': '462', 'Accept': 'application/json,*/*', 'Accept-Encoding': 'gzip,deflate', 'Content-Type': 'application/x-www-form-urlencoded', 'X-Forwarded-For': '34.206.64.55', 'X-Forwarded-Host': '7a15-220-85-91-47.ngrok-free.app', 'X-Forwarded-Proto': 'https', 'X-Slack-Request-Timestamp': '1736841124', 'X-Slack-Signature': 'v0=e737bc933e330572dd38c56cd87919e3f90a8f9b81289b6cc7b43744a2583be8'}
+2025-01-14 16:52:04,855 - DEBUG - Body: token=fvnpCcQj3ngFfGr8ODhEPEAJ&team_id=T01EQ5VAYA2&team_domain=hyperhire&channel_id=D07DGAAE1EG&channel_name=directmessage&user_id=U054JK0RHL3&user_name=jayden&command=%2Fconnect-github&text=%2Fconnect-github%0A%2Fconnect-github&api_app_id=A088J1965RR&is_enterprise_install=false&response_url=https%3A%2F%2Fhooks.slack.com%2Fcommands%2FT01EQ5VAYA2%2F8290298039282%2FOttlFC5EKJuUTQaiFZkM8KpZ&trigger_id=8275768295511.1500199372342.68ce3bea28664f2f00ca2b79165af6a9
+2025-01-14 16:52:04,855 - DEBUG - URL: http://7a15-220-85-91-47.ngrok-free.app/slack/events
+2025-01-14 16:52:04,855 - DEBUG - Method: POST
+2025-01-14 16:52:04,855 - INFO - Received request to /slack/events
+2025-01-14 16:52:04,857 - DEBUG - Request data: {'token': 'fvnpCcQj3ngFfGr8ODhEPEAJ', 'team_id': 'T01EQ5VAYA2', 'team_domain': 'hyperhire', 'channel_id': 'D07DGAAE1EG', 'channel_name': 'directmessage', 'user_id': 'U054JK0RHL3', 'user_name': 'jayden', 'command': '/connect-github', 'text': '/connect-github\n/connect-github', 'api_app_id': 'A088J1965RR', 'is_enterprise_install': 'false', 'response_url': 'https://hooks.slack.com/commands/T01EQ5VAYA2/8290298039282/OttlFC5EKJuUTQaiFZkM8KpZ', 'trigger_id': '8275768295511.1500199372342.68ce3bea28664f2f00ca2b79165af6a9'}
+2025-01-14 16:52:04,857 - DEBUG - Applying slack_bolt.middleware.ssl_check.ssl_check.SslCheck
+2025-01-14 16:52:04,857 - DEBUG - Applying slack_bolt.middleware.request_verification.request_verification.RequestVerification
+2025-01-14 16:52:04,857 - INFO - Invalid request signature detected (signature: v0=e737bc933e330572dd38c56cd87919e3f90a8f9b81289b6cc7b43744a2583be8, timestamp: 1736841124, body: token=fvnpCcQj3ngFfGr8ODhEPEAJ&team_id=T01EQ5VAYA2&team_domain=hyperhire&channel_id=D07DGAAE1EG&channel_name=directmessage&user_id=U054JK0RHL3&user_name=jayden&command=%2Fconnect-github&text=%2Fconnect-github%0A%2Fconnect-github&api_app_id=A088J1965RR&is_enterprise_install=false&response_url=https%3A%2F%2Fhooks.slack.com%2Fcommands%2FT01EQ5VAYA2%2F8290298039282%2FOttlFC5EKJuUTQaiFZkM8KpZ&trigger_id=8275768295511.1500199372342.68ce3bea28664f2f00ca2b79165af6a9)
+2025-01-14 16:52:04,858 - INFO - Event handled successfully in 0.00 seconds
+2025-01-14 16:52:04,858 - INFO - 127.0.0.1 - - [14/Jan/2025 16:52:04] "[31m[1mPOST /slack/events HTTP/1.1[0m" 401 -
+2025-01-14 16:52:34,029 - DEBUG - Headers: {'Host': '7a15-220-85-91-47.ngrok-free.app', 'User-Agent': 'Slackbot 1.0 (+https://api.slack.com/robots)', 'Content-Length': '462', 'Accept': 'application/json,*/*', 'Accept-Encoding': 'gzip,deflate', 'Content-Type': 'application/x-www-form-urlencoded', 'X-Forwarded-For': '54.221.185.157', 'X-Forwarded-Host': '7a15-220-85-91-47.ngrok-free.app', 'X-Forwarded-Proto': 'https', 'X-Slack-Request-Timestamp': '1736841153', 'X-Slack-Signature': 'v0=5109995ebacaa80f0e911e8a22a049976371555c7630046b068500d65c369e48'}
+2025-01-14 16:52:34,030 - DEBUG - Body: token=fvnpCcQj3ngFfGr8ODhEPEAJ&team_id=T01EQ5VAYA2&team_domain=hyperhire&channel_id=D07DGAAE1EG&channel_name=directmessage&user_id=U054JK0RHL3&user_name=jayden&command=%2Fconnect-github&text=%2Fconnect-github%0A%2Fconnect-github&api_app_id=A088J1965RR&is_enterprise_install=false&response_url=https%3A%2F%2Fhooks.slack.com%2Fcommands%2FT01EQ5VAYA2%2F8287466229989%2FdVkdMO2yBj4UoukLNNMRa3tU&trigger_id=8290299726050.1500199372342.03c7e039b24527f48ada1382114beada
+2025-01-14 16:52:34,031 - DEBUG - URL: http://7a15-220-85-91-47.ngrok-free.app/slack/events
+2025-01-14 16:52:34,031 - DEBUG - Method: POST
+2025-01-14 16:52:34,031 - INFO - Received request to /slack/events
+2025-01-14 16:52:34,031 - DEBUG - Request data: {'token': 'fvnpCcQj3ngFfGr8ODhEPEAJ', 'team_id': 'T01EQ5VAYA2', 'team_domain': 'hyperhire', 'channel_id': 'D07DGAAE1EG', 'channel_name': 'directmessage', 'user_id': 'U054JK0RHL3', 'user_name': 'jayden', 'command': '/connect-github', 'text': '/connect-github\n/connect-github', 'api_app_id': 'A088J1965RR', 'is_enterprise_install': 'false', 'response_url': 'https://hooks.slack.com/commands/T01EQ5VAYA2/8287466229989/dVkdMO2yBj4UoukLNNMRa3tU', 'trigger_id': '8290299726050.1500199372342.03c7e039b24527f48ada1382114beada'}
+2025-01-14 16:52:34,031 - DEBUG - Applying slack_bolt.middleware.ssl_check.ssl_check.SslCheck
+2025-01-14 16:52:34,032 - DEBUG - Applying slack_bolt.middleware.request_verification.request_verification.RequestVerification
+2025-01-14 16:52:34,032 - INFO - Invalid request signature detected (signature: v0=5109995ebacaa80f0e911e8a22a049976371555c7630046b068500d65c369e48, timestamp: 1736841153, body: token=fvnpCcQj3ngFfGr8ODhEPEAJ&team_id=T01EQ5VAYA2&team_domain=hyperhire&channel_id=D07DGAAE1EG&channel_name=directmessage&user_id=U054JK0RHL3&user_name=jayden&command=%2Fconnect-github&text=%2Fconnect-github%0A%2Fconnect-github&api_app_id=A088J1965RR&is_enterprise_install=false&response_url=https%3A%2F%2Fhooks.slack.com%2Fcommands%2FT01EQ5VAYA2%2F8287466229989%2FdVkdMO2yBj4UoukLNNMRa3tU&trigger_id=8290299726050.1500199372342.03c7e039b24527f48ada1382114beada)
+2025-01-14 16:52:34,032 - INFO - Event handled successfully in 0.00 seconds
+2025-01-14 16:52:34,032 - INFO - 127.0.0.1 - - [14/Jan/2025 16:52:34] "[31m[1mPOST /slack/events HTTP/1.1[0m" 401 -
+2025-01-14 16:53:04,977 - DEBUG - Headers: {'Host': '7a15-220-85-91-47.ngrok-free.app', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7,hi;q=0.6,no;q=0.5', 'Cache-Control': 'max-age=0', 'Cookie': 'abuse_interstitial=7a15-220-85-91-47.ngrok-free.app', 'Priority': 'u=0, i', 'Sec-Ch-Ua': '"Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"', 'Sec-Ch-Ua-Mobile': '?0', 'Sec-Ch-Ua-Platform': '"macOS"', 'Sec-Fetch-Dest': 'document', 'Sec-Fetch-Mode': 'navigate', 'Sec-Fetch-Site': 'same-origin', 'Sec-Fetch-User': '?1', 'Upgrade-Insecure-Requests': '1', 'X-Forwarded-For': '220.85.91.47', 'X-Forwarded-Host': '7a15-220-85-91-47.ngrok-free.app', 'X-Forwarded-Proto': 'https'}
+2025-01-14 16:53:04,979 - DEBUG - Body: 
+2025-01-14 16:53:04,979 - DEBUG - URL: http://7a15-220-85-91-47.ngrok-free.app/slack/events
+2025-01-14 16:53:04,979 - DEBUG - Method: GET
+2025-01-14 16:53:04,980 - INFO - 127.0.0.1 - - [14/Jan/2025 16:53:04] "[31m[1mGET /slack/events HTTP/1.1[0m" 405 -
+2025-01-14 16:53:05,662 - DEBUG - Headers: {'Host': '7a15-220-85-91-47.ngrok-free.app', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'Accept': 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7,hi;q=0.6,no;q=0.5', 'Cookie': 'abuse_interstitial=7a15-220-85-91-47.ngrok-free.app', 'Priority': 'u=1, i', 'Referer': 'https://7a15-220-85-91-47.ngrok-free.app/slack/events', 'Sec-Ch-Ua': '"Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"', 'Sec-Ch-Ua-Mobile': '?0', 'Sec-Ch-Ua-Platform': '"macOS"', 'Sec-Fetch-Dest': 'image', 'Sec-Fetch-Mode': 'no-cors', 'Sec-Fetch-Site': 'same-origin', 'X-Forwarded-For': '220.85.91.47', 'X-Forwarded-Host': '7a15-220-85-91-47.ngrok-free.app', 'X-Forwarded-Proto': 'https'}
+2025-01-14 16:53:05,662 - DEBUG - Body: 
+2025-01-14 16:53:05,663 - DEBUG - URL: http://7a15-220-85-91-47.ngrok-free.app/favicon.ico
+2025-01-14 16:53:05,663 - DEBUG - Method: GET
+2025-01-14 16:53:05,663 - INFO - 127.0.0.1 - - [14/Jan/2025 16:53:05] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-01-14 16:53:21,454 - DEBUG - Headers: {'Host': '7a15-220-85-91-47.ngrok-free.app', 'User-Agent': 'got (https://github.com/sindresorhus/got)', 'Accept-Encoding': 'gzip, deflate, br', 'X-Forwarded-For': '18.215.124.116', 'X-Forwarded-Host': '7a15-220-85-91-47.ngrok-free.app', 'X-Forwarded-Proto': 'https'}
+2025-01-14 16:53:21,455 - DEBUG - Body: 
+2025-01-14 16:53:21,455 - DEBUG - URL: http://7a15-220-85-91-47.ngrok-free.app/slack/events
+2025-01-14 16:53:21,455 - DEBUG - Method: GET
+2025-01-14 16:53:21,456 - INFO - 127.0.0.1 - - [14/Jan/2025 16:53:21] "[31m[1mGET /slack/events HTTP/1.1[0m" 405 -
+2025-01-14 16:53:55,979 - INFO -  * Detected change in '/Users/conan/Documents/Slack_Ai_Backendbot/app.py', reloading
+2025-01-14 16:53:56,016 - INFO -  * Restarting with stat
+2025-01-14 17:02:12,080 - INFO -  * Restarting with stat
