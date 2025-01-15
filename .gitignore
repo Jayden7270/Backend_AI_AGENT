@@ -8,3 +8,16 @@ echo "data/" >> .gitignore
 echo "venv/" >> .gitignore
 echo "__pycache__/" >> .gitignore
 echo "*.pyc" >> .gitignore
+
+# 환경 변수 파일
+.env
+
+# 데이터 디렉토리
+data/
+s
+# Python 가상 환경
+venv/
+
+# Python 컴파일 파일
+__pycache__/
+*.pyc
